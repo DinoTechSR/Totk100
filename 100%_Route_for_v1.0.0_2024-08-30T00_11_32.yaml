@@ -1,0 +1,392 @@
+---
+_config:
+_project:
+  authors:
+    - BounceSR
+  contributors:
+    - savagei3
+    - Aergyl
+    - anapup
+    - BloomPrism
+    - cloudedSR
+    - DinoTechSR
+    - TZSR_Ondrej
+  description: 100% Route for v1.0.0
+  name: 100% Route for v1.0.0
+  url: "https://restite.org/notceler-totk/?codeberg=Bouncesw/totk-100-v100/raw/totk-100-v100-route"
+  version: 2.1.0
+  
+_route:
+  - Great Sky Island 1A:
+    - Important Please Read:
+       comment: https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit
+    - Copy/paste URL into browser to view the document
+    - _Special::StartPos Sky<Room of Awakening>:
+       comment: Wake up from slumber
+    - _Equipment::Weapon<Decayed Master Sword>
+    - _Chest<Wing x3>:
+       coord: [379.57, 2441.25, -1698.73]
+       comment: Perform Cog Skip and run through the tunnel
+       line-color: rgb(255, 255, 255)
+    - _Location::GreatSkyIsland:
+       hide-icon-on-map: true
+    - _Npc::Steward Construct_07
+    - _KeyItem::PurahPad
+    - Wing to the Temple of Time and do not touch the ground
+    - _Location::TempleofTime:
+       coord: [453.51, 1556.17, -849.75]
+       comment: Activate the button
+    - _Equipment::Weapon<MsgNotFound>:
+       comment: Use QDZ against the door, then voidout/reload up top
+    - _Warp::Location<Up Top>:
+       coord: [425, 2485, -1679]
+    - _Shrine::Gutanbac
+    - _KeyItem::Ascend
+    - _Item<Spicy Pepper>: 
+       coord: [778.18, 1681.52, -1391.44]
+    - _Item<Flint>: 
+       coord: [790.68, 1682.9, -1389.64]
+    - _Cave::Bottomless01
+    - _Equipment::Shield<Flame Emitter Shield>:
+       coord: [745.41, 1650.87, -1368.7]
+    - _Item<Bomb Flower>:
+       coord: [744.35, 1647.04, -1344.69]
+    - _KeyItem::EnergyCell:
+       comment: Run to the ledge and perform Battery Throw
+    - Wing to/enter Fuse
+    - _KeyItem::Fuse
+    - _Item<Fire Fruit>:
+       comment: Pick up for campfires
+    - _Equipment::Bow<Old Wooden Bow>
+    - _Chest<Shrine Key>:
+       comment: Use bomb arrow, then drain to 0
+    - Set up QDS and skip cutscene
+    - _Shrine::In-isa
+    - Arrow fly to/enter Ultrahand
+    - _KeyItem::Ultrahand
+    - _Shrine::Ukouh
+    - _Korok::GSI02
+    - _KeyItem::KorokSeed
+    - _Location<Temple of Time>:
+       coord: [453.51, 1556.17, -849.75]
+       comment: Open the door at ToT 2
+    - _MainQuest::TheClosedDoor
+    - _KeyItem::Recall
+    - _Location<4-Heart Door>:
+       coord: [453.51, 1573.47, -760.25]
+       comment: Attempt to open
+   
+  - Great Sky Island 1B:
+    - _Warp::ROA
+    - Bomb jump up the ledge and run to/enter Recall
+    - _Shrine::Nachoyah:
+       line-color: rgb(206, 240, 209)
+    - _Warp::Shrine::Ukouh
+    - _Chest<Large Zonaite>:
+       coord: [588.93, 1579.45, -912.35]
+       comment: Chest in water of island above
+    - _Location<Temple of Time>:
+       coord: [453.51, 1556.17, -849.75]
+       comment: Re-enter for ToT 3
+    - _GoddessStatue::TempleofTime:
+       comment: Heart Container
+    - _Location<4-Heart Door>:
+       coord: [453.51, 1573.47, -760.25]
+       comment: Open
+    - _Location<Deposit the Decayed Master Sword>:
+       comment: To the Kingdom of Hyrule
+       coord: [453.76, 1579.32, -636.17]
+  
+  - Rocket Chest:
+    - Dive down to the surface below
+    - _Chest<Rockets x3>:
+       coord: [891.57, 118.09, -541.65]
+       comment: Dupe to appriximately 150
+    - _Item<Splash Fruit>:
+       coord: [884.24, 116.18, -543.12]
+       comment: For water fruit and for Gerudo Canyon quest
+  
+  - Farosh:
+    - _Warp::Shrine::Nachoyah
+    - _Korok::GSI15
+    - _Chest<Zonaite>:
+       coord: [431.96, 1554.57, -1807.92]
+       comment: In chest here
+    - _Item<Board>:
+       coord: [449.89, 1549.2, -1694.27]
+       comment: Slide to dragonhead
+    - _Dispenser::S02:
+       comment: Use for steering sticks, carts, fans, wings (everything that it drops)
+    - _Item<Fairy>:
+       coord: [909.74, 6999.88, -2122.8]
+    - _Item<Farosh Horn>:
+       coord: [-100, 800, -2100]
+       comment: Cart slide to there
+  
+  - Paraglider:
+    - _Item<Fleet Lotus Seeds>:
+       coord: [453.5, 115.86, -2016.46]
+    - _Chest<Cannon>:
+       coord: [238.57, 113.53, -1648.46]
+       comment: In lake below
+    - _Chest<Ancient Blade>:
+       coord: [267, 114.5, -1651.5]
+       comment: Next to Cannon chest
+    - _Tear::G03
+    - _Korok::LL54
+    - _Location::RanchRuins:
+       hide-icon-on-map: true
+    - _Cave::RanchRuins00
+    - _Item<Giant Brightbloom Seed>:
+       coord: [30.28, 135.15, -161.07]
+    - _Item<Giant Brightbloom Seed>:
+       coord: [28.15, 135.81, -159.14]
+    - _Bubbulfrog::RanchRuinsCave
+    - _Chest<Royal Broadsword>:
+       coord: [9.4, 132.47, -176.66]
+       comment: Pick up in chest
+    - _Item<Brightcap>:
+       coord: [7.98, 132.63, -173.85]
+    - _Item<Raw Meat>:
+       coord: [6.9, 132.5, -172.55]
+    - _Cave::RanchRuins01
+    - _Location::MabeVillageRuins:
+       hide-icon-on-map: true
+    - _Well::MabeVillageRuins:
+       comment: Drop into well
+    - _Item<Glowing Cave Fish>:
+       coord: [-56.67, 111.26, -157.75]
+    - _Item<Amber>:
+       coord: [-80.26, 113.97, -173.74]
+       comment: Break the ore deposits
+    - _Place::LookoutLanding:
+       hide-icon-on-map: true
+    - _Equipment::Weapon<Torch>:
+       coord: [-246.46, 124.78, 42.67]
+       comment: Pick up for charge farming  
+    - _Npc<Josha>:
+       coord: [-238.97, 132.32, 147.92]
+       comment: Start Hyrule Castle questline
+    - _MainQuest::TotheKingdomofHyrule
+    - _Chest<Ruby>:
+       coord: [-522.39, 134.69, 312.49]
+       comment: Pick up in field
+    - _Location::FirstGatehouse
+    - _Npc<Hoz>:
+        coord: [-334.93, 238.96, 845.94]
+        comment: Watch Zelda cutscene
+    - _Korok::LL21
+    - _Location::Docks:
+       hide-icon-on-map: true
+    - _Equipment::Shield<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+       comment: Dupe the shield, keep one at full durability
+    - _Korok::LL01
+    - _Location::EastPassage:
+        coord: [-79, 120, 1120]
+        comment: Move slightly inside the passage
+    - _Korok::LL18
+    - _Location::DiningHall
+    - _Korok::LL24
+    - _Location::ObservationRoom:
+       coord: [-254.13, 203.48, 758.33]
+    - _Cave::RoyalHiddenPassage01
+    - _Chest<Diamond>:
+       coord: [-253.72, 193.21, 761.67]
+       comment: Inside Royal Hidden Passage
+    - _Korok::LL26
+    - _Korok::LL42
+    - _KeyItem::Paraglider:
+       comment: Return to LL and progress quest until tower is active
+    - _Tower::LookoutLanding
+    - _Location::CentralHyruleSkyArchipelago:
+       hide-icon-on-map: true
+       comment: Dive back down
+    - _Npc<Purah>:
+       coord: [-248.72, 126.36, 148.83]
+       comment: Start Regional Phenomena
+    - _Item<Egg:
+       coord: [-284.76, 132.61, 173.7]
+    - _Item<Wood>:
+       coord: [-268, 25, 168]
+    - _Item<Hyrule Bass>:
+       coord: [-272.07, 121.99, 160.06]
+    - _Npc<Josha>:
+       movements:
+        - to: [-254, 25, 166]
+        - to: [-254.72, 126.36, 144.83]
+       comment: Start Camera quest
+    - _Npc<Scorpis>:
+       coord: [-258.32, 127.4, 100.7]
+       comment: Open the Emergency Shelter
+    - _Location::EmergencyShelter<Emergency Shelter>:
+       comment: Perform BID (duping amts in readme document)
+    - _Shop::GeneralStore:
+       comment: Sell 175 diamonds, buy arrows
+    - _Shop::ArmorShop:
+       comment: Buy Hylian set
+    - _Chest<Hylian Hood>
+    - _Chest<Hylian Tunic>
+    - _Chest<Hylian Trousers>
+  
+  - Central Depths:
+    - Stick clip down to the Depths
+    - _Item<Large Poe>:
+       coord: [-150.5, -338.9, -9.12]
+    - _Item<Large Poe>:
+       coord: [-140.24, -339.37, -5.02]
+    - _Item<Large Poe>:
+       coord: [-132.9, -339.24, -26.28]
+    - _Item<Large Poe>:
+       coord: [-135.08, -285.5, -46.98]
+    - _KeyItem::Poe
+    - _Enemy::Talus::DC01
+    - _Lightroot::Nisoij
+    - _Enemy::Talus::DC03
+    - _Enemy::Frox::DC08
+    - _Lightroot::Stakijat
+    - _Location::PlainsBargainerStatue
+    - _Shop::BargainerStatue01:
+       comment: Unlock 1st depths armor piece
+    - _Enemy::FluxConstruct::DC03
+    - _Enemy::Hinox::DC02
+    - _Item<Large Poe>:
+       coord: [482.5, -314.87, 169.5]
+    - _Item<Large Poe>:
+       coord: [495.77, -315.48, 187.61]
+    - _Item<Large Poe>:
+       coord: [529.6, -296.68, 200.44]
+    - _Item<Large Poe>:
+       coord: [529.66, -296.1, 207.94]
+    - _Location::AppleanGrove
+    - _Lightroot::Oyimay
+    - _Item<Large Poe>:
+       coord: [-88.75, -321.12, 348.35]
+    - _Item<Large Poe>:
+       coord: [-105.8, -320.93, 348.03]
+    - _Item<Large Poe>:
+       coord: [-119.3, -323.72, 384.23]
+    - _Lightroot::Sinonoyk
+    - _Enemy::Frox::DC05
+    - _Lightroot::Gadohsi
+    - _Location::GustafCanyonMine
+    - _Enemy::Hinox::DC01    
+    - _Location::GiantsGrove
+    - _Enemy::Hinox::DC03
+    - _Lightroot::Iayusus
+    - _Npc<Robbie>:
+       coord: [-803.81, -365.40, -452.58]
+       comment: Progress Camera quest
+    - _Tablet<Statue With Raised Arm>:
+       comment: Complete Quest
+    - _KeyItem::Camera
+    - _Location::DaphnesCanyonMine
+    - _Chest::MinersTop
+    - _Enemy::Hinox::DC04
+    - _Lightroot::Nihcayam
+    - _Enemy::Frox::DC09
+    - _Enemy::Talus::DC04
+    - _Lightroot::Netinet
+    - _Enemy::Hinox::DC05
+    - _Lightroot::Nuzimak
+    - _Location::GroveofTime
+    - _Tablet<Frox>:
+       coord: [-293.30, -355.53, -1793.55]
+    - _Enemy::Frox::DC10
+    - _Lightroot::Nogukoyk
+    - _Item<Grand Poe>:
+       coord: [-648.6, -412.91, -1784.9]
+    - _Item<Grand Poe>:
+       coord: [-658, -410.28, -1794.7]
+    - _Location::GreatAbandonedCentralMine
+    - _Special::StartPos Depths
+    - _KeyItem::Autobuild
+    - _Enemy<Master Kohga>:
+       comment: Build vehicles using normal autobuild
+    - _Chest<Huge Crystallized Charge>:
+       coord: [-815.27, -415.18, -1934.66]
+       comment: Pick up this 100 CC chest
+    - _KeyItem::CrystallizedCharge
+    - _SchemaStone::CentralMine
+    - _KeyItem::SchemaStone
+    - _Shop::ForgeConstruct10:
+       comment: Farm to 2500
+    - _Lightroot::Koradat
+    - _Item<Grand Poe>:
+       coord: [-1031.94, -508.81, -1917.7]
+    - _Item<Large Poe>:
+       coord: [-1034.03, -508.74, -1918.27]
+    - _Location::SecretSpringofRevival    
+    - _Item<Grand Poe>:
+       coord: [-1160.64, -428.48, -1813.99]
+    - _Location::GroveofSpirits
+    - _Lightroot::Kogoir
+    - _Lightroot::Mu-ustust
+    - _Location::FloatingColiseum
+    - _Tablet<Lynel>:
+       coord: [-1167.36, -394.13, -1321.01]
+       comment: Picture for Sayge 8
+    - _Enemy<Lynel>:
+       comment: Only pick up drops from the LAST lynel, ancient blade others
+    - _Equipment::Bow<Savage Lynel Bow>
+    - _Chest::MajorasMask
+  
+  - Hyrule Field:
+    - _Warp::Tower::LookoutLanding
+    - _Shop::CrystalRefinery01
+    - _Npc<Robbie>:
+       coord: [-250.72, 126.36, 144.83]
+       comment: Complete Camera Quest
+       line-color: rgb(184, 226, 230)
+    - _MainQuest::CameraWorkintheDepths
+    - _Korok::LL50
+    - _Chasm::HyruleField
+    - _Korok::LL56
+    - _Shrine::Jiosin
+    - _Korok::HF07
+    - _Enemy<Monster Forces>:
+       coord: [-441.12, 156.17, -624.38]
+       comment: Defeat the Monster Forces
+    - _SideAdv::BringPeacetoHyruleField
+    - _Location::HyruleGarrisonRuins
+    - _Korok::LL60
+    - _Shrine::Susuyai
+    - _Korok::HF22::Start
+    - _Korok::HF13
+    - _Korok::HF22::End
+    - _Location::ExchangeRuins
+    - _Shrine::Mayachin
+    - _Addison::A32
+    - _Tower::HyruleField
+    
+  - Hyrule Field Sky:
+    - _Location::SouthHyruleSkyArchipelago:
+        hide-icon-on-map: true    
+    - _Korok::HFS02
+    - _OldMap::SouthHyrule_02
+    - _KeyItem::OldMap
+    - _SagesWill::SouthHyrule
+    - _Dispenser::S10
+    - _OldMap::SouthHyrule_01
+    - _Shrine::Jinodok::Start
+    - _OldMap::SouthHyrule
+    - _Shrine::Jinodok
+    - _SideQuest<The South Hyrule Sky Crystal>
+    - _Korok::HFS01
+    - _Enemy::FluxConstruct::SC03
+    - _OldMap::SouthHyrule_03
+    - _Tablet::S10
+    - _Location::EastGerudoSkyArchipelago:
+        hide-icon-on-map: true
+    - _Shrine::Rakashog
+    - _Tablet<Smiling Spectacle Rock>:
+       coord: [-1839, 100, -2106]
+       comment: Picture for Gerudo Canyon Stable 1
+    - _Dispenser::S16:
+       comment: Use for steering sticks if you do not have any
+    - FldObj_KorokStartingBlock:
+       coord: [-1829.72, 1305.17, -1917.68]
+    - _Korok::GCS01
+    - _OldMap::SouthHyrule_04
+    - _SagesWill::SouthHyrule_01
+ 
