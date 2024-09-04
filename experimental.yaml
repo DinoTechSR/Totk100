@@ -404,7 +404,42 @@ _route:
     - _SideQuest::ColdEnduranceContest:
        comment: use campfire to morning
        coord: [-1381, 5, -3366]
+    - _Korok::GC44
+    - _SideQuest::TheGreatTumbleweedPurge:
+       coord: [-1010, 5, -3581]
+    - _Korok::PF56
+    - _Korok::GC39
+    - _Addison::A27
     - _Korok::GC41
+    - _Korok::GC21::Start
+    - _Korok::PF30
+    - _Korok::GC21::End
+    - _Korok::GC26
+    - _Korok::GC33
+    - _Shrine::Kitawak
+    - _Korok::GC36
+    - _Korok::GC38
+    - _Korok::GC27
+    - _Addison::A26
+    - _Korok::GC23
+    - _Enemy::Gleeok::G09:
+       notes: Grab the guts if It drops them, if not, get it at a king gleeok sometime later
+    - _Chasm::EastGerudo
+    - _Korok::GC40
+    - _Enemy::Molduga::SG03
+    - _Shrine::Siwakama
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+   
  
  
