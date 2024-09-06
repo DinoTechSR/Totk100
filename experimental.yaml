@@ -384,13 +384,14 @@ _route:
        comment: Picture for Gerudo Canyon Stable 1
     - _Dispenser::S16:
        comment: Use for steering sticks if you do not have any
-    - FldObj_KorokStartingBlock:
+    - GCS01 Start:
        coord: [-1829.72, 1305.17, -1917.68]
     - _Korok::GCS01
     - _OldMap::SouthHyrule_04
     - _SagesWill::SouthHyrule_01
     - _Shrine::Siyamotsus
     - _Korok::GCS02
+ 
   - Gerudo 1:
     - _Shrine::Motsusis
     - _Chasm::SouthLomei   
@@ -423,7 +424,7 @@ _route:
     - _Addison::A26
     - _Korok::GC23
     - _Enemy::Gleeok::G09:
-       notes: Grab the guts if It drops them, if not, get it at a king gleeok sometime later
+       notes: Grab the guts if It drops them unless the last gleeok dropped guts. if not, get it at a king gleeok sometime later
     - _Chasm::EastGerudo
     - _Korok::GC40
     - _Enemy::Molduga::SG03
@@ -454,7 +455,7 @@ _route:
     - _Korok::GC29
     - _Npc<Riju>:
        coord: [-3782.48, 137.99, -2639.96]
-       notes: Pocket rocket to studs/manaquinns to get more precise timming
+       notes: Pocket rocket to studs/manaquinns to get more precise timing
     - _Cave::ValleyofSilentStatues00
     - _Cave::GerudoSanctuary00
     - _Bubbulfrog::ValleyofSilentStatues
@@ -486,7 +487,179 @@ _route:
     - _SideQuest::TheIcelessIcehouse:
        coord: [-3754, 5, -2277]
        notes: use spare ice fruit and 1 fire fruit to fit it. make sure you still have at least 3 ice fruit for the shrine quest later on. 
+    - _Npc<Riju>:
+       comment: Start tower defense
+       coord: [-3886.63, 157.48, -2965.29]
+       notes: Make your way around in the air. when the pillar turns to a more vibrant color shoot it with a bomb arrow, cannon, or an arrow if rijus lightning is already in the vicinity
+    - _Npc<Riju>:
+       coord: [-3900.08, 140.73, -2978.17]
+       notes: in shelter looking at mural
+    - _Tablet<Stelae 1>:
+       coord: [-3889.34, 137.78, -2998.3]
+       comment: To the side after mural
+    - _Tablet<Stelae 2>:
+       coord: [-3870.5, 138.6, -2982.51]
+       comment: Stand in Voe and You classroom to line two pieces up
+    - _Tablet<Stelae 3>:
+       coord: [-3853.54, 137.9, -2943.95]
+       comment: Attach piece in sand together
+    - Take off shirt to warp to Gerudo Jail
+    - _Tablet<Stelae 4>:
+       coord: [-3885, 139.95, -2925]
+       comment: Stelae in jail and put shirt back on, leave jail
+    - _Npc<Rotana>:
+       coord: [-3887.35, 157.48, -2970]
+       comment: Turn in stelae 
+    - _SideQuest::TheHeroinesSecret
+    - _Npc<Rotana>:
+       coord: [-3857, 137.87, -2971]
+       notes: Deposit Bazaar Orb
+    - GC32 Start:
+       coord: [-3859.5, 5,-3016]
+    - _Korok::GC32
+    - _Shrine::Soryotanog
+    - First Pillar:
+       coord: [-4054, 5, -3145]
+       notes: Bomb floor to activate light
+    - _Korok::GC42::Start
+    - _Cave::CentralGerudo00
+    - _Bubbulfrog::CentralGerudoCave
+    - _Korok::GC42::End
+    - _Shrine::Karahatag
+    - Second Pillar: 
+       coord: [-4188,5,-3638]
+       notes: use rocket to spin the wheel
+    - Third Pillar:
+       coord: [-4541,5,-3282]
+    - _Npc<Riju>:
+       coord: [-4253.4, 147.83, -3346.4]
+    - _Enemy<Queen Gibdo>:
+       coord: [-4378,5,-3471]
+    - _Temple::Lightning:
+       notes: Overload clip Out of bounds outside of the temple and hit all of the terminals from the bottom. ABC clip back into the main room and activate the termain twice to ascend up to the boss fight 
+    - _Warp::Npc<Riju: 
+       coord: [-3886.63, 157.48, -2965.29]
     - _Enemy::Molduga::SG01
+    - _Korok::GC24
+    - _Enemy::Gleeok::S02
+    - _Korok::GC14::1
+    - _Korok::GC14::2
+    - _Korok::GC14::3
+    - _Korok::GC14::4
+    - _Korok::GC14::5
+    - _Korok::GC14:  
+       comment: high to low
+    - _Korok::GC17
+    - _Korok::GC10
+    - _Korok::GC04
+    - _Cave::WestGerudoUndergroundRuins00
+    - _Chest::VahNaborisDivineHelm:
+       notes:: both the helm and bubbulfrog are reached from out of bounds movement
+    - _Bubbulfrog::WestGerudoUndergroundRuins
+    - GC07 Start:
+       coord: [-4482, 5, -2133]
+    - _Korok::GC07
+    - _Korok::GH52
+    - _Shrine::Kudanisar
+    - _Korok::GH47::Start
+    - _Korok::GH49
+    - _Korok::GH47::End
+    - _Korok::GH44
+    - _Shrine::Mayamats
+    - _Korok::GH28
+    - _Korok::GH27
+    - _Korok::GH10::Start
+    - _Korok::GH10::End
+    - _Korok::GH06
+    - _Korok::GH09
+    - _Location::StatueoftheEighthHeroine:
+       hide-icon-on-map: true
+    - _Cave::StatueoftheEighthHeroine00:
+       notes: Enter using ABC Clip or Multishot Dazzlefruit
+    - _Chest::TinglesHood
+    - _Bubbulfrog::StatueoftheEighthHeroineCave
+    - _Korok::GH13
+    - _Shrine::Otutsum
+    - _Chasm::GerudoSummit
+    - _Korok::GH11
+    - _Cave::Mystathi'sShelf00
+    - _Bubbulfrog::Mystathi'sShelfCave
+    - _Korok::GH15
+    - GH16 Start:
+        coord: [-3721.92, 746.8, -803.17]
+    - _Korok::GH16
+    - _Korok::GH14   
+    - _Korok::GH17
+    - _Korok::GH19
+    - _Tablet<Grizzlemaw Bear>:
+       coord: [-3616.08, 663.16, -1025.65]
+       comment: Picture for Sayge 6
+    - _Korok::GH20::Trail
+    - _Enemy::Gleeok::G06:
+       notes: Grab Guts if it drops them. if not, grab the guts from the hebra king gleeok
+    - _Korok::GH18
+    - _Tablet<Sword Statue>:
+       coord: [-4002.98, 820.09, -969.15]
+       comment: Picture for Gerudo Canyon 2
+    - _Korok::GH24
+    - _Enemy::Talus::GG01
+    - _Enemy::Hinox::GG01
+    - _Addison::A01
+    - _Korok::GH26
+    - _Cave::Meadela'sMantle00
+    - _Bubbulfrog::Meadela'sMantleCave
+    - Ascend up into tower platform
+    - _Tower::GerudoHighlands
+    
+  - Gerudo Sky:
+    - _Location::NorthGerudoSkyArchipelago:
+       hide-icon-on-map: true
+    - _Tablet::S08:
+       comment: Snap before it falls
+    - _Location::StarviewIsland:
+       hide-icon-on-map: true
+    - _SagesWill::Tabantha_02
+    - _Shrine::Mayasiar
+    - _Dispenser::S23
+    - GHS01 Start:
+       coord: [-3374.14, 2429.17, 12.18]
+    - _Korok::GHS01
+    - _OldMap::Tabantha_03
+    - _Dispenser::S13
+    - _Location::TabanthaSkyArchipelago:
+        hide-icon-on-map: true
+    - _Enemy::FluxConstruct::SH03
+    - _Shrine::Ganos::Start
+    - _Shrine::Ganos:
+       comment: The Tabantha Sky Crystal
+    - _OldMap::Tabantha_02
+    - _OldMap::Tabantha_01
+    - LBS05 Start:
+       coord: [-3960.01, 1610.81, 649.91]
+    - _Korok::LBS05
+    - _Korok::LBS03
+    - LBS01 Start:
+       coord: [-3612.40, 1919.96, 1030.28]
+    - _Korok::LBS01
+    - _Location::LightcastIsland:
+       coord: [-3684.80, 1902.40, 1060.34]
+       comment: Activate the terminal and drain the water
+    - Overload clip next to lightpost to room with switch
+    - _Chest::ZonaiteHelm
+    - Overload clip next to chest to get to shrine
+    - _Shrine::Ga-ahisas
+    - Overload clip out through the bottom (wall is transparent but still there)
+    - _Korok::LBS02
+    - _Dispenser::S00:
+       comment: Use for Hover Stones
+    - Dupe 100 Hover Stones
+    - _Location::NorthTabanthaSkyArchipelago:
+       hide-icon-on-map: true
+    - _OldMap::Tabantha
+    - _SagesWill::Tabantha_01
+    
+       
+    
     
        
        
