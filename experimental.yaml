@@ -428,6 +428,86 @@ _route:
     - _Korok::GC40
     - _Enemy::Molduga::SG03
     - _Shrine::Siwakama
+    - _Korok::GC50::Start
+    - _Cave::AncientAltarRuins04
+    - _Chest::PhantomGreaves
+    - _Bubbulfrog::AncientAltarRuins
+    - _Cave::AncientAltarRuins05
+    - _Cave::AncientAltarRuins03
+    - _Cave::AncientAltarRuins09
+    - _Cave::AncientAltarRuins02
+    - _Cave::AncientAltarRuins06
+    - _Cave::AncientAltarRuins00
+    - _Cave::AncientAltarRuins10
+    - _Cave::AncientAltarRuins07
+    - _Cave::AncientAltarRuins08
+    - _Cave::AncientAltarRuins11
+    - _Cave::AncientAltarRuins01
+    - _Korok::GC50::End
+    - _Korok::GC51
+    - _Cave::SouthGerudo00
+    - _Bubbulfrog::SouthGerudoCave
+    - _Addison::A16
+    - _Enemy::Molduga::SG02
+    - _Korok::GC37
+    - _Addison::A08
+    - _Korok::GC29
+    - _Npc<Riju>:
+       coord: [-3782.48, 137.99, -2639.96]
+       notes: Pocket rocket to studs/manaquinns to get more precise timming
+    - _Cave::ValleyofSilentStatues00
+    - _Cave::GerudoSanctuary00
+    - _Bubbulfrog::ValleyofSilentStatues
+    - _Korok::GC34 
+    - _Korok::GC35::Start
+    - _Korok::GC35::End
+    - _Cave::AncientPrisonRuins00
+    - _Bubbulfrog::AncientPrisonRuins
+    - _Shrine::Chichim
+    - _Cave::QuicksandLake00
+    - _Bubbulfrog::QuicksandLakeCave
+    - _Location::DesertRift
+    - Start Kara Kara defense:
+       coord: [-3237, 5, -2541]
+    - _SideQuest::DecoratewithPassion:
+       coord: [-3224, 5, -2520]
+       notes: Ruby fused weapon
+    - _Korok::GC25
+    - _Npc<Beedle>:
+       coord: [-3225.5, 130, -2592.75]
+       notes: Buy arrows from Beedle and From the shop
+    - _Well::KaraKaraBazaar
+    - _Bubbulfrog::OasisSource
+    - Save Guy stuck in well
+    - _SideQuest::LostintheDunes:
+       coord: [-3272, 5, -2582]
+    - ABC the Sphere and Bring it back to gerudo town
+    - _Korok::GC15
+    - _SideQuest::TheIcelessIcehouse:
+       coord: [-3754, 5, -2277]
+       notes: use spare ice fruit and 1 fire fruit to fit it. make sure you still have at least 3 ice fruit for the shrine quest later on. 
+    - _Enemy::Molduga::SG01
+    
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
     
     
     
