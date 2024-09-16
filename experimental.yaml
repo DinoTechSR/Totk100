@@ -657,28 +657,28 @@ _route:
        hide-icon-on-map: true
     - _OldMap::Tabantha
     - _SagesWill::Tabantha_01
+    - _Enemy::Gleeok::S01
+    - _SagesWill::Hebra
     
-  - Hebra 0.5:
-    - _Korok::RP42
-    - _Korok::RP38::Start
-    - _Korok::RP38::End
-    - _Korok::RP34
-    - Pick up Swallow Bow here
-    - _Korok::RP40
-    - _Korok::RP35
-    - _Tower::RosproPass
+  - Tulin:
+    - _Korok::RP49
+    - _Enemy::Talus::DH04
+    - _Korok::RP50::Trail
+    - _Korok::RP45
+    - _Shrine::Wao-os
+    - _Bubbulfrog::WestLakeTotoriCave
+    - _Cave::WestLakeTotori00
+    - _Korok::RP46
+    - _Korok::RP47
+    - _Korok::RP54
+    - _Korok::RP57::Trail
+    - _Korok::RP59
+    
+
  
-  - Rospro Pass Sky:
-    - _Location::WestHebraSkyArchipelago:
-       hide-icon-on-map: true
-       level: Sky
-    - _Shrine::Ijo-o
-    - _Dispenser::S11
-    - _OldMap::Hebra_02
-    - _Korok::RPS03
-    - _Enemy::FluxConstruct::SH02
-    - _OldMap::Hebra_03
-       
+  
+    
+      
     
     
        
