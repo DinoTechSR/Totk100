@@ -658,6 +658,26 @@ _route:
     - _OldMap::Tabantha
     - _SagesWill::Tabantha_01
     
+  - Hebra 0.5:
+    - _Korok::RP42
+    - _Korok::RP38::Start
+    - _Korok::RP38::End
+    - _Korok::RP34
+    - Pick up Swallow Bow here
+    - _Korok::RP40
+    - _Korok::RP35
+    - _Tower::RosproPass
+ 
+  - Rospro Pass Sky:
+    - _Location::WestHebraSkyArchipelago:
+       hide-icon-on-map: true
+       level: Sky
+    - _Shrine::Ijo-o
+    - _Dispenser::S11
+    - _OldMap::Hebra_02
+    - _Korok::RPS03
+    - _Enemy::FluxConstruct::SH02
+    - _OldMap::Hebra_03
        
     
     
