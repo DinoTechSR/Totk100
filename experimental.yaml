@@ -657,7 +657,8 @@ _route:
        hide-icon-on-map: true
     - _OldMap::Tabantha
     - _SagesWill::Tabantha_01
-    - _Enemy::Gleeok::S01
+    - _Enemy::Gleeok::S01:
+       notes: TAKE A PICTURE 
     - _SagesWill::Hebra
     
   - Tulin:
@@ -673,6 +674,111 @@ _route:
     - _Korok::RP54
     - _Korok::RP57::Trail
     - _Korok::RP59
+    - _Korok::RP58
+    - _Korok::RP61
+    - _Enemy::Hinox::DH03:
+       notes: Take a picture for the paraglider fabric
+    - _Korok::LB10::Trail
+    - _Addison::A05
+    - _Korok::RP60
+    - _Korok::RP55
+    - _Korok::RP52
+    - _Korok::RP53
+    - _Shrine::Gatakis
+    - _GoddessStatue::RitoVillage:
+       notes: get a second stamina wheel
+    - _Place::RitoVillage:
+       hide-icon-on-map: true
+    - Buy arrows and armor from the shop
+    - _Chest<Snowquill Headdress>
+    - _Chest<Snowquill Tunic>
+    - _Chest<Snowquill Trousers>
+    - _Npc::Tulin:
+       coord: [-3594.84, 318.5, 1805.23]
+    - _Korok::RP51
+    - _Korok::RP44
+    - _Addison::A02
+    - _Npc::Harth
+    - _Location::HebraTrailheadLodge
+    - _Korok::RP41
+    - Grab Swallow Bow here
+    - _Tower::RosproPass
+  
+  - Rospro Pass Sky:
+    - _Location::WestHebraSkyArchipelago:
+       hide-icon-on-map: true
+       level: Sky
+    - _Shrine::Ijo-o
+    - _Korok::RPS03
+    - _OldMap::Hebra_02
+    - _Dispenser::S11
+    - _Enemy::FluxConstruct::SH02
+    - _OldMap::Hebra_03
+  
+  - Boko Fight:
+    - _Korok::RP31
+    - _Korok::RP29
+    - _SideQuest::TheBlockedCave
+    - _Cave::RosproPass00:
+       comment: Enter cave
+    - _Item<Chillfin Trout>:
+       coord: [-3470.34, 337.76, 2472.27]
+       comment: For Arrow Farming
+       notes: In pond next to Bubbulfrog
+    - _Bubbulfrog::RosproPassCave
+    - _Bubbulfrog::HebraSouthSummitCave:
+       notes: Clip across to here, above and northeast
+    - _Bubbulfrog::TalontoPeakCave:
+       notes: Clip down to here
+    - _Item<Chillshroom x10>:
+       coord: [-3222.29, 449.69, 2566.25]
+       comment: Crossing the Cold Pool
+       notes: Drop down to crevice below and pick up shrooms
+    - _Cave::TalontoPeak00:
+       comment: Exit cave through entrance
+    - _Npc<Verla>:
+       coord: [-3216.98, 453.59, 2457.41]
+       comment: Crossing the Cold Pool
+       notes: Turn in 10 Chillshrooms
+    - _SideQuest::CrossingtheColdPool
+    - _Korok::RP36
+    - _Cave::HebraSouthSummit00:
+       notes: Make sure to mark entrance before entering shrine
+    - _Shrine::Sahirow
+    - FldObj_KorokStartingBlock:
+       coord: [-3328.79, 508.49, 2301.97]
+    - _Korok::RP37
+    - _Addison::A03
+    - _Cave::HebraSouthSummit01
+    - _Item<Ice Fruit x6>:
+       coord: [-3236.05, 558.35, 2556.77]
+       notes: use one for fletcher quest and one for the hebra stable korok. Make to keep at least 3 for the ice tablet quest later
+    - _Equipment::Bow<Swallow Bow>:
+       coord: [-3189.08, 564.19, 2562.46]
+       notes: Grab if you havent already 
+    - _Korok::RP32
+    - Shoot Aerocude with a rocket arrow from afar
+    - _Enemy<Aerocuda>:
+       coord: [-3022.67, 664.12, 2748.73]
+       comment: Tulin of Rito Village
+    - _Enemy<Bokoblin>:
+       comment: Tulin of Rito Village
+       notes: Take a picture for Kilton
+       
+  - Wind Temple:
+    - _Location::RisingIslandChain:
+       hide-icon-on-map: true
+    - FldObj_KorokStartingBlock:
+       coord: [-3103.90, 970.78, 3259.92]
+    - _Korok::RPS02
+    - _Shrine::Mayaumekis
+    - _Npc<Tulin>:
+       comment: Tulin of Rito Village
+       coord: [-2859.50, 1022.57, 2987.50]
+    - _Korok::RPS01
+    - _Shrine::Kahatanaum
+    - _Temple::Wind
+
     
 
  
