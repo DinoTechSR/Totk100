@@ -537,6 +537,8 @@ _route:
        coord: [-4378,5,-3471]
     - _Temple::Lightning:
        notes: Overload clip Out of bounds outside of the temple and hit all of the terminals from the bottom. ABC clip back into the main room and activate the termain twice to ascend up to the boss fight 
+    
+  - To Wind Temple:  
     - _Warp::Npc<Riju: 
        coord: [-3886.63, 157.48, -2965.29]
     - _Enemy::Molduga::SG01
@@ -565,145 +567,100 @@ _route:
     - _Korok::GH49
     - _Korok::GH47::End
     - _Korok::GH44
-    - _Shrine::Mayamats
-    - _Korok::GH28
+    - _Addison::A01
+    - Make a Vertical Cart slide blueprint with stabalizers here
+    - _Enemy::Hinox::DG01
+    - _Enemy::Talus::GG01
+    - _Korok::GH24
     - _Korok::GH27
+    - _Korok::GH28
+    - _Shrine::Mayamats
     - _Korok::GH10::Start
     - _Korok::GH10::End
     - _Korok::GH06
     - _Korok::GH09
-    - _Location::StatueoftheEighthHeroine:
-       hide-icon-on-map: true
-    - _Cave::StatueoftheEighthHeroine00:
-       notes: Enter using ABC Clip or Multishot Dazzlefruit
-    - _Chest::TinglesHood
+    - _Cave::StatueoftheEighthHeroine00
     - _Bubbulfrog::StatueoftheEighthHeroineCave
-    - _Korok::GH13
     - _Shrine::Otutsum
+    - _Korok::GH13
     - _Chasm::GerudoSummit
-    - _Korok::GH11
+    - _Korok::GH18
+    - _Korok::GH20
+    - _Korok::GH17
+    - _Tablet<Grizzlemaw Bear>:
+       notes: Take a picture for the paraglider fabric
+       coord: [-3616.08, 663.16, -1025.65]
+    - _Korok::GH19
+    - _Korok::GH14
+    - _Korok::GH16
+    - _Korok::GH15
     - _Cave::Mystathi'sShelf00
     - _Bubbulfrog::Mystathi'sShelfCave
-    - _Korok::GH15
-    - GH16 Start:
-        coord: [-3721.92, 746.8, -803.17]
-    - _Korok::GH16
-    - _Korok::GH14   
-    - _Korok::GH17
-    - _Korok::GH19
-    - _Tablet<Grizzlemaw Bear>:
-       coord: [-3616.08, 663.16, -1025.65]
-       comment: Picture for Sayge 6
-    - _Korok::GH20::Trail
-    - _Enemy::Gleeok::G06:
-       notes: Grab Guts if it drops them. if not, grab the guts from the hebra king gleeok
-    - _Korok::GH18
-    - _Tablet<Sword Statue>:
-       coord: [-4002.98, 820.09, -969.15]
-       comment: Picture for Gerudo Canyon 2
-    - _Korok::GH24
-    - _Enemy::Talus::GG01
-    - _Enemy::Hinox::GG01
-    - _Addison::A01
-    - _Korok::GH26
-    - _Cave::Meadela'sMantle00
-    - _Bubbulfrog::Meadela'sMantleCave
-    - Ascend up into tower platform
-    - _Tower::GerudoHighlands
-    
-  - Gerudo Sky:
-    - _Location::NorthGerudoSkyArchipelago:
-       hide-icon-on-map: true
-    - _Tablet::S08:
-       comment: Snap before it falls
-    - _Location::StarviewIsland:
-       hide-icon-on-map: true
-    - _SagesWill::Tabantha_02
-    - _Shrine::Mayasiar
-    - _Dispenser::S23
-    - GHS01 Start:
-       coord: [-3374.14, 2429.17, 12.18]
-    - _Korok::GHS01
-    - _OldMap::Tabantha_03
-    - _Dispenser::S13
-    - _Location::TabanthaSkyArchipelago:
-        hide-icon-on-map: true
-    - _Enemy::FluxConstruct::SH03
-    - _Shrine::Ganos::Start
-    - _Shrine::Ganos:
-       comment: The Tabantha Sky Crystal
-    - _OldMap::Tabantha_02
-    - _OldMap::Tabantha_01
-    - LBS05 Start:
-       coord: [-3960.01, 1610.81, 649.91]
-    - _Korok::LBS05
-    - _Korok::LBS03
-    - LBS01 Start:
-       coord: [-3612.40, 1919.96, 1030.28]
-    - _Korok::LBS01
-    - _Location::LightcastIsland:
-       coord: [-3684.80, 1902.40, 1060.34]
-       comment: Activate the terminal and drain the water
-    - Overload clip next to lightpost to room with switch
-    - _Chest::ZonaiteHelm
-    - Overload clip next to chest to get to shrine
-    - _Shrine::Ga-ahisas
-    - Overload clip out through the bottom (wall is transparent but still there)
-    - _Korok::LBS02
-    - _Dispenser::S00:
-       comment: Use for Hover Stones
-    - Dupe 100 Hover Stones
-    - _Location::NorthTabanthaSkyArchipelago:
-       hide-icon-on-map: true
-    - _OldMap::Tabantha
-    - _SagesWill::Tabantha_01
-    - _Enemy::Gleeok::S01:
-       notes: TAKE A PICTURE 
-    - _SagesWill::Hebra
-    
-  - Tulin:
-    - _Korok::RP49
-    - _Enemy::Talus::DH04
-    - _Korok::RP50::Trail
-    - _Korok::RP45
-    - _Shrine::Wao-os
-    - _Bubbulfrog::WestLakeTotoriCave
-    - _Cave::WestLakeTotori00
-    - _Korok::RP46
-    - _Korok::RP47
-    - _Korok::RP54
-    - _Korok::RP57::Trail
-    - _Korok::RP59
-    - _Korok::RP58
+    - _Korok::GH11
+    - _Korok::GH05
+    - _Korok::GH07
+    - _Shrine::Turakawak
+    - _Korok::GH04
+    - _Korok::GH03::Start
+    - _Enemy::Talus::GR05:
+       notes: pick up amber if it drops. you want 10 before eldin
+    - _Korok::GH02
+    - _Korok::GH01
+    - _Korok::GH03::End
+    - _Shrine::Gasas
+    - LB32 Start:
+       coord: [-3966.7539937312267,6,625.9000199973561]
+    - _Korok::LB32
+    - _Korok::LB28
+    - _Korok::LB24
+    - _Korok::LB27
+    - _Korok::LB22
+    - _Cave::GisaCrater01
+    - _Bubbulfrog::GisaCraterCave
+    - _Shrine::Ikatak::Start
+    - _Cave::GisaCrater00
+    - _Shrine::Ikatak
+    - _Korok::LB12
     - _Korok::RP61
-    - _Enemy::Hinox::DH03:
-       notes: Take a picture for the paraglider fabric
-    - _Korok::LB10::Trail
-    - _Addison::A05
-    - _Korok::RP60
+    - _Korok::RP58
+    - _Korok::RP59
+    - _Korok::RP57:
+       notes: flower trail under the neck of the skeleton
+    - _Korok::RP54
     - _Korok::RP55
     - _Korok::RP52
     - _Korok::RP53
     - _Shrine::Gatakis
     - _GoddessStatue::RitoVillage:
        notes: get a second stamina wheel
-    - _Place::RitoVillage:
-       hide-icon-on-map: true
-    - Buy arrows and armor from the shop
-    - _Chest<Snowquill Headdress>
-    - _Chest<Snowquill Tunic>
-    - _Chest<Snowquill Trousers>
-    - _Npc::Tulin:
+    - Buy arrows from shop
+    - _Chest<Snowquill Set>
+    - _Npc<Tulin>:
        coord: [-3594.84, 318.5, 1805.23]
-    - _Korok::RP51
     - _Korok::RP44
-    - _Addison::A02
     - _Npc::Harth
-    - _Location::HebraTrailheadLodge
     - _Korok::RP41
-    - Grab Swallow Bow here
+    - _Addison::A02
+    - _Well::Dronoc'sPass
+    - _Korok::RP47
+    - _Korok::RP46
+    - _Cave::WestLakeTotori00
+    - _Bubbulfrog::WestLakeTotoriCave
+    - _Shrine::Wao-os
+    - _Korok::RP45
+    - _Korok::RP50::Trail
+    - _Enemy::Talus::DH04
+    - _Korok::RP49
+    - _Korok::RP42
+    - _Korok::RP38::Start
+    - _Korok::RP38::End
+    - _Korok::RP34
+    - Pick up Swallow Bow here
+    - _Korok::RP40
+    - _Korok::RP35
     - _Tower::RosproPass
-  
+   
+     
   - Rospro Pass Sky:
     - _Location::WestHebraSkyArchipelago:
        hide-icon-on-map: true
@@ -755,32 +712,44 @@ _route:
        notes: use one for fletcher quest and one for the hebra stable korok. Make to keep at least 3 for the ice tablet quest later
     - _Equipment::Bow<Swallow Bow>:
        coord: [-3189.08, 564.19, 2562.46]
-       notes: Grab if you havent already 
-    - _Korok::RP32
-    - Shoot Aerocude with a rocket arrow from afar
+       notes: Grab if you havent already     - Shoot Aerocude with a rocket arrow from afar
     - _Enemy<Aerocuda>:
        coord: [-3022.67, 664.12, 2748.73]
        comment: Tulin of Rito Village
     - _Enemy<Bokoblin>:
        comment: Tulin of Rito Village
        notes: Take a picture for Kilton
-       
+    - _Korok::RP32
+    - _Korok::RP27
+    - _Korok::RP26::Start
+    - _Korok::RP26::End
+    - _Shrine::Rutafu-um::Start
+    - _Shrine::Rutafu-um
+    - _Bubbulfrog::HebraMountainsNorthwestCave
+    - _Cave::HebraMountainsNorthwest00
+    - _Korok::RP20
+    - _Korok::RP25
+    - _Cave::EastBironSnowshelf00
+    - _Korok::RP18
+    - _Korok::RP11
+    - _Korok::RP09
+    - _Shrine::Eutoum
+    
+
   - Wind Temple:
     - _Location::RisingIslandChain:
        hide-icon-on-map: true
-    - FldObj_KorokStartingBlock:
-       coord: [-3103.90, 970.78, 3259.92]
-    - _Korok::RPS02
-    - _Shrine::Mayaumekis
-    - _Npc<Tulin>:
-       comment: Tulin of Rito Village
-       coord: [-2859.50, 1022.57, 2987.50]
-    - _Korok::RPS01
+    - _Enemy::FluxConstruct::SH01
+    - _OldMap::Hebra
     - _Shrine::Kahatanaum
-    - _Temple::Wind
-
-    
-
+    - _Korok::RPS01
+    - RPS02 Start:
+       coord: [-3103.7517,555,3260.0]
+    - _Korok::RPS02
+    - _Temple::Wind:
+        movements:
+        - to: [-3060.0425344626365,555,3187.204034042957]
+        - to: [-2860.0621355974918,666,2997.28581907666]
  
   
     
