@@ -538,7 +538,7 @@ _route:
     - _Temple::Lightning:
        notes: Overload clip Out of bounds outside of the temple and hit all of the terminals from the bottom. ABC clip back into the main room and activate the termain twice to ascend up to the boss fight 
     
-  - To Wind Temple:  
+  - To Rito Village:  
     - _Warp::Npc<Riju: 
        coord: [-3886.63, 157.48, -2965.29]
     - _Enemy::Molduga::SG01
@@ -739,6 +739,7 @@ _route:
   - Wind Temple:
     - _Location::RisingIslandChain:
        hide-icon-on-map: true
+       level: Sky
     - _Enemy::FluxConstruct::SH01
     - _OldMap::Hebra
     - _Shrine::Kahatanaum
@@ -750,6 +751,52 @@ _route:
         movements:
         - to: [-3060.0425344626365,555,3187.204034042957]
         - to: [-2860.0621355974918,666,2997.28581907666]
+  - To Faron:
+    - _Warp::Npc<Tulin>:
+       coord: [-3594.84, 318.50, 1805.23]
+       comment: Tulin of Rito Village
+       line-color: rgb(132, 199, 232)
+    - _MainQuest::TulinofRitoVillage
+    - _Item<Staminoka Bass>:
+       coord: [-3490.37, 258.08, 1853.66]
+       comment: Genli's Home Cooking
+    - _SideQuest::GenlisHomeCooking:
+       coord: [-3590.12, 296.77, 1803.98]
+       comment: Turn in Staminoka Bass
+    - _Npc<Laissa>:
+       coord: [-3633.88, 309.76, 1826.67]
+       comment: start The White Bird's Guidance quest
+    - _SideQuest::FishforFletching:
+       coord: [-3655.16, 320.26, 1762.85]
+       comment: Fish for Fletching
+       notes: farm to 200 arrows here. you might be short items since its RNG, so just dupe more. MAKE SURE THAT YOU HAVE YOUR FISH IN NUMBERS NON DIVISIBLE BY 3 AND YOUR BRIGHTCAPS IN NUMBERS NOT DIVISIBLE BY 5. Also, make sure you have at least 10 brightcaps for quest
+    - _SideQuest::MollitheFletchersQuest:
+       coord: [-3617.09, 320.35, 1789.5]
+       comment: Turn in Ice Fruit for fletcher quest
+    - _SideQuest::LegacyoftheRito:
+       coord: [-3609.06, 323.62, 1825.01]
+       comment: Legacy of the Rito
+       notes: Replace your SLBs with your new GEBs. At the next hinox, grab the nights or royal bow for fire temple and hover stone placements
+    - _Npc<Tulin>:
+       coord: [-3604.06, 323.62, 1822.01]
+       comment: Treasure of the Secret Springs
+    - _Korok::RP56
+    - _Npc<Gesane>:
+       coord: [-3296.80, 227.18, 1807.36]
+       comment: Start The Rito Rope Bridge
+    - _Place::LuckyCloverGazette:
+       hide-icon-on-map: true
+    - _Npc<Traysi>:
+       coord: [-3258.50, 224.96, 1762.50]
+       comment: Potential Princess Sightings!
+    - _Cave::Brightcap00
+    - _SideQuest::CaveMushroomsThatGlow:
+       comment: 10 brightcaps
+    - _Bubbulfrog::BrightcapCave
+    - _Shrine::Oromuwak:
+       notes: above cave
+    - _Korok::LB09
+    
  
   
     
