@@ -620,6 +620,10 @@ _route:
     - _Cave::GisaCrater00
     - _Shrine::Ikatak
     - _Korok::LB12
+    - _Addison::A05
+    - _Korok::LB10::Trail
+    - _Enemy::Hinox::DH03:
+       notes: Take a picture for the paraglider fabric
     - _Korok::RP61
     - _Korok::RP58
     - _Korok::RP59
