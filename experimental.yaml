@@ -614,7 +614,6 @@ _route:
     - _Korok::LB28
     - _Korok::LB24
     - _Korok::LB27
-    - _Korok::LB22
     - _Cave::GisaCrater01
     - _Bubbulfrog::GisaCraterCave
     - _Shrine::Ikatak::Start
@@ -796,6 +795,73 @@ _route:
     - _Shrine::Oromuwak:
        notes: above cave
     - _Korok::LB09
+    - _Korok::LB14
+    - _Korok::LB11
+    - _Korok::LB13
+    - _Enemy::Talus::DR02
+    - _Korok::LB20
+    - _Korok::LB22
+    - _Korok::LB30::Start
+    - _Korok::LB30::End
+    - _Korok::LB31
+    - _Shrine::Iun-orok:
+       notes: clip at the top of the grate
+    - _Bubbulfrog::TanagarCanyonWestCave
+    - _Korok::LB33
+    - _Korok::LB36
+    - _Korok::LB40
+    - _Korok::LB37
+    - _Korok::LB46::1
+    - _Korok::LB46::2
+    - _Korok::LB46::3
+    - _Korok::LB46::4
+    - Make time to sunrise and take picture of ancient ruins:
+       comment: picture for Tabantha Bridge Stable
+    - _Korok::LB45
+    - _Cave::AncientColumns00:
+       notes: clip through the slate
+    - _Chest<Tunic Of Awakening>:
+       coord: [-3535.25, 348.06, 410.16]
+    - _Korok::LB46::5
+    - _Korok::LB46::6
+    - _Enemy::Gleeok::G05
+    - _Korok::LB46::7
+    - _Korok::LB46::8
+    - _Korok::LB46::9
+    - _Korok::LB46
+    - _Addison::A06
+    - _Korok::LB39
+    - _Location::UltraBallHaulCheckIn:
+       hide-icon-on-map: true
+    - _Location::TabanthaGreatBridge
+    - _Korok::LB38
+    - _Korok::LB34
+    - _Shrine::Makurukis:
+       notes: Overload Clip
+    - _Korok::LB41::Trail
+    - _Well::TabanthaBridgeStable
+    - Grab a pony point
+    - _SideQuest::APictureforTabanthaBridgeStable:
+       coord: [-2927, 35, 547]
+    - _Npc<Penn>:
+       coord: [-2910.76, 274.97, 522.58]
+       comment: Start goat quest
+    - _Korok::LB53::Start
+    - _Korok::LB44
+    - _SideAdv::WhiteGoatsGoneMissing:
+       coord: [-2548.82, 256.06, 406.33]
+    - _Korok::LB53::End
+    - _Addison::A11
+    - _Korok::LB47
+    - _Korok::LB43::Start
+    - _Korok::LB43::End
+    - Grab Acorns here for Milk Quest
+    - _Korok::LB55
+    - _Korok::LB57
+    - _Korok::LB58
+    - _Location::JeddoBridge
+    
+
     
  
   
