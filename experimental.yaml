@@ -17,7 +17,7 @@ _project:
   version: 0.1
   
 _route:
-  - Great Sky Island 1A:
+  - Great Sky Island:
     - Important Please Read:
        comment: https://docs.google.com/document/d/1c8NV3myURb6TGSVHIMcyaD_mM4dtuu51SuzeVbN99X8/edit
     - Copy/paste URL into browser to view the document
@@ -28,6 +28,7 @@ _route:
        coord: [379.57, 2441.25, -1698.73]
        comment: Perform Cog Skip and run through the tunnel
        line-color: rgb(255, 255, 255)
+    - _Korok::GSI15
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
     - _Npc::Steward Construct_07
@@ -42,10 +43,6 @@ _route:
        coord: [425, 2485, -1679]
     - _Shrine::Gutanbac
     - _KeyItem::Ascend
-    - _Item<Spicy Pepper>: 
-       coord: [778.18, 1681.52, -1391.44]
-    - _Item<Flint>: 
-       coord: [790.68, 1682.9, -1389.64]
     - _Cave::Bottomless01
     - _Equipment::Shield<Flame Emitter Shield>:
        coord: [745.41, 1650.87, -1368.7]
@@ -75,8 +72,6 @@ _route:
     - _Location<4-Heart Door>:
        coord: [453.51, 1573.47, -760.25]
        comment: Attempt to open
-   
-  - Great Sky Island 1B:
     - _Warp::ROA
     - Bomb jump up the ledge and run to/enter Recall
     - _Shrine::Nachoyah:
@@ -105,65 +100,61 @@ _route:
     - _Item<Splash Fruit>:
        coord: [884.24, 116.18, -543.12]
        comment: For water fruit and for Gerudo Canyon quest
+    - Set up Infinite Pocket rocket here:
+       notes: after setup has been completed, zuggle the shield and perform QDS 
   
   - Farosh:
-    - _Warp::Shrine::Nachoyah
-    - _Korok::GSI15
+    - _Warp::Shrine::Gutanbac
+    - _Item<Spicy Pepper>: 
+       coord: [778.18, 1681.52, -1391.44]
+    - _Item<Flint>: 
+       coord: [790.68, 1682.9, -1389.64]
     - _Chest<Zonaite>:
        coord: [431.96, 1554.57, -1807.92]
        comment: In chest here
-    - _Item<Board>:
-       coord: [449.89, 1549.2, -1694.27]
-       comment: Slide to dragonhead
-    - _Dispenser::S02:
-       comment: Use for steering sticks, carts, fans, wings (everything that it drops)
     - _Item<Fairy>:
        coord: [909.74, 6999.88, -2122.8]
+    - _Korok::PFS01
+    - _Shrine::En-oma::Start
+    - _Enemy::FluxConstruct::SC04
     - _Item<Farosh Horn>:
        coord: [-100, 800, -2100]
-       comment: Cart slide to there
+       comment: Slide
+       notes: Dupe more than 25 for speed fod later
   
   - Paraglider:
-    - _Item<Fleet Lotus Seeds>:
-       coord: [453.5, 115.86, -2016.46]
-    - _Chest<Cannon>:
+    - _Chasm::LakeHylia
+    - _Korok::PF32
+    - _Tear::G09
+    - _Korok::PF35
+    - _Korok::HF74
+    - _Korok::PF30:
+       notes: Make Rock Weapon 
+    - _Korok::GC21::Start
+    - _Item<Swift Violet>:
+       notes: Dupe at least 5 for speed food
+       coord: [-1370.8635212206937,6,-2461.834276146543]
+    - _Korok::GC21::End
+    - Grab Stakes from Chest
+    - _Item<Steering Stick>:
+       coord: [-1681.62, 138.94, -2067.24]
+       notes: dupe 250 on the way to outskirt stable
+    - _Shrine::Tsutsu-um
+    - _Korok::HF35
+    - _Well::OutskirtStable:
+       notes: Grab Brightcaps, Fairies, and Glowing Cave Fish in the well
+    - _Npc<Beedle>:
+       notes: Sell 25 farosh horns, and buy arrows
+       coord: [-1446.9046398272794,6,-1262.0839380556472]
+    - Cook A dubious/rock hard food FIRST (can use a zonai charge or a zonaite) and cook the speed food SECOND
+    - _Npc<Yiga Banana Salesman>:
+       coord: [-997.4155908680978,6,-2009.3801497429158]  
+       notes: Eat Speedfood and Buy as many bananas as you can
+    - _Item<Cannon>:
        coord: [238.57, 113.53, -1648.46]
-       comment: In lake below
-    - _Chest<Ancient Blade>:
+       notes: Dupe to 250 on the slide to Lookout Landing
+    - _Item<Ancient Blade:
        coord: [267, 114.5, -1651.5]
-       comment: Next to Cannon chest
-    - _Tear::G03
-    - _Korok::LL54
-    - _Location::RanchRuins:
-       hide-icon-on-map: true
-    - _Cave::RanchRuins00
-    - _Item<Giant Brightbloom Seed>:
-       coord: [30.28, 135.15, -161.07]
-    - _Item<Giant Brightbloom Seed>:
-       coord: [28.15, 135.81, -159.14]
-    - _Bubbulfrog::RanchRuinsCave
-    - _Chest<Royal Broadsword>:
-       coord: [9.4, 132.47, -176.66]
-       comment: Pick up in chest
-    - _Item<Brightcap>:
-       coord: [7.98, 132.63, -173.85]
-    - _Item<Raw Meat>:
-       coord: [6.9, 132.5, -172.55]
-    - _Cave::RanchRuins01
-    - _Location::MabeVillageRuins:
-       hide-icon-on-map: true
-    - _Well::MabeVillageRuins:
-       comment: Drop into well
-    - _Item<Glowing Cave Fish>:
-       coord: [-56.67, 111.26, -157.75]
-    - _Item<Amber>:
-       coord: [-80.26, 113.97, -173.74]
-       comment: Break the ore deposits
-    - _Place::LookoutLanding:
-       hide-icon-on-map: true
-    - _Equipment::Weapon<Torch>:
-       coord: [-246.46, 124.78, 42.67]
-       comment: Pick up for charge farming  
     - _Npc<Josha>:
        coord: [-238.97, 132.32, 147.92]
        comment: Start Hyrule Castle questline
@@ -412,10 +403,6 @@ _route:
     - _Korok::GC39
     - _Addison::A27
     - _Korok::GC41
-    - _Korok::GC21::Start
-    - _Korok::PF30
-    - _Korok::GC21::End
-    - _Korok::GC26
     - _Korok::GC33
     - _Shrine::Kitawak
     - _Korok::GC36
@@ -860,10 +847,15 @@ _route:
     - _Korok::LB43::Start
     - _Korok::LB43::End
     - Grab Acorns here for Milk Quest
+    - Make time night
     - _Korok::LB55
     - _Korok::LB57
     - _Korok::LB58
     - _Location::JeddoBridge
+    - _Addison::A23
+    - _Korok::HF02
+    - _Korok::HF01
+    
     
 
     
