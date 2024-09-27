@@ -867,16 +867,40 @@ _route:
     - _Korok::LL51
     - _Cave::SageTemple00
     - _Bubbulfrog::SageTempleCave
-    - _Cave::AncientTreeStump00
-    - LL55 Start:
-       coord: [-1110.4346300113511,6,-420.4847727758024]
-    - _Korok::LL55
     - _Korok::LL61
     - _Korok::LL59
     - _Chest<Fierce Diety Boots>:
        coord: [-1108.18, 140.9, -546.13]
     - _Bubbulfrog::AncientTreeStumpCave:
        notes: clip down
+    - _Cave::AncientTreeStump00
+    - LL55 Start:
+       coord: [-1110.4346300113511,6,-420.4847727758024]
+    - _Korok::LL55
+    - _Location::AquameBridge
+    - _Korok::HF25 
+    - _Korok::HF37
+    - _Location::ColiseumRuins:
+       hide-icon-on-map: true
+    - _Enemy::Gleeok::G07
+    - _Cave::ColiseumRuins00:
+       comment: place claymore in the right soldiers hands
+    - _Bubbulfrog::ColiseumRuinsCave
+    - _Chest<Trousers of Awakening>:
+       coord: [-1151.85, -393.54, -1263.46]
+    - Read Stone Tablet for treasure quest
+    - _Korok::HF34
+    - _Korok::HF10::Start
+    - _Korok::HF26
+    - _Location::ManhalaBridge:
+       hide-icon-on-map: true
+    - _Korok::HF19
+    - _Korok::HF20
+    - _Enemy::Talus::GC05
+    - _Korok::HF15
+    - _Well::MountDaphnes
+    - _Korok::HF10::End
+    - _Korok::HF05
     - _Korok::HF02
     - _Korok::HF01::Start
     - _Korok::HF01::End
@@ -909,9 +933,26 @@ _route:
     - _Enemy::Hinox::GC06:
        notes: Grab Soldiers bow here if you havent already
     - _Korok::HF29::Trail:
+    - Set time to night
+    - _Location::SanidinParkRuins:
+       hide-icon-on-map: true
+    - _Korok::HF14:
+       Comment: SLIDE TO HERE
+    - Ride Stalhorse to OutskirtStable
     - _Korok::HF24:
        notes: make sure you have 5 golden apples for quest in korok forest
-    - _Korok::HF14
+    - _SideQuest::TheHorseGuardsRequest:
+       movements: 
+       - to: [-1821.5,6,-1073.5]
+       - to: [-1635,6,-1019]
+       - to: [-1577.5,5,-1015]
+       - to: [-1511.5,6,-1136]
+       - to: [-1449,6,-1250]
+       - to: [-1432.5,5,-1189]
+       - to: [-1449,6,-1250]
+       notes: talk to guy with stalhorse, go get a deer from the trees N> and bring it back for pt2
+       
+        
    
 
        
