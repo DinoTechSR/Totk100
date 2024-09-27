@@ -732,15 +732,17 @@ _route:
        level: Sky
     - _Enemy::FluxConstruct::SH01
     - _OldMap::Hebra
-    - _Shrine::Kahatanaum
+    - _Shrine::Kahatanaum:
+       comment: Blessing
     - _Korok::RPS01
     - RPS02 Start:
        coord: [-3103.7517,555,3260.0]
     - _Korok::RPS02
+    - Talk to tulin at the ship
+    - _Shrine::Mayaumekis   
     - _Temple::Wind:
-        movements:
-        - to: [-3060.0425344626365,555,3187.204034042957]
-        - to: [-2860.0621355974918,666,2997.28581907666]
+       notes: vertical cart slide to the top of the wind temple. if you are not going to vertical cart slide, use the near reverse of this route as it is faster
+ 
   - To Faron:
     - _Warp::Npc<Tulin>:
        coord: [-3594.84, 318.50, 1805.23]
@@ -849,12 +851,71 @@ _route:
     - Grab Acorns here for Milk Quest
     - Make time night
     - _Korok::LB55
-    - _Korok::LB57
-    - _Korok::LB58
+    - _Korok::LB59
     - _Location::JeddoBridge
-    - _Addison::A23
+    - _Korok::LB58
+    - _Korok::LB57
+    - _Korok::LB56
+    - _Korok::LB52
+    - Set time to night
+    - _Korok::LL47:
+       notes: Shoot on the way to LL48
+    - _Korok::LL48
+    - _Korok::LL45
+    - _Enemy::Hinox::GC03
+    - _Korok::LL52
+    - _Korok::LL51
+    - _Cave::SageTemple00
+    - _Bubbulfrog::SageTempleCave
+    - _Cave::AncientTreeStump00
+    - LL55 Start:
+       coord: [-1110.4346300113511,6,-420.4847727758024]
+    - _Korok::LL55
+    - _Korok::LL61
+    - _Korok::LL59
+    - _Chest<Fierce Diety Boots>:
+       coord: [-1108.18, 140.9, -546.13]
+    - _Bubbulfrog::AncientTreeStumpCave:
+       notes: clip down
     - _Korok::HF02
-    - _Korok::HF01
+    - _Korok::HF01::Start
+    - _Korok::HF01::End
+    - _Shrine::Sonapan
+    - _Korok::HF04
+    - _Cave::SatoriMountain00
+    - _Bubbulfrog::SatoriMountainCave
+    - _Korok::HF03
+    - _Korok::HF12
+    - _Korok::HF09::Trail
+    - HF08 Start:
+       coord: [-2478.859512545105,6,-508.85278556394223]
+    - _Korok::HF08
+    - _Korok::HF17
+    - _Korok::HF16
+    - _Enemy::Talus::DC02
+    - _Bubbulfrog::SatoriMountainFoothillCave:
+       notes: Overload clip to bubbulfrog    
+    - _Enemy::Hinox::GC04:
+       hide-icon-on-map: true
+    - _Shrine::Usazum::Start:
+       comment: kill the hinox for the crystal
+    - _Cave::SatoriMountainFoothill00
+    - _Korok::HF18:
+       comment: above cave entrance
+    - _Shrine::Usazum:
+       comment::Blessing
+    - _Korok::HF27
+    - _Korok::HF30
+    - _Enemy::Hinox::GC06:
+       notes: Grab Soldiers bow here if you havent already
+    - _Korok::HF29::Trail:
+    - _Korok::HF24:
+       notes: make sure you have 5 golden apples for quest in korok forest
+    - _Korok::HF14
+   
+
+       
+    
     
     
 
