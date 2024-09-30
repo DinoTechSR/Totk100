@@ -159,14 +159,9 @@ _route:
        coord: [-238.97, 132.32, 147.92]
        comment: Start Hyrule Castle questline
     - _MainQuest::TotheKingdomofHyrule
-    - _Chest<Ruby>:
-       coord: [-522.39, 134.69, 312.49]
-       comment: Pick up in field
-    - _Location::FirstGatehouse
-    - _Npc<Hoz>:
-        coord: [-334.93, 238.96, 845.94]
-        comment: Watch Zelda cutscene
-    - _Korok::LL21
+    - PRAF to Hylian Shield area:
+       comment: 12 Rocket boosts / full shield
+       notes: you may need to land in the middle to redirect
     - _Location::Docks:
        hide-icon-on-map: true
     - _Equipment::Shield<Hylian Shield>:
@@ -180,12 +175,22 @@ _route:
     - _Location::DiningHall
     - _Korok::LL24
     - _Location::ObservationRoom:
-       coord: [-254.13, 203.48, 758.33]
-    - _Cave::RoyalHiddenPassage01
+       hide-icon-on-map: true
+    - _Cave::RoyalHiddenPassage01:
+       comment: Enter by lifting up grate
     - _Chest<Diamond>:
        coord: [-253.72, 193.21, 761.67]
-       comment: Inside Royal Hidden Passage
     - _Korok::LL26
+    - _Korok::LL21
+    - _Location::FirstGatehouse:
+       hide-icon-on-map: true
+    - _Npc<Hoz>:
+       coord: [-334.93, 238.96, 845.94]
+       comment: Watch Zelda cutscene
+    - _Chest<Ruby>:
+       coord: [-522.39, 134.69, 312.49]
+       comment: Pick up in field
+    - Fuse a ruby to random weapon and keep until Bazaar
     - _Korok::LL42
     - _KeyItem::Paraglider:
        comment: Return to LL and progress quest until tower is active
@@ -322,7 +327,7 @@ _route:
     - _Equipment::Bow<Savage Lynel Bow>
     - _Chest::MajorasMask
   
-  - Hyrule Field:
+  - Hyrule Field/Eldin Canyon:
     - _Warp::Tower::LookoutLanding
     - _Shop::CrystalRefinery01
     - _Npc<Robbie>:
@@ -331,26 +336,130 @@ _route:
        line-color: rgb(184, 226, 230)
     - _MainQuest::CameraWorkintheDepths
     - _Korok::LL50
-    - _Chasm::HyruleField
-    - _Korok::LL56
-    - _Shrine::Jiosin
-    - _Korok::HF07
-    - _Enemy<Monster Forces>:
-       coord: [-441.12, 156.17, -624.38]
-       comment: Defeat the Monster Forces
-    - _SideAdv::BringPeacetoHyruleField
-    - _Location::HyruleGarrisonRuins
-    - _Korok::LL60
     - _Shrine::Susuyai
     - _Korok::HF22::Start
     - _Korok::HF13
     - _Korok::HF22::End
-    - _Location::ExchangeRuins
+    - _Location::ExchangeRuins:
+       hide-icon-on-map: true
     - _Shrine::Mayachin
     - _Addison::A32
-    - _Tower::HyruleField
+    - _Korok::LL60
+    - _Location::HyruleGarrisonRuins:
+       hide-icon-on-map: true
+    - _Korok::HF07:
+       notes: shoot from afar
+    - _Korok::LL56
+    - _Shrine::Jiosin
+    - _Chasm::HyruleField
+    - _Well::MabeVillageRuins
+    - _Cave::RanchRuins01
+    - _Bubbulfrog::RanchRuinsCave
+    - _Cave::RanchRuins00
+    - _Enemy<Bokoblin>:
+       coord: [100.74, 127.14, -313.17]
+       notes: Take a picture for Kilton
+    - _Korok::LL54
+    - _Korok::LL53
+    - _Korok::LL49
+    - _Korok::LL46
+    - _Well::RebonaeBridge:
+       notes: jump in the well and fix the ladder
+    - _SideQuest::FellintoaWell
+    - _Location::RebonaeBridge
+    - _Korok::SS17
+    - _Cave::RebonaeBridge00
+    - _Bubbulfrog::RebonaeBridgeCave
+    - _Korok::SS14
+    - _Cave::CrenelPeak00
+    - _Bubbulfrog::CrenelPeakCave
+    - _Shrine::Jojon:
+       comment: Proving Grounds
+    - _Korok::SS11
+    - _Cave::CrenelPeak01
+    - _Korok::SS15
+    - _Location::MoorGarrisonRuins:
+       hide-icon-on-map: true
+    - _Well::MoorGarrisonRuins
+    - _Korok::SS12
+    - _Korok::SS09:
+       notes: Shoot from afar
+    - _Korok::EC58
+    - _Korok::EC60
+    - _Korok::EC59
+    - _Location::ThimsBridge
+    - _Korok::SS05::Trail
+    - _Korok::SS10
+    - _Korok::LL39
+    - _Addison::A39
+    - _Enemy::Talus::GK02
+    - _Location::OrseddBridge:
+       coord: [554.25,6,518.75]
+    - _Korok::SS08
+    - _Cave::CrenelHills00
+    - _Bubbulfrog::CrenelHillsCave:
+       notes: (550, 780) Pocket rocket above ground and overload clip here
+    - _Chest<Barbarian Armor>:
+       coord: [629,6,820]
+    - _Korok::SS04
+    - _Shrine::Ren-iz:
+       notes: overload clip 
+    - _Korok::SS03::Trail
+    - _Korok::SS02
+    - _Korok::SS01
+    - _Well::WoodlandStable
+    - _Location::PicoPond:
+       hide-icon-on-map: true
+    - _SideAdv::TheHuntforBubbulGems:
+       coord: [1222, 6, 1207]
+    - _Cave::PicoPond00
+    - _Bubbulfrog::PicoPondCave:
+       notes: from this momeny forward, your bubbulfrog count will appear 1 less than expected in the tracker (that is expected. if you are 2 behind, than you are missing 1 and so on)
+    - _Addison::A48
+    - _Korok::EC48
+    - _Tower::EldinCanyon:
+       notes: Dive in through the top to activate
+  
+  - Eldin Canyon Sky:
+    - _Korok::ECS02
+    - _Shrine::Kadaunar
+    - _Dispenser::S19
+    - _Korok::ECS01
+    - _Location::SouthEldinSkyArchipelago:
+       hide-icon-on-map: true
+    - _Tablet::S00
+  
+  - Akkala 1:
+    - _Korok::EC53
+    - _Korok::EC49
+    - _Shrine::Kisinona
+    - _Korok::EC52
+    - _Korok::UZ04
+    - _Korok::EC51
+    - _Korok::UM41
+    - _Enemy::Talus::GA04
+    - _Korok::UZ01
+    - _Cave::AkkalaCitadelRuins00
+    - _Bubbulfrog::AkkalaCitadelRuinsCave
+    - _Korok::UM35
+    - (OPTIONAL) Grab demon kings bow from gloom hands here:
+       notes: it is more optimal to grab a knights bow from a hinox later, but if you need hover stone spawns early, get this
+    - _Cave::AkkalaCitadelRuinsSummit00
+    - _Chest<Fierce Diety Armor>: 
+       coord: [3302.5,6,1494.5]
+    - _Bubbulfrog::AkkalaCitadelRuinsSummitCave
+    - _Shrine::Domizuin
+    - _Enemy::Gleeok::G03
+    - _Item<Hover Stone>:
+       coord: [4074.5,6,908.5]
+       notes: dupe to 100
+    
     
   - Hyrule Field Sky:
+    - _Warp::Shrine::Mayachin
+    - _Tower::HyruleField:
+       line-color: rgb(177, 156, 217)
+       level: Sky
     - _Location::SouthHyruleSkyArchipelago:
         hide-icon-on-map: true    
     - _Korok::HFS02
@@ -358,12 +467,16 @@ _route:
     - _KeyItem::OldMap
     - _SagesWill::SouthHyrule
     - _Dispenser::S10
-    - _OldMap::SouthHyrule_01
+    - _OldMap::SouthHyrule:
+       movements: 
+        - to: [-1273.5,6,-1449]
+        - to: [-1267.5,6,-1419.5]
+       notes: chest manip = 2 down, wait 1 second, 2 down, wait 1 second, 2 down 2 left. recall and open chest 
     - _Shrine::Jinodok::Start
-    - _OldMap::SouthHyrule
-    - _Shrine::Jinodok
     - _SideQuest<The South Hyrule Sky Crystal>
+    - _OldMap::SouthHyrule_01
     - _Korok::HFS01
+    - _Shrine::Jinodok
     - _Enemy::FluxConstruct::SC03
     - _OldMap::SouthHyrule_03
     - _Tablet::S10
@@ -380,6 +493,8 @@ _route:
     - _Korok::GCS01
     - _OldMap::SouthHyrule_04
     - _SagesWill::SouthHyrule_01
+    - _Location::EastGerudoSkyArchipelago:
+       hide-icon-on-map: true
     - _Shrine::Siyamotsus
     - _Korok::GCS02
  
@@ -526,7 +641,7 @@ _route:
        notes: Overload clip Out of bounds outside of the temple and hit all of the terminals from the bottom. ABC clip back into the main room and activate the termain twice to ascend up to the boss fight 
     
   - To Rito Village:  
-    - _Warp::Npc<Riju: 
+    - _Warp::Npc<Riju>: 
        coord: [-3886.63, 157.48, -2965.29]
     - _Enemy::Molduga::SG01
     - _Korok::GC24
