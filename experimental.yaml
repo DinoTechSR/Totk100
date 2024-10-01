@@ -994,17 +994,6 @@ _route:
     - _Korok::LL55
     - _Location::AquameBridge
     - _Korok::HF25 
-    - _Korok::HF37
-    - _Location::ColiseumRuins:
-       hide-icon-on-map: true
-    - _Enemy::Gleeok::G07
-    - _Cave::ColiseumRuins00:
-       comment: place claymore in the right soldiers hands
-    - _Bubbulfrog::ColiseumRuinsCave
-    - _Chest<Trousers of Awakening>:
-       coord: [-1151.85, -393.54, -1263.46]
-    - Read Stone Tablet for treasure quest
-    - _Korok::HF34
     - _Korok::HF10::Start
     - _Korok::HF26
     - _Location::ManhalaBridge:
@@ -1066,10 +1055,49 @@ _route:
        - to: [-1432.5,5,-1189]
        - to: [-1449,6,-1250]
        notes: talk to guy with stalhorse, go get a deer from the trees N> and bring it back for pt2
-       
-        
-   
-
+    - _Npc<Penn>:
+       coord: [-1412.67, 137.5, -1296.43]
+    - _Korok::HF38::Start
+    - _Npc<Ralera>:
+       movements:
+       - to: [-1356.03, 122.09, -1439.93]
+       - to: [-1041.17, 127.55, -1459.25]
+       - to: [-1088.28, 251.83, -1371.44]
+    - _Korok::HF37
+    - _Location::ColiseumRuins:
+       hide-icon-on-map: true
+    - _Enemy::Gleeok::G07
+    - _Cave::ColiseumRuins00:
+       comment: place claymore in the right soldiers hands
+    - _Bubbulfrog::ColiseumRuinsCave
+    - _Chest<Trousers of Awakening>:
+       coord: [-1151.85, -393.54, -1263.46]
+    - Read Stone Tablet for treasure quest
+    - _Korok::HF34  
+    - _Shrine::Riogok
+    - _Korok::HF49
+    - _Enemy::Talus::GC07
+    - _Npc<Ralera>:
+       coord: [-989.8, 190.78, -1527.7]
+    - _SideAdv::TheBeckoningWoman
+    - _Addison::A33
+    - _Cave::GreatPlateauFoothill00
+    - _Bubbulfrog::GreatPlateauFoothillCave
+    - _Shrine::Kyokugon
+    - _Korok::HF42:
+       movements: 
+       - to: [-692.0632178705164,6,-1493.79984002115]
+       - to: [-611.0940651446854,6,-1522.7873569256944]
+       notes: shoot on your way to HF39
+    - HF39 start: 
+       coord: [-658.0761661090564,6,-1386.8458983388637]
+    - _Korok::HF39
+    - Break the Bombable wall and relase the water
+    - TALK TO THE BARGAINER STATUE
+    - _Chasm::GreatPlateauNorth:
+       movements: 
+       - to: [-586.1035859083167,6,-1534.7821915068853]
+       - to: [-668.0723578036032,6,-1508.7933832476383]
        
     
     
