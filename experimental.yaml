@@ -1215,8 +1215,51 @@ _route:
     - _Korok::PF14::End
     - _Korok::PF15
     - _Korok::PF17
-    - _Shrine::Jochisiu
-    - _ShrineQuest::KeysBornofWater
+    - _Korok::SS61
+    - _Korok::SS59
+    - _Korok::SS64
+    - _Shrine::Eshos:
+       notes: Overload clip through the shrine
+    - _Korok::SS68
+    - _Npc<Penn>:
+       coord: [1759.67, 145.98, -1925.56]
+       notes: on top of the stable
+    - _Well::DuelingPeaksStable
+    -  SS70 Start:
+        coord: [1241,6,-1939]
+    - _Korok::SS70 
+    - _SideAdv::PrincessZeldaKidnapped:
+       coord: [1316,6,-1980]
+    - _Korok::SS67
+    - _Korok::SS69:
+        movements:
+        - to: [1326,6,-1963]
+          away: true
+    - _Korok::SS66
+    - _Cave::DuelingPeaksNorth00
+    - _Bubbulfrog::DuelingPeaksNorthCave
+    - _Cave::DuelingPeaksSouth00
+    - _Bubbulfrog::DuelingPeaksSouthCave
+    - _Korok::SS63::Start
+    - _Korok::SS63::End
+    - _Shrine::Jochisiu:
+       notes: keep Largest as is, melt middle with 1 fire fruit, and melt the smallest with the flame emitter or campfire 
+    - _SideQuest<Keys Born Of Water>
+    - _Bubbulfrog::PoplaFoothillsExcavationSite
+    - _Cave::PoplaFoothillsExcavationSite00
+    - _Well::PoplaFoothillsSouth
+    - _Korok::PF25
+    - _Korok::PF28
+    - _Korok::PF26
+    - _Well::PoplaFoothillsNorth
+    - _Tower::PoplaFoothills
+    
+    
+    
+    
+    
+    
+      
     
        
   
