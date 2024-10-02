@@ -4,7 +4,7 @@ _project:
   authors:
     - DinoTechSR
   contributors:
-    - savagei3
+    - savage13
     - Aergyl
     - anapup
     - BloomPrism
@@ -1168,10 +1168,13 @@ _route:
     - _Korok::PF18
     - _Korok::PF16
     - _Korok::HF53
+    - _Korok::PF12::Start
     - _Korok::HF48
     - _Location::ProximBridge
     - _Korok::PF13
     - _Korok::PF10
+    - _Korok::PF12::End
+    - _Korok::PF09
     - _Korok::PF06
     - _Location::OwlanBridge
     - _Addison::A41
@@ -1209,10 +1212,11 @@ _route:
     - _Enemy::Talus::GF01
     - _Tear::G03
     - _Well::SouthNabiLake
-    - _Korok::PF09
-    - _Korok::PF12
     - _Korok::PF14::End
     - _Korok::PF15
+    - _Korok::PF17
+    - _Shrine::Jochisiu
+    - _ShrineQuest::KeysBornofWater
     
        
   
