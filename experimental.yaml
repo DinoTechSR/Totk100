@@ -153,7 +153,7 @@ _route:
     - _Item<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        notes: Dupe to 250 on the slide to Lookout Landing
-    - _Item<Ancient Blade:
+    - _Item<Ancient Blade>:
        coord: [267, 114.5, -1651.5]
     - _Npc<Josha>:
        coord: [-238.97, 132.32, 147.92]
@@ -1084,21 +1084,143 @@ _route:
     - _Cave::GreatPlateauFoothill00
     - _Bubbulfrog::GreatPlateauFoothillCave
     - _Shrine::Kyokugon
+    - Open the floodgate:
+       coord: [-577.5,6,-1530]
+    - Npc<Bargainer Statue>:
+       coord: [-609,6,-1564.5]
+       comment: in the ground
+    - _Chasm::GreatPlateauNorth
+    - Drop first eye
     - _Korok::HF42:
        movements: 
-       - to: [-692.0632178705164,6,-1493.79984002115]
-       - to: [-611.0940651446854,6,-1522.7873569256944]
-       notes: shoot on your way to HF39
-    - HF39 start: 
-       coord: [-658.0761661090564,6,-1386.8458983388637]
+        - to: [-615,6,-1521]
+          away: true   
+    - HF39 Start: 
+       coord: [-656,6,-1384]
     - _Korok::HF39
-    - Break the Bombable wall and relase the water
-    - TALK TO THE BARGAINER STATUE
-    - _Chasm::GreatPlateauNorth:
+    - _Korok::HF32
+    - _Korok::HF28
+    - _Korok::HF31
+    - _Enemy::Talus::GC06
+    - _Korok::HF23
+    - _Bubbulfrog::WhistlingHillCave
+    - _Cave::WhistlingHill00
+    - _Shrine::Teniten
+    - _Korok::HF43::Start
+    - _Korok::HF43::End
+    - _Shrine::Kamizun:
+       comment: proving grounds
+    - _Chasm::ForestofTime
+    - _Korok::HF45
+    - _Korok::HF50::Start
+    - _Korok::HF50::End
+    - _Korok::HF58::Start
+    - _Korok::HF54
+    - _Korok::HF65
+    - _Chest<Nostalgic Fabric>: 
+       coord: [-810.5,6,-1966]
+    - _Korok::HF64:
+       comment: up in ceiling
+    - Take a picture of the Great Goddess Statue
+    - _Korok::HF60
+    - _Korok::HF57
+    - _Korok::HF58::End
+    - _Cave::ShrineofResurrection00
+    - _Bubbulfrog::ShrineofResurrection
+    - _SchemaStone::ShrineOfResurrection
+    - _Korok::HF55
+    - _Korok::HF68::Start
+    - _Korok::HF67
+    - _Korok::HF68::End
+    - _Korok::HF63
+    - _Chasm::GreatPlateauWest
+    - Drop second eye
+    - _Korok::HF62
+    - _Korok::HF72
+    - _Cave::RiveroftheDeadWaterfall00
+    - _Bubbulfrog::RiveroftheDeadWaterfallCave
+    - _Shrine::Tadarok
+    - _Korok::HF71
+    - _Chasm::GreatPlateauSouth
+    - Drop third eye
+    - _Chest<Yiga Mask>:
+       coord: [-779,6,-2261]
+    - _Korok::HF73
+    - _Korok::HF66
+    - _Chasm::GreatPlateauEast
+    - _Korok::HF61
+    - _Korok::HF59
+    - _Korok::PF19
+    - _Korok::HF69
+    - _Chasm::HillsofBaumer
+    - _Korok::PF23::Trail
+    - _Well::HillsofBaumer
+    - _Well::DeyaVillageRuinsSouth
+    - PF21 Start: 
+         coord: [353,6,-2165]
+    - _Korok::PF21
+    - _Shrine::Susub:
+       notes: (350,-2050) overload clip to the shrine
+    - _Well::DeyaVillageRuinsEast
+    - _Korok::PF20
+    - _Well::DeyaVillageRuins
+    - _Well::DeyaVillageRuinsNorth
+    - _Korok::PF18
+    - _Korok::PF16
+    - _Korok::HF53
+    - _Korok::HF48
+    - _Location::ProximBridge
+    - _Korok::PF13
+    - _Korok::PF10
+    - _Korok::PF06
+    - _Location::OwlanBridge
+    - _Addison::A41
+    - _Korok::PF05
+    - _Korok::PF04
+    - _Npc<Food Guy>:
+       coord: [543,6,-1193.5]
+       notes: Make hylian rice bowl (Meat, rice, salt)
+    - _Well::RiversideStable
+    - _SideQuest::FeatheredFugitives:
        movements: 
-       - to: [-586.1035859083167,6,-1534.7821915068853]
-       - to: [-668.0723578036032,6,-1508.7933832476383]
+       - to: [383,6,-1148]
+       - to: [372.5,6,-1095]
+       - to: [338.5,6,-1094]
+       - to: [342,6,-1102.75]
+       - to: [372.5,6,-1092.25]
+       - to: [319.75,6,-1130]
+       - to: [373,6,-1090.5]
+       notes: you can look at the map or | 1 on rock island , 2 on top of stable, 3 in stable, 4 in big tree (south)
+    - _SideAdv::GourmetsGoneMissing:
+        coord: [387, 6,-1045]
+    - _Shrine::Tajikats
+    - _Korok::PF14::Start
+    - _Korok::PF02
+    - _Enemy::Hinox::GC05
+    - _Korok::PF03::Start:
+       notes: Peepo Friendhip (thx ana)
+    - _Addison::A40
+    - _Korok::SS39
+    - _Location::EagusBridge
+    - _Korok::PF01
+    - _Korok::PF03::End
+    - _Korok::PF08
+    - _Korok::PF07
+    - _Enemy::Talus::GF01
+    - _Tear::G03
+    - _Well::SouthNabiLake
+    - _Korok::PF09
+    - _Korok::PF12
+    - _Korok::PF14::End
+    - _Korok::PF15
+    
        
+  
+    
+    
+
+    
+    
     
     
     
