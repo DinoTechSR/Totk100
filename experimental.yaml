@@ -1153,12 +1153,6 @@ _route:
     - _Korok::PF19
     - _Korok::HF69
     - _Chasm::HillsofBaumer
-    - _Korok::PF23::Trail
-    - _Well::HillsofBaumer
-    - _Well::DeyaVillageRuinsSouth
-    - PF21 Start: 
-         coord: [353,6,-2165]
-    - _Korok::PF21
     - _Shrine::Susub:
        notes: (350,-2050) overload clip to the shrine
     - _Well::DeyaVillageRuinsEast
@@ -1251,16 +1245,83 @@ _route:
     - _Korok::PF25
     - _Korok::PF28
     - _Korok::PF26
+    - _Korok::PF23::Trail
+    - _Well::HillsofBaumer
+    - _Well::DeyaVillageRuinsSouth
+    - PF21 Start: 
+         coord: [353,6,-2165]
+    - _Korok::PF21
     - _Well::PoplaFoothillsNorth
     - _Tower::PoplaFoothills
+  - Zonaite Forge: 
+    - _Tablet::S04
+    - _Korok::SSS06:
+       level: Sky
+    - _Shrine::Ukoojisi::Start
+    - SSS07 Start: 
+       coord: [1298,6,-1972]
+    - _Korok::SSS07
+    - _Dispenser::S05
+    - _Shrine::Ukoojisi
+    - _Shrine::Josiu::Start
+    - _OldMap::Necluda_03
+    - _Shrine::Josiu
+    - _Dispenser::S14
+    - _Korok::SSS01
+    - _OldMap::Necluda_04
+    - _SagesWill::Necluda
+    - _OldMap::Necluda_02
+    - _Korok::SSS02
+    - _Korok::SSS04
+    - _Korok::SSS05
+    - _Korok::SSS03
+    - _Dispenser::S01
+    - _Shrine::Yansamin:
+       comment: Proving Grounds
+
+  - Faron: 
+    - _Enemy::Hinox::DL03:
+       level: Surface  
+    - _Korok::RW02
+    - _Korok::RW04
+    - _Korok::RW06
+    - _Korok::RW08
+    - _Korok::RW11
+    - _Cave::MountFloria01
+    - _Korok::RW13
+    - _Korok::RW12
+    - _Korok::RW15
+    - _Bubbulfrog::MountFloriaCave
+    - _Korok::RW19
+    - _Korok::RW18
+    - _Korok::PF44
+    - _Korok::PF50
+    - _Bubbulfrog::SarjonWoodsCave
+    - _Bubbulfrog::CortaLakeCave
+    - _Cave::CortaLake00
+    - _Korok::PF49
+    - _Cave::MountFloria00
+    - _Korok::PF52
+    - _Cave::RodaiLakefrontTunnel00
+    - _Bubbulfrog::RodaiLakefrontTunnel
+    - _Enemy::Hinox::GF06
+    - _Bubbulfrog::CaloraLakeCave
+    - _Enemy::Hinox::GF08
+    - _Cave::CaloraLake01
+    - _Cave::CaloraLake00
+    - _Korok::PF64
+    - _Korok::PF70
+    - _Addison::A53
+    
+    
+  
     
     
     
     
     
-    
-      
-    
+          
+
        
   
     
