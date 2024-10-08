@@ -27,7 +27,6 @@ _route:
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.73]
        comment: Perform Cog Skip and run through the tunnel
-       line-color: rgb(255, 255, 255)
     - _Korok::GSI15
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
@@ -37,6 +36,7 @@ _route:
     - _Location::TempleofTime:
        coord: [453.51, 1556.17, -849.75]
        comment: Activate the button
+       line-color: rgb(0,0,0)
     - _Equipment::Weapon<MsgNotFound>:
        comment: Use QDZ against the door, then voidout/reload up top
     - _Warp::Location<Up Top>:
@@ -97,6 +97,7 @@ _route:
     - _Chest<Rockets x3>:
        coord: [891.57, 118.09, -541.65]
        comment: Dupe to appriximately 150
+       line-color: rgb(100,0,0)
     - _Item<Splash Fruit>:
        coord: [884.24, 116.18, -543.12]
        comment: For water fruit and for Gerudo Canyon quest
@@ -104,11 +105,9 @@ _route:
        notes: after setup has been completed, zuggle the shield and perform QDS 
   
   - Farosh:
-    - _Warp::Shrine::Gutanbac
-    - _Item<Spicy Pepper>: 
-       coord: [778.18, 1681.52, -1391.44]
-    - _Item<Flint>: 
-       coord: [790.68, 1682.9, -1389.64]
+    - _Warp::Shrine::Nachoyah
+    - _Item<Large Zonai Charge>: 
+       coord: [501.28, 1893.86, -1613.06]
     - _Chest<Zonaite>:
        coord: [431.96, 1554.57, -1807.92]
        comment: In chest here
@@ -139,7 +138,8 @@ _route:
     - _Item<Steering Stick>:
        coord: [-1681.62, 138.94, -2067.24]
        notes: dupe 250 on the way to outskirt stable
-    - _Shrine::Tsutsu-um
+    - _Item<Flint and Wood>:
+       coord: [-1687.65, 111.2, -1773.9]
     - _Korok::HF35
     - _Well::OutskirtStable:
        notes: Grab Brightcaps, Fairies, and Glowing Cave Fish in the well
@@ -147,6 +147,8 @@ _route:
        notes: Sell 25 farosh horns, and buy arrows
        coord: [-1446.9046398272794,6,-1262.0839380556472]
     - Cook A dubious/rock hard food FIRST (can use a zonai charge or a zonaite) and cook the speed food SECOND
+    - _Item<Spicy Pepper>:
+       coord: [-977.53, 249.68, -2025.78]
     - _Npc<Yiga Banana Salesman>:
        coord: [-997.4155908680978,6,-2009.3801497429158]  
        notes: Eat Speedfood and Buy as many bananas as you can
@@ -203,8 +205,6 @@ _route:
        comment: Start Regional Phenomena
     - _Item<Egg:
        coord: [-284.76, 132.61, 173.7]
-    - _Item<Wood>:
-       coord: [-268, 25, 168]
     - _Item<Hyrule Bass>:
        coord: [-272.07, 121.99, 160.06]
     - _Npc<Josha>:
@@ -1153,6 +1153,12 @@ _route:
     - _Korok::PF19
     - _Korok::HF69
     - _Chasm::HillsofBaumer
+    - _Korok::PF23::Trail
+    - _Well::HillsofBaumer
+    - _Well::DeyaVillageRuinsSouth
+    - PF21 Start: 
+         coord: [353,6,-2165]
+    - _Korok::PF21
     - _Shrine::Susub:
        notes: (350,-2050) overload clip to the shrine
     - _Well::DeyaVillageRuinsEast
@@ -1245,83 +1251,16 @@ _route:
     - _Korok::PF25
     - _Korok::PF28
     - _Korok::PF26
-    - _Korok::PF23::Trail
-    - _Well::HillsofBaumer
-    - _Well::DeyaVillageRuinsSouth
-    - PF21 Start: 
-         coord: [353,6,-2165]
-    - _Korok::PF21
     - _Well::PoplaFoothillsNorth
     - _Tower::PoplaFoothills
-  - Zonaite Forge: 
-    - _Tablet::S04
-    - _Korok::SSS06:
-       level: Sky
-    - _Shrine::Ukoojisi::Start
-    - SSS07 Start: 
-       coord: [1298,6,-1972]
-    - _Korok::SSS07
-    - _Dispenser::S05
-    - _Shrine::Ukoojisi
-    - _Shrine::Josiu::Start
-    - _OldMap::Necluda_03
-    - _Shrine::Josiu
-    - _Dispenser::S14
-    - _Korok::SSS01
-    - _OldMap::Necluda_04
-    - _SagesWill::Necluda
-    - _OldMap::Necluda_02
-    - _Korok::SSS02
-    - _Korok::SSS04
-    - _Korok::SSS05
-    - _Korok::SSS03
-    - _Dispenser::S01
-    - _Shrine::Yansamin:
-       comment: Proving Grounds
-
-  - Faron: 
-    - _Enemy::Hinox::DL03:
-       level: Surface  
-    - _Korok::RW02
-    - _Korok::RW04
-    - _Korok::RW06
-    - _Korok::RW08
-    - _Korok::RW11
-    - _Cave::MountFloria01
-    - _Korok::RW13
-    - _Korok::RW12
-    - _Korok::RW15
-    - _Bubbulfrog::MountFloriaCave
-    - _Korok::RW19
-    - _Korok::RW18
-    - _Korok::PF44
-    - _Korok::PF50
-    - _Bubbulfrog::SarjonWoodsCave
-    - _Bubbulfrog::CortaLakeCave
-    - _Cave::CortaLake00
-    - _Korok::PF49
-    - _Cave::MountFloria00
-    - _Korok::PF52
-    - _Cave::RodaiLakefrontTunnel00
-    - _Bubbulfrog::RodaiLakefrontTunnel
-    - _Enemy::Hinox::GF06
-    - _Bubbulfrog::CaloraLakeCave
-    - _Enemy::Hinox::GF08
-    - _Cave::CaloraLake01
-    - _Cave::CaloraLake00
-    - _Korok::PF64
-    - _Korok::PF70
-    - _Addison::A53
-    
-    
-  
     
     
     
     
     
-          
-
+    
+      
+    
        
   
     
