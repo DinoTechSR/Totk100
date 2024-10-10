@@ -30,13 +30,13 @@ _route:
     - _Korok::GSI15
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
+       line-color: rgb(20,20,20)
     - _Npc::Steward Construct_07
     - _KeyItem::PurahPad
     - Wing to the Temple of Time and do not touch the ground
     - _Location::TempleofTime:
        coord: [453.51, 1556.17, -849.75]
        comment: Activate the button
-       line-color: rgb(0,0,0)
     - _Equipment::Weapon<MsgNotFound>:
        comment: Use QDZ against the door, then voidout/reload up top
     - _Warp::Location<Up Top>:
@@ -75,7 +75,6 @@ _route:
     - _Warp::ROA
     - Bomb jump up the ledge and run to/enter Recall
     - _Shrine::Nachoyah:
-       line-color: rgb(206, 240, 209)
     - _Warp::Shrine::Ukouh
     - _Chest<Large Zonaite>:
        coord: [588.93, 1579.45, -912.35]
@@ -229,6 +228,7 @@ _route:
     - Stick clip down to the Depths
     - _Item<Large Poe>:
        coord: [-150.5, -338.9, -9.12]
+       line-color: rgb(0,250,150)
     - _Item<Large Poe>:
        coord: [-140.24, -339.37, -5.02]
     - _Item<Large Poe>:
@@ -458,7 +458,7 @@ _route:
   - Hyrule Field Sky:
     - _Warp::Shrine::Mayachin
     - _Tower::HyruleField:
-       line-color: rgb(177, 156, 217)
+       line-color: rgb(257, 156, 217)
        level: Sky
     - _Location::SouthHyruleSkyArchipelago:
         hide-icon-on-map: true    
@@ -507,6 +507,7 @@ _route:
     - _Korok::GC43
     - _SideQuest::HeatEnduranceContest:
        comment: use campfire to night
+       line-color: rgb(177, 156, 217)
        coord: [-1381, 5, -3366]
     - _SideQuest::ColdEnduranceContest:
        comment: use campfire to morning
@@ -640,9 +641,10 @@ _route:
     - _Temple::Lightning:
        notes: Overload clip Out of bounds outside of the temple and hit all of the terminals from the bottom. ABC clip back into the main room and activate the termain twice to ascend up to the boss fight 
     
-  - To Rito Village:  
+  - To Rito Village: 
     - _Warp::Npc<Riju>: 
        coord: [-3886.63, 157.48, -2965.29]
+       line-color: rgb(125,255,240)
     - _Enemy::Molduga::SG01
     - _Korok::GC24
     - _Enemy::Gleeok::S02
@@ -862,7 +864,7 @@ _route:
     - _Warp::Npc<Tulin>:
        coord: [-3594.84, 318.50, 1805.23]
        comment: Tulin of Rito Village
-       line-color: rgb(132, 199, 232)
+       line-color: rgb(1, 100, 255)
     - _MainQuest::TulinofRitoVillage
     - _Item<Staminoka Bass>:
        coord: [-3490.37, 258.08, 1853.66]
@@ -970,13 +972,48 @@ _route:
     - _Location::JeddoBridge
     - _Korok::LB58
     - _Korok::LB57
-    - _Korok::LB56
-    - _Korok::LB52
+    - _Korok::LB51
+    - _Korok::LB42
+    - _Well::NewSerenneStable
+    - Take Picture at the top of the stable
+    - _SideQuest::APictureforNewSerenneStable:
+       comment: geoglyph
+    - _Npc<Penn>:
+       coord: [-1349.11, 191.08, 732.73]
+       comment: Start beast and princess quest
+    - _Shrine::Sinakawak:
+       notes: Stick Clip
+    - _Npc::Impa:
+       coord: [-1313.14, 201.35, 823.5]
+    - _Tear::G00
+    - _Enemy::Talus::GR03
+    - _Addison::A21
+    - _Location::RoyalAncientLabRuins:
+       hide-icon-on-map: false
+    - _Korok::LB25
+    - _Cave::NorthHyrulePlain01
+    - _Bubbulfrog::NorthHyrulePlainCave
+    - _Chest<ClimbingGear>:
+       coord: [-1212,6,770]
+    - _Korok::LB35
+    - _Cave::NorthHyrulePlain00
+    - _Korok::LL33
+    - _Enemy::Hinox::GC01
+    - _Location::CarokBridge:
+       hide-icon-on-map: true
+    - _Well::CarokBridge
+    - _Shrine::Ishodag
+    - _Korok::LL40
+    - _Well::MountGustaf
+    - _Addison::A31
+    - _Korok::LL44
     - Set time to night
     - _Korok::LL47:
        notes: Shoot on the way to LL48
     - _Korok::LL48
     - _Korok::LL45
+    - _Korok::LB52
+    - _Korok::LB56
     - _Enemy::Hinox::GC03
     - _Korok::LL52
     - _Korok::LL51
