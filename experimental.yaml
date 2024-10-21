@@ -1290,6 +1290,50 @@ _route:
     - _Korok::PF26
     - _Well::PoplaFoothillsNorth
     - _Tower::PoplaFoothills
+  - Zonaite Forge:
+    - _Tablet::S04
+    - _Korok::SSS06
+    - _Shrine::Ukoojisi::Start
+    - SSS07 Start:
+       coord: [1303, 6868, -1975]
+       level: Sky
+    - _Korok::SSS07
+    - _Dispenser::S05
+    - _Shrine::Ukoojisi
+    - _OldMap::Necluda
+    - _Shrine::Josiu::Start
+    - _OldMap::Necluda_03
+    - _Shrine::Josiu
+    - _Dispenser::S14
+    - _OldMap::Necluda_04
+    - _SagesWill::Necluda
+    - _OldMap::Necluda_02
+    - _Korok::SSS03
+    - _Korok::SSS05
+    - SSS04 Start::
+       coord: [2409,6666,-1823]
+    - _Korok::SSS04
+    - _Korok::SSS02
+    - Location::ZonaiteForgeIsland:
+       coord: [2421,666,-1674]
+       notes: activate pedistal
+    - _Dispenser::S01
+    - _Chest<Zonaite Armor>:
+       coord: [2374.19, 1594.56, -1774.47]
+    - _Shrine::Yansamin:
+       comment: Proving Grounds
+  - Faron:
+    - _Enemy::Hinox::DL03
+    - _Korok::RW02
+    - _Korok::RW04
+    - _Korok::RW06
+    - _Korok::RW06
+    - _Enemy::Hinox::DF03
+    - _Korok::SS71
+    - _Enemy::Hinox::GF02
+    - _Korok::SS72
+    - _Korok::PF24
+ 
     
     
     
