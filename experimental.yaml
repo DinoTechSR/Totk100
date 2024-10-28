@@ -1188,22 +1188,6 @@ _route:
     - _Korok::HF61
     - _Korok::HF59
     - _Korok::PF19
-    - _Korok::HF69
-    - _Chasm::HillsofBaumer
-    - _Korok::PF23::Trail
-    - _Well::HillsofBaumer
-    - _Well::DeyaVillageRuinsSouth
-    - PF21 Start: 
-         coord: [353,6,-2165]
-    - _Korok::PF21
-    - _Shrine::Susub:
-       notes: (350,-2050) overload clip to the shrine
-    - _Well::DeyaVillageRuinsEast
-    - _Korok::PF20
-    - _Well::DeyaVillageRuins
-    - _Well::DeyaVillageRuinsNorth
-    - _Korok::PF18
-    - _Korok::PF16
     - _Korok::HF53
     - _Korok::PF12::Start
     - _Korok::HF48
@@ -1212,8 +1196,6 @@ _route:
     - _Korok::PF10
     - _Korok::PF12::End
     - _Korok::PF09
-    - _Korok::PF06
-    - _Location::OwlanBridge
     - _Addison::A41
     - _Korok::PF05
     - _Korok::PF04
@@ -1234,7 +1216,9 @@ _route:
     - _SideAdv::GourmetsGoneMissing:
         coord: [387, 6,-1045]
     - _Shrine::Tajikats
-    - _Korok::PF14::Start
+    - _Korok::PF14::Start  
+    - _Location::OwlanBridge
+    - _Korok::PF06
     - _Korok::PF02
     - _Enemy::Hinox::GC05
     - _Korok::PF03::Start:
@@ -1249,90 +1233,50 @@ _route:
     - _Enemy::Talus::GF01
     - _Tear::G03
     - _Well::SouthNabiLake
-    - _Korok::PF14::End
-    - _Korok::PF15
     - _Korok::PF17
-    - _Korok::SS61
-    - _Korok::SS59
-    - _Korok::SS64
-    - _Shrine::Eshos:
-       notes: Overload clip through the shrine
-    - _Korok::SS68
-    - _Npc<Penn>:
-       coord: [1759.67, 145.98, -1925.56]
-       notes: on top of the stable
-    - _Well::DuelingPeaksStable
-    -  SS70 Start:
-        coord: [1241,6,-1939]
-    - _Korok::SS70 
-    - _SideAdv::PrincessZeldaKidnapped:
-       coord: [1316,6,-1980]
-    - _Korok::SS67
-    - _Korok::SS69:
-        movements:
-        - to: [1326,6,-1963]
-          away: true
-    - _Korok::SS66
-    - _Cave::DuelingPeaksNorth00
-    - _Bubbulfrog::DuelingPeaksNorthCave
-    - _Cave::DuelingPeaksSouth00
-    - _Bubbulfrog::DuelingPeaksSouthCave
-    - _Korok::SS63::Start
-    - _Korok::SS63::End
-    - _Shrine::Jochisiu:
-       notes: keep Largest as is, melt middle with 1 fire fruit, and melt the smallest with the flame emitter or campfire 
-    - _SideQuest<Keys Born Of Water>
-    - _Bubbulfrog::PoplaFoothillsExcavationSite
-    - _Cave::PoplaFoothillsExcavationSite00
-    - _Well::PoplaFoothillsSouth
-    - _Korok::PF25
-    - _Korok::PF28
+    - _Korok::PF15
+    - _Korok::PF14::End
+    - _Korok::PF16
+    - _Korok::PF18
+    - _Well::DeyaVillageRuinsNorth
+    - _Well::DeyaVillageRuins
+    - _Korok::PF20
+    - _Well::DeyaVillageRuinsEast
+    - _Shrine::Susub
+    - _Well::DeyaVillageRuinsSouth
+    - _Well::HillsofBaumer
+    - _Korok::PF21:
+       movements:
+       - to: [355,150,-2159]
+       - to: [462,150,-2150]
+    - _Korok::PF22::Start
+    - _Korok::PF22::End
+    - _Chasm::HillsofBaumer
+    - _Korok::PF23::Trail
     - _Korok::PF26
+    - _Korok::PF28
+    - _Korok::PF25
+    - _Well::PoplaFoothillsSouth
+    - _Cave::PoplaFoothillsExcavationSite00
+    - _Bubbulfrog::PoplaFoothillsExcavationSite
     - _Well::PoplaFoothillsNorth
     - _Tower::PoplaFoothills
-  - Zonaite Forge:
-    - _Tablet::S04
-    - _Korok::SSS06
+  - Faron Sky:
+    - _Korok::SSS06:
+       movements:
+       - to: [676,1500,-2181]
+       - to: [1676,1500,-1898]
+       notes: go to the little island and set up a cart slide
     - _Shrine::Ukoojisi::Start
-    - SSS07 Start:
-       coord: [1303, 6868, -1975]
-       level: Sky
-    - _Korok::SSS07
-    - _Dispenser::S05
+    - _Korok::SSS07:
+       movements:
+       - to: [1299,1500,-1977]
+       - to: [1337,1500,-2066]
     - _Shrine::Ukoojisi
-    - _OldMap::Necluda
-    - _Shrine::Josiu::Start
-    - _OldMap::Necluda_03
-    - _Shrine::Josiu
-    - _Dispenser::S14
-    - _OldMap::Necluda_04
-    - _SagesWill::Necluda
-    - _OldMap::Necluda_02
-    - _Korok::SSS03
-    - _Korok::SSS05
-    - SSS04 Start::
-       coord: [2409,6666,-1823]
-    - _Korok::SSS04
-    - _Korok::SSS02
-    - Location::ZonaiteForgeIsland:
-       coord: [2421,666,-1674]
-       notes: activate pedistal
-    - _Dispenser::S01
-    - _Chest<Zonaite Armor>:
-       coord: [2374.19, 1594.56, -1774.47]
-    - _Shrine::Yansamin:
-       comment: Proving Grounds
+    - _Dispenser::S05
+    - _Tablet::S04
   - Faron:
-    - _Enemy::Hinox::DL03
-    - _Korok::RW02
-    - _Korok::RW04
-    - _Korok::RW06
-    - _Korok::RW06
-    - _Enemy::Hinox::DF03
-    - _Korok::SS71
-    - _Enemy::Hinox::GF02
-    - _Korok::SS72
-    - _Korok::PF24
+    - _Korok::HF69
  
     
     
