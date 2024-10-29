@@ -1341,20 +1341,99 @@ _route:
     - _Korok::PF57
     - _Korok::PF50
     - _Bubbulfrog::SarjonWoodsCave
+    - _Chest<Rubber Helm>:
+       coord: [1595,150,-2944]
     - _Enemy::Hinox::DF06
     - _Bubbulfrog::CortaLakeCave
     - _Cave::CortaLake00
     - _Korok::PF49
     - _Cave::MountFloria00
     - _Korok::PF45
-    - _Korok::RW18
+    - _Enemy::Hinox::GF06:
+       notes: everything up until the cave entrance will be performed out of bounds
+    - _Bubbulfrog::RodaiLakefrontTunnel
+    - _Enemy::Hinox::GF08
+    - _Bubbulfrog::CaloraLakeCave
+    - _Cave::CaloraLake01
+    - _Cave::CaloraLake00
+    - _Cave::RodaiLakefrontTunnel00
+    - _Korok::PF52
+    - _Korok::PF64
+    - Take a Picture of the the waterfall when its sunny:
+       notes: use noon time to reset
+    - _Korok::PF70
+    - _Korok::PF61
+    - _SideAdv::TheBeastandthePrincess:
+        coord: [1539,150,-3359]
+    - _Cave::UbotaPoint00
+    - _Bubbulfrog::UbotaPointCave
+    - _Korok::PF72
+    - _Korok::PF74
+    - _Shrine::Joju-u-u
+    - _Well::LakesideStable
+    - _SideQuest::APictureforLakesideStable:
+       coord: [1550,150,-3536]
+    - _Korok::PF67::Start
+    - _Addison::A53
+    - _Korok::PF78
+    - _Bubbulfrog::RasslaLakeCave
+    - _Cave::RasslaLake00
+    - _Korok::PF75
+    - _Enemy::Talus::GF05
+    - _Korok::PF67::End
+    - _Korok::RW23
+    - _Korok::RW24::Start
+    - _Bubbulfrog::AtunValleyCave
+    - _Cave::AtunValley00
+    - _Korok::RW26:
+       movements:
+       - to: [2550,150,-3210]
+       - to: [2541.5,150,-3292]
+    - Set Time to Night
+    - _Korok::RW24::End
+    - _Korok::RW22
+    - _Korok::RW20
+    - _Korok::RW16
+    - _Enemy::Hinox::GL05
+    - _Addison::A63
+    - _Korok::RW09
+    - _Chasm::MedaMountain
+    - _Korok::RW05
+    - _Shrine::Tokiy:
+       comment: Blessing Shrine
+    - _Korok::RW07
+    - _Korok::RW04
+    - _Korok::RW06
+    - _Korok::RW08
     - _Korok::RW11
     - _Korok::RW13
     - _Cave::MountFloria01
     - _Bubbulfrog::MountFloriaCave
+    - _Korok::RW18
     - _Korok::RW19
+    - _Korok::RW15
+    - _Korok::RW12
+    - _Korok::RW14
+    - _Korok::RW17
+    - _Tower::RabellaWetlands
+  - Laurelin Sky:
+    - _Tablet::S06
+    - _OldMap::Necluda_01
+    - _Korok::RWS01
+    - _Enemy::FluxConstruct::SF01
+    - _Shrine::Kumamayn::Start
+    - _Shrine::Kumamayn
+    - _Dispenser::S17
+    - _Korok::RWS02
+    - _Enemy::FluxConstruct::SF03
+  - Laurelin: 
+    - _Shrine::Sifumim:
+       comment: Proving Grounds
+    
+
     
     
+     
     
     
     
