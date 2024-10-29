@@ -6,11 +6,9 @@ _project:
   contributors:
     - savage13
     - Aergyl
-    - anapup
+    - Ana
     - BloomPrism
-    - cloudedSR
     - BounceSR
-    - TZSR_Ondrej
   description: 100% Route for v1.0.0
   name: 100% Route for v1.0.0
   url: "https://restite.org/notceler-totk/?link=github/totk100/main/experimental.yaml"
@@ -27,11 +25,13 @@ _route:
     - _Chest<Wing x3>:
        coord: [379.57, 2441.25, -1698.73]
        comment: Perform Cog Skip and run through the tunnel
-    - _Korok::GSI15
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
        line-color: rgb(20,20,20)
-    - _Npc::Steward Construct_07
+    - _Npc::Steward Construct_07:
+       movements:
+       - to: [425, 2485, -1679]
+       - to: [443,1500,-1310]
     - _KeyItem::PurahPad
     - Wing to the Temple of Time and do not touch the ground
     - _Location::TempleofTime:
@@ -105,6 +105,7 @@ _route:
   
   - Farosh:
     - _Warp::Shrine::Nachoyah
+    - _Korok::GSI15
     - _Item<Large Zonai Charge>: 
        coord: [501.28, 1893.86, -1613.06]
     - _Chest<Zonaite>:
@@ -121,14 +122,11 @@ _route:
        notes: Dupe more than 25 for speed fod later
   
   - Paraglider:
-    - _Chasm::LakeHylia
-    - _Korok::PF32
     - _Tear::G09
     - _Korok::PF35
-    - _Korok::HF74
+    - _Korok::GC21::Start
     - _Korok::PF30:
        notes: Make Rock Weapon 
-    - _Korok::GC21::Start
     - _Item<Swift Violet>:
        notes: Dupe at least 5 for speed food
        coord: [-1370.8635212206937,6,-2461.834276146543]
@@ -1179,6 +1177,7 @@ _route:
     - _Shrine::Tadarok
     - _Korok::HF71
     - _Chasm::GreatPlateauSouth
+    - _Korok::HF74
     - Drop third eye
     - _Chest<Yiga Mask>:
        coord: [-779,6,-2261]
@@ -1251,7 +1250,6 @@ _route:
        - to: [462,150,-2150]
     - _Korok::PF22::Start
     - _Korok::PF22::End
-    - _Chasm::HillsofBaumer
     - _Korok::PF23::Trail
     - _Korok::PF26
     - _Korok::PF28
@@ -1261,6 +1259,7 @@ _route:
     - _Bubbulfrog::PoplaFoothillsExcavationSite
     - _Well::PoplaFoothillsNorth
     - _Tower::PoplaFoothills
+ 
   - Faron Sky:
     - _Korok::SSS06:
        movements:
@@ -1275,10 +1274,85 @@ _route:
     - _Shrine::Ukoojisi
     - _Dispenser::S05
     - _Tablet::S04
+  
   - Faron:
+    - _Chasm::HillsofBaumer
     - _Korok::HF69
- 
-    
+    - _Korok::HF70
+    - _Korok::PF34::Start
+    - _Korok::HF75
+    - _Korok::PF31
+    - _Korok::PF34::End
+    - _Chasm::LakeHylia
+    - _Korok::PF32
+    - _Korok::PF43
+    - _Cave::CoraLakefront00
+    - _Bubbulfrog::CoraLakefrontCave
+    - _Cave::CoraLakefront01
+    - _Korok::PF51
+    - _Korok::PF48
+    - _Korok::PF47
+    - _Korok::PF37
+    - _Korok::PF33
+    - _Cave::LakeHyliaWhirlpool00
+    - _Shrine::En-oma
+    - _Bubbulfrog::LakeHyliaWhirlpoolCave
+    - _Korok::PF36
+    - _Korok::PF41
+    - _Korok::PF40
+    - _Korok::PF42
+    - _Cave::FinraWoodsExcavationSite00
+    - _Bubbulfrog::FinraWoodsExcavationSite
+    - _Bubbulfrog::PagosWoodsExcavationSite
+    - _Cave::PagosWoodsExcavationSite00
+    - _Cave::FloriaRiverUpstreamExcavation00
+    - _Korok::PF39
+    - _Korok::PF29
+    - _SideQuest::GoddessStatueofCourage:
+       coord: [875.25,150,-2367.25]
+       comment: farosh claw
+    - _Shrine::Jiukoum
+    - _Korok::SS72::Start
+    - _Korok::PF24
+    - _Korok::SS72::End
+    - _Enemy::Hinox::GF02
+    - _Korok::SS71
+    - _Enemy::Hinox::DF03
+    - _Cave::Tobio'sHollow00
+    - _Bubbulfrog::Tobio'sHollowCave
+    - _Shrine::Utojis:
+       comment: throw wing spear
+       notes: zuggle AFTER shrine to prevent overload drop early
+    - _Chest<Charged Shirt>:
+       coord: [1008,150,-2534]
+       notes: everything until the PF55 is performed out of bounds
+    - _Chest<Charged Trousers>:
+       coord: [954,150,-2710]
+    - _Enemy::Hinox::DF05
+    - _Chest<Charged Headdress:
+       coord: [996,150,-2828]
+    - _Bubbulfrog::FloriaRiverUpstreamExcavation
+    - _Korok::PF55
+    - _Cave::SarjonWoods00
+    - _Korok::PF54
+    - _Korok::PF53
+    - _Korok::PF59
+    - _Korok::PF58
+    - _Korok::PF57
+    - _Korok::PF50
+    - _Bubbulfrog::SarjonWoodsCave
+    - _Enemy::Hinox::DF06
+    - _Bubbulfrog::CortaLakeCave
+    - _Cave::CortaLake00
+    - _Korok::PF49
+    - _Cave::MountFloria00
+    - _Korok::PF45
+    - _Korok::RW18
+    - _Korok::RW11
+    - _Korok::RW13
+    - _Cave::MountFloria01
+    - _Bubbulfrog::MountFloriaCave
+    - _Korok::RW19
     
     
     
