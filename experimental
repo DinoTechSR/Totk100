@@ -451,9 +451,12 @@ _route:
     - _Korok::UZ24
     - Splash the Statue
     - _Shrine::Ihen-a
+    - _Location::MiphaCourt:
+       hide-icon-on-map: true
     - Start Sidon Quest
     - _Location<Fix The Slate>:
        coord: [3420.9276285505985,150,883.9145215627459]
+    - Set time to night
     - _Cave::PristineSanctum01
     - _Bubbulfrog::PristineSanctum
     - Speak to doraphan
@@ -464,6 +467,9 @@ _route:
        coord: [3707.8854975039903,150,492.6757924986996]
     - _Korok::UZ31
     - _Korok::UZ30
+    - _Tablet<Mipha Picture>:
+       coord: [3764,150,432]
+       notes: Quest will work with a picture taken any time between 12-2am. if you cant make it to here by 2 am from jahaito, then set campfire later
     - _Korok::UZ22::Start
     - Shoot King Scale through tear
     - _Chest<Zora Helm>:
@@ -471,7 +477,8 @@ _route:
        notes: overload clip to the helm
     - _Korok::UZ22::End
     - Defeat Sludge like and get ROT
-    - _SideQuest::\
+    - _MainQuest::RestoringtheZoraArmor:
+       coord: [3850.75,150,585.25]
     - _Korok::UZ09
     - _Korok::UZ11
     - _Korok::UZ12::Start
@@ -509,9 +516,9 @@ _route:
     - _Korok::UZ49
     - _Korok::UZ48
     - Meet Sidon:
-       coord: [3671.4809162506644,150,260.37483514544874]
-    - _Cave::AncientZoraWaterworks00
-    - Activate Terminal in middle
+       coord: [3678.97, 340.9, 131.84]
+    - _Cave::AncientZoraWaterworks00:
+       notes: Activate Terminal in middle
  
   - Water Temple:
     - _Korok::UZS02
@@ -519,14 +526,189 @@ _route:
     - _Dispenser::S08
     - _Enemy::FluxConstruct::SL01
     - _Korok::UZS01
-    - _Temple::Water
-   
+    - _Temple::Water:
+       movements:
+       - to: [3326,1500,737.5]
+       - to: [3238.5,1500,750]
+       - to: [3198,1500,600]
+       - to: [3514,1500,720]
+       - to: [3444.5,1500,882]
+       - to: [3356,1500,778]
+       notes: old map is on Little island between terminal 2 and 3
+    - _OldMap::WellspringIsland_01:
+       hide-icon-on-map: true
+       
   - Lanayru 1.5:
+    - _Warp::Location<Zoras Domain>:
+       coord: [3338.14, 271.89, 550.50]
+       comment: Sidon of the Zora
+       line-color: rgb(224, 158, 128)
     - Reload Autosave for quest
-    - _SideQuest::SecretTreasureundertheGreatFish
+    - _MainQuest::SidonoftheZora
+    - _SideQuest::TheNeverEndingLecture:
+       coord: [3321, 6, 0549]
+    - _SideQuest::GloryoftheZora:
+       coord: [3337.25,150,483.375]
+       notes: make lightscale trident main weapon from here on out
+    - Buy Arrows from store
+    - _Npc<Fronk>:
+         coord: [3291.71, 244.86, 441.43]
+         notes: Start Wife Wafted Away
+    - _Npc<Yona>:
+       coord: [3310.5,150,486.5]
+       notes: Start Token of Friendship
+    - _SideQuest::TheMoonlitPrincess:
+       coord: [3275.25,150,540.25]
+    - _Korok::UZ29
+    - _Korok::UZ20
+    - _Cave::UplandZoranaFoothill00
+    - _Bubbulfrog::UplandZoranaFoothillCave
+    - _Addison::A59
+    - _Tower::UplandZorana
+ 
+  - Wife Quest: 
+    - _Shrine::Jirutagumac
+    - _Dispenser::S22
+    - _OldMap::WellspringIsland_02
+    - _Korok::UZS03
+    - _Npc<Mei>:
+       coord: [3668.75, 1356.94, 567.5]
+       comment: A Wife Wafted Away
+    - _OldMap::WellspringIsland
+    - _Tablet::S01
+    - _Enemy::FluxConstruct::SL02
+  
+  - Eldin 1:
+    - _Warp::Tower::EldinCanyon
+    - _Korok::EC42::Start
+    - _Korok::EC42::End
+    - _Item<Rock Roast>:
+       coord: [1952.89, 395.55, 1804.17]
+       notes: (1952 1804) Clip here. This is the hardest clip in the run. if you cant get it fitst try, go into the cave normally. Buffer to around half a second after cave discovery
+    - _Bubbulfrog::EastRestaurantCave
+    - _Cave::EastRestaurant00
+    - _Korok::EC43
+    - _SideQuest::CashInonRipenedFlint:
+       coord: [1747.5,150,1536.25]
+       notes: Donate 100 flint. make sure you have at least 15 for other champion weapons
+    - _SideQuest::RockRoastorDust:
+       coord: [1753.5,150,1556]
+       comment: Unibrow -_-
+    - _Shrine::Timawak
+    - _Korok::EC37
+    - _Korok::EC36::Start
+    - _Korok::EC36::End
+    - _Korok::EC39
+    - _Korok::EC32
+    - _Cave::GoronbiRiver00
+    - _Bubbulfrog::GoronbiRiverCave
+    - _Chest<Ember Shirt>:
+       coord: [1382,150,2227]
+    - _SideQuest::MiskosTreasureofAwakeningI:
+       coord: [1386.75,150,2233.25]
+       notes: READ SLATE
+    - _Korok::EC29
+    - _Addison::A46
+    - _Korok::EC19
+    - _Korok::EC21
+    - _Location<Buy Armor>:
+       coord: [1641,150,2408]
+    - _Npc<Yunobo>:
+       coord: [1648.01, 487.5, 2439.43]
+    - Buy Goron Spice, Rock Salt, and Arros from shop
+    - _Korok::EC16
+    - _Shrine::Marakuguc:
+       comment: STICK
+    - Take Picture of daruk
+    - _Npc<Dugby>:
+       notes: attach rocket to back of cart
+       coord: [1744, 531.5, 2585]
+    - _Korok::EC06::Start
+    - _Cave::YunoboCoHQSouth00
+    - _Bubbulfrog::YunoboCoHQSouthCave
+    - _Chest<Ember Headdress>:
+       coord: [1574.5,150,2758.5]
+    - _SideQuest::TheAncientCityGorondia?:
+       coord: [1645.5,150,2788.5]
+    - _Korok::EC06::End
+    - _Cave::IsleofRabacGallery00
+    - _Location::IsleofRabac:
+       hide-icon-on-map: true
+    - _Korok::EC11:
+       movements:
+       - to: [1461,150,2966]
+       - to: [1567.5,150,2941.5]
+         away: true
+       notes: Shoot on the way to EC12
+    - _Korok::EC12
+    - _Korok::EC13
+    - Yunobo Fight:
+       notes: MAKE SURE TO HAVE ABC DEACTIVATED WHEN THE FIGHT ENDS. you will get an infinite load if this is not executed
+    - _Cave::YunoboCoHQEast00
+    - _Shrine::Isisim:
+       comment: PROVING GROUNDS
+    - _Bubbulfrog::YunoboCoHQEastCave
+    - _Bubbulfrog::IsleofRabacGallery
+    - _Shrine::Jiotak
+    - Set Time to night
+    - _Enemy::Talus::GE03
+    - _Korok::EC09:
+       movements: 
+       - to: [2194.43, 613.08, 3008.75]
+       - to: [2170.75,150,3035.75]
+    - _Korok::EC07
+    - _Enemy::Hinox::GE02:
+       movements:
+       - to: [2141.25,150,3010.75]
+         away: true
+    - _Korok::EC08
+    - _Cave::Lizard'sBurrow00
+    - _Bubbulfrog::Lizard'sBurrow
+    - _Chest::VahRudaniaDivineHelm
+    - _Cave::LakeDarmanMonsterDen00
+    - _Bubbulfrog::LakeDarmanMonsterDen
+    - _SideAdv::BringPeacetoEldin
+    - _Enemy::Talus::GE04
+    - _Shrine::Momosik::Start
+    - _Bubbulfrog::DeathMountainEastTunnel
+    - _Cave::DeathMountainEastTunnel00
+    - _Shrine::Momosik
+    - _SideQuest<The Death Caldera Crystal>
+    - _Addison::A55
+    - _Korok::EC18
+    - _Korok::EC23
+    - _Addison::A56
+    - _Location::BridgeofEldin
+    - _Korok::EC22::Trail
+    - _Korok::EC24
+    - _Enemy::Talus::GE05
+    - _Korok::EC17
+    - _Korok::EC15::Start
+    - _Korok::EC15::End
+    - _Addison::A47
+    - _Cave::DeathMountainFoothill00
+    - _Cave::DeathMountainWestTunnel00:
+    - _Korok::EC14
+    - _Korok::EC10::Start
+    - _Korok::EC10::End
+    - _Bubbulfrog::DeathMountainWestTunnel
+    - _Npc<Mota>:
+       coord: [2345.72, 620.15, 2682.08]
+       comment: The Abandoned Laborer
+    - _Bubbulfrog::DeathMountainFoothillCave
+    - _Location::DeathMountainWestSite: 
+       hide-icon-on-map: true
+    - _Npc<Mota>:
+       coord: [2220, 620, 2670]
+    - _Cave::DeathMountainWestTunnel00
+    - _SideQuest::TheAbandonedLaborer
+    - _Shrine::Sitsum
+    - _Enemy<Moragia>
+    - _Chasm::DeathMountain
     
-   
-   
+  
+    
+    
   - Hyrule Field Sky:
     - _Warp::Shrine::Mayachin
     - _Tower::HyruleField:
