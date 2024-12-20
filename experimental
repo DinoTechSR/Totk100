@@ -705,9 +705,158 @@ _route:
     - _Shrine::Sitsum
     - _Enemy<Moragia>
     - _Chasm::DeathMountain
-    
+    - _Korok::EC27
+    - _Location::ShadowHamletRuins:
+       hide-icon-on-map: true
+    - _Well::ShadowHamletRuins
+    - _Korok::UM27
+    - _Tower::UlriMountain
   
-    
+  - Eldin Sky:
+    - _Tablet::S11
+    - _SagesWill::Akkala
+    - _Shrine::Natak::Start
+    - _Dispenser::S20
+    - _Korok::UMS03
+    - _Shrine::Natak
+    - _Enemy::FluxConstruct::SA02
+    - _OldMap::Akkala
+    - _Chest<Zonaite Shin Guards>:
+       coord: [4465.135395332254,1500,2025.77287158101]
+    - _Shrine::Gikaku::Start:
+       comment: chuck to shrine area
+    - _Korok::UMS02:
+       movements:
+       - to: [4613.272095766028,1500,2284.591648145464]
+       - to: [4649.127037595696,1500,2129.7203633981253]
+    - _Dispenser::S12
+    - _Location::SkyMine:
+       coord: [4493.201003564242,1500,2105.5304791553676]
+       notes: Activating the terminal is necessary
+    - _Shrine::Gikaku
+    - _OldMap::Akkala_01
+    - _Enemy::FluxConstruct::SA01
+    - _OldMap::Akkala_02
+    - _Shrine::Mogisari 
+    - _Korok::UMS01
+  
+  - Akkala Labarynth:
+    - _Korok::UM01
+    - _Shrine::Igashuk
+    - _Chasm::LomeiLabyrinth
+    - _Cave::NorthAkkalaBeach01
+    - _Bubbulfrog::NorthAkkalaBeachCave
+    - _Enemy::Hinox::GA01
+    - Clip down to depths
+
+  - Eldin Depths/Fire Temple:
+    - _Lightroot::Kuhsagi
+    - _Enemy::FluxConstruct::DA01
+    - _Lightroot::Kawisar
+    - _Enemy::Talus::DA01
+    - _Lightroot::Ui-ihcoj
+    - _YigaSchema::HeadlightRaft
+    - _Lightroot::Sikutamak:
+       line-color: rgb(255,100,155)
+       notes: (OPTIONAL AND DIFFICULT) use Raft of killed yiga with ultrahand to fly to lightroot
+    - _Enemy::Hinox::DE01
+    - _Chest<Biggorons Sword>:
+       coord: [3259.129127029835,-500,3445.777145502873]
+    - _YigaSchema::AssaultCart
+    - _Lightroot::Tayamik
+    - _Enemy::Talus::DE01
+    - _Enemy::FluxConstruct::DE02
+    - _Lightroot::Kisomom
+    - _Enemy::Talus::DE03
+    - _Lightroot::Mustis
+    - _Npc<Yunobo>:
+          coord: [2299.867111988713,-500,2573.312509140368]
+    - _Dispenser::D00
+    - _SchemaStone::EldinMine
+    - _Lightroot::Cugukaram
+    - _Lightroot::Misisi
+    - Do first terminals of fire temple:
+       movements:
+       - to: [1517.058086269084,-500,2843.786303906865]
+       - to: [1289.9786877717752,-500,2864.8888780315697]
+       - to: [1355.0050146419362,-500,2564.5506276441497]
+       - to: [1250.9615544118296,-500,2746.66174961258]
+       - to: [1348.084413139246,-500,3051.5335319566993]
+    - _Enemy::Talus::DE02
+    - _Lightroot::Katoij
+    - _Enemy::Hinox::DE02
+    - _Lightroot::Katijabis
+    - _Chest<Zants Helmet>:
+       coord: [2145.1370668795653,-500,3184.774092701542]
+    - _Chest<Trousers of the Wild>:
+       coord: [1680.2758053064426,-500,3713.5408586798912]
+    - _Lightroot::Kayam
+    - _Enemy::Talus::DT01
+    - _YigaSchema::ChargedCharger
+    - _Enemy::Frox::DE01
+    - _Lightroot::Katenim
+    - _Enemy::FluxConstruct::DE01
+    - _Enemy::FluxConstruct::DH01
+    - _Lightroot::Ikatoayam
+    - _Lightroot::U-nazohso
+    - _Enemy::Frox::DH01
+    - _YigaSchema::WhirlingBasher
+    - _Lightroot::Muihcoro
+    - _Enemy::Frox::DH05
+    - _YigaSchema::SprinklerSystem
+    - _Lightroot::Aduon
+    - _Enemy::Frox::DH06
+    - _Enemy::FluxConstruct::DH03
+    - _Enemy::Hinox::DH02
+    - _Lightroot::Kawumoro
+    - _Enemy::Talus::GR01
+    - _Enemy::Talus::DR03
+    - _Enemy::Hinox::GH03
+    - _Location::CuhoCanyonMine:
+       hide-icon-on-map: true
+    - _Chest<Tunic of the Wind>:
+       coord: [-3781.81696556936,-500,1337.615347032356]
+    - _Lightroot::Kataki
+    - _Enemy::Frox::DH07
+    - _Lightroot::Koro-nui
+    - _YigaSchema::AllPurposeRaft
+    - _Enemy::Frox::DH08
+    - _Lightroot::Sasag
+    - _Lightroot::Kawakarut
+    - _YigaSchema::InstantScaffold
+    - _Enemy::Talus::DR04
+    - _Enemy::Frox::DC04
+    - _Lightroot::Sikurukam
+    - _Location::RhoamCanyonMine
+    - _YigaSchema::FlamethrowerBalloon
+    - _Enemy::Hinox::DH04
+    - _Enemy::Talus::DR01
+    - _Lightroot::Tikanur
+    - _Location::LindorCanyonMine
+    - _Lightroot::Nabahi-ikat
+    - _YigaSchema::BombBouquet
+    - _Lightroot::Kawakanis
+    - _YigaSchema::CargoCarrier
+    - _Enemy::FluxConstruct::DC01
+    - _Lightroot::Netamnet
+    - _YigaSchema::FishingTrawler
+    - _Enemy::Frox::DE04
+    - _Lightroot::Uoyoyuik
+    - _Lightroot::Yisuayam
+    - _Location::CliffBargainerStatue
+    - _Location::DrenaCanyonMine
+    - _Lightroot::Nikakik
+    - _Enemy::Talus::DT02
+    - _Enemy::Frox::DE02
+    - _YigaSchema::AerialCannon
+    - _Enemy::Gleeok::D01:
+       notes: take picture and get guts
+    - _Lightroot::Uukukis
+    - _Enemy::Hinox::DE03
+    - _Temple::Fire:
+       notes:
+      
+      
     
   - Hyrule Field Sky:
     - _Warp::Shrine::Mayachin
