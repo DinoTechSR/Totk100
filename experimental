@@ -74,7 +74,7 @@ _route:
        comment: Attempt to open
     - _Warp::ROA
     - Bomb jump up the ledge and run to/enter Recall
-    - _Shrine::Nachoyah:
+    - _Shrine::Nachoyah
     - _Warp::Shrine::Ukouh
     - _Chest<Large Zonaite>:
        coord: [588.93, 1579.45, -912.35]
