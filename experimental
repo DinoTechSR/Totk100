@@ -1708,35 +1708,31 @@ _route:
     - _Korok::PF42
     - _Cave::FinraWoodsExcavationSite00
     - _Bubbulfrog::FinraWoodsExcavationSite
-    - _Bubbulfrog::PagosWoodsExcavationSite
     - _Cave::PagosWoodsExcavationSite00
-    - _Cave::FloriaRiverUpstreamExcavation00
-    - _Korok::PF39
-    - _Korok::PF29
-    - _SideQuest::GoddessStatueofCourage:
-       coord: [875.25,150,-2367.25]
-       comment: farosh claw
-    - _Shrine::Jiukoum
-    - _Korok::SS72::Start
-    - _Korok::PF24
-    - _Korok::SS72::End
-    - _Enemy::Hinox::GF02
-    - _Korok::SS71
-    - _Enemy::Hinox::DF03
-    - _Cave::Tobio'sHollow00
-    - _Bubbulfrog::Tobio'sHollowCave
-    - _Shrine::Utojis:
-       comment: throw wing spear
-       notes: zuggle AFTER shrine to prevent overload drop early
-    - _Chest<Charged Shirt>:
-       coord: [1008,150,-2534]
-       notes: everything until the PF55 is performed out of bounds
-    - _Chest<Charged Trousers>:
-       coord: [954,150,-2710]
-    - _Enemy::Hinox::DF05
-    - _Chest<Charged Headdress:
-       coord: [996,150,-2828]
-    - _Bubbulfrog::FloriaRiverUpstreamExcavation
+    - _Bubbulfrog::PagosWoodsExcavationSite
+    - _Npc<Beedle>:
+       coord: [482,150,-3363]
+       notes: buy arrows and fireflies if you dont already have 10
+    - _SideAdv::TheFlutePlayersPlan:
+       coord: [532.5,150,-3395.5]
+       notes: Grab Well and Pony point whilst the girl walks to Pyper
+    - _Well::HighlandStable
+    - _Place::HighlandStable:
+       hide-icon-on-map: true
+    - _Item<Pony Point>:
+       coord: [519.5,150,-3444]
+    - _Npc<Penn>:
+       coord: [506,150,-3443.5]
+       comment: Start Well Singing Quest
+    - _Korok::PF73::Start
+    - _Korok::PF73::End
+    - _Well::HaranLakefront
+    - _SideAdv::AnEerieVoice:
+       comment: Inside Well
+    - _Shrine::Utsushok:
+       comment: Stick Clip
+    - _Korok::PF65
+    - _Korok::PF71
     - _Korok::PF55
     - _Cave::SarjonWoods00
     - _Korok::PF54
@@ -1798,8 +1794,7 @@ _route:
     - _Korok::RW24::End
     - _Korok::RW22
     - _Korok::RW20
-    - _Korok::RW16
-    - _Enemy::Hinox::GL05
+    - _Korok::RW17
     - _Addison::A63
     - _Korok::RW09
     - _Chasm::MedaMountain
@@ -1819,8 +1814,8 @@ _route:
     - _Korok::RW15
     - _Korok::RW12
     - _Korok::RW14
-    - _Korok::RW17
     - _Tower::RabellaWetlands
+ 
   - Laurelin Sky:
     - _Tablet::S06
     - _OldMap::Necluda_01
@@ -1832,6 +1827,95 @@ _route:
     - _Korok::RWS02
     - _Enemy::FluxConstruct::SF03
  
+  - Laurelin:
+    - _Korok::RW34
+    - Set Time to morning and take a Picture east
+    - _Shrine::Sifumim:
+       comment: Proving Grounds
+    - _Material<Logs x15>:
+       coord: [2974,150,-2958]
+       comment: abc to Lurelin
+    - _Place::LurelinVillage:
+       hide-icon-on-map: true
+    - _Well::LurelinVillage:
+       notes: enter well and kill boko
+    - _Enemy<Monster Forces>:
+       coord: [2964.5,150,-3383.5]
+    - _Enemy<Monster Forces>:
+       coord: [2974,150,-3444.5]
+    - _Enemy<Monster Forces>:
+       coord: [2918,150,-3508.5]
+    - _Enemy<Monster Forces>:
+       cord: [2848,150,-3450]
+    - _Enemy<Monster Forces>:
+       coord: [2906,150,-3418]
+    - _Location::KeyaPond:
+       hide-icon-on-map: true
+    - _Npc<Bolson>:
+       coord: [2885,150,-3423]
+       notes: Give him the 15 logs and the 20 Hylian rice
+    - _SideAdv::LurelinVillageRestorationProject
+    - _SideQuest::RattledRalera:
+       coord: [2845, 23, -3462]
+       notes: Rice, Porgy, Goron Spice. Use Cart claymore as wind
+    - _Npc<Village Leader>:
+       coord: [2860,150,-3528.75]
+       notes: Pick Water Rally Text to Start Resort Quest
+    - _Korok::RW29
+    - _Cave::MountDunsel01
+    - _Korok::RW28
+    - _Korok::RW27
+    - _Korok::RW40::Start
+    - _Korok::RW35
+    - _Korok::RW40::End
+    - _Tear::G06
+    - _Shrine::Bamitok:
+       notes: In cave. Stick Clip down to Shrine
+    - Set Time To Night
+    - _Cave::MountDunsel00
+    - _Enemy::Talus::GL03
+    - _Korok::RW21
+    - _Location::HanuPond:
+       hide-icon-on-map: true
+    - _Enemy::Hinox::GL05
+    - _Korok::RW16
+    - _Korok::RW10
+    - _Enemy::Hinox::GL04
+    - _Location::EbonMountain:
+       hide-icon-on-map: true
+    - _Korok::ML43
+    - _Korok::ML38
+    - _Korok::ML39::Start
+    - _Korok::ML39::End
+    - _Well::Zelda'sSecret
+    - _Chest<Well Worn Hairband>:
+       comment: in well
+    - Read Diary To start champions Tunic Quest
+    - _Korok::ML34
+    - _Korok::ML31
+    - _Well::HatenoVillageSouth
+    - _Shrine::Zanmik:
+       comment: Stick Clip
+    - _Npc<Manny>:
+       coord: [3374.75,150,-2130.25]
+       comment: Start Mannys Beloved
+    - _Npc<Ivee>:
+       coord: [3356,150,-2158.5]
+    - _SideQuest::Manny'sBeloved:
+       coord: [3374.75,150,-2130.25]
+       comment: 10 frogs
+    - _Npc<Lasli>: 
+       coord: [3356.75,150,-2140.5]
+    - _Npc<Cece>:
+       comment: get 8 shrooms
+       coord: [3357.75,150,-2123]
+
+    
+
+       
+       
+    
+                
     
 
     
