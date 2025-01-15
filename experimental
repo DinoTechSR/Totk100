@@ -369,6 +369,9 @@ _route:
     - _Addison::A39
     - _Korok::LL39
     - _Korok::SS10
+    - _Material<Hot Footed Frog x2>:
+       coord: [1080.700386280574,150,201.943692548326]
+       notes: is possible to do during ss14 but difficult. Dupe 10 for hateno quest
     - _Korok::SS14
     - _Cave::CrenelPeak00
     - _Bubbulfrog::CrenelPeakCave
@@ -448,7 +451,7 @@ _route:
     - _Location::SokkalaBridge
     - _Location::WestSokkalaBridge
     - _Korok::UZ15
-    - _Korok::UZ24
+    - _Korok::UZ23
     - Splash the Statue
     - _Shrine::Ihen-a
     - _Location::MiphaCourt:
@@ -466,7 +469,6 @@ _route:
     - _Chest<Climber's Bandana>:
        coord: [3707.8854975039903,150,492.6757924986996]
     - _Korok::UZ31
-    - _Korok::UZ30
     - _Tablet<Mipha Picture>:
        coord: [3764,150,432]
        notes: Quest will work with a picture taken any time between 12-2am. if you cant make it to here by 2 am from jahaito, then set campfire later
@@ -508,8 +510,6 @@ _route:
     - _Enemy::Talus::GZ03
     - _Enemy::Talus::DZ01
     - _Korok::UZ25
-    - _Korok::UZ27
-    - _Korok::UZ28
     - _Korok::UZ33
     - _Korok::UZ46
     - _Korok::UZ43
@@ -1869,6 +1869,7 @@ _route:
     - _Korok::RW35
     - _Korok::RW40::End
     - _Tear::G06
+    - _Addison::A73
     - _Shrine::Bamitok:
        notes: In cave. Stick Clip down to Shrine
     - Set Time To Night
@@ -1896,26 +1897,408 @@ _route:
     - _Well::HatenoVillageSouth
     - _Shrine::Zanmik:
        comment: Stick Clip
-    - _Npc<Manny>:
-       coord: [3374.75,150,-2130.25]
-       comment: Start Mannys Beloved
-    - _Npc<Ivee>:
-       coord: [3356,150,-2158.5]
-    - _SideQuest::Manny'sBeloved:
-       coord: [3374.75,150,-2130.25]
-       comment: 10 frogs
-    - _Npc<Lasli>: 
-       coord: [3356.75,150,-2140.5]
-    - _Npc<Cece>:
-       comment: get 8 shrooms
-       coord: [3357.75,150,-2123]
-
+    - _Npc<Sophie + Cece>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Sophie -> Cece -> Cece -> Sophie
+       notes: 10 Hot Footed Frogs
+    - _Npc<Leop>:
+       coord: [3325.66, 225.66, -2153.96]
+       comment: Shroom
+    - _Npc<Tamana>:
+       coord: [3342.79, 218.85, -2083.32]
+       comment: Shroom, forget bird eggs
+    - _Npc<Medda>:
+       coord: [3380.11, 225.72, -2104.59]
+       comment: Shroom
+    - _Item<Reede's Diary>:
+       coord: [3415.07, 238.58, -2085.43]
+       notes: Ascend from beneath
+    - _Npc<Worten>:
+       coord: [3465.08, 232.75, -2119.37]
+       comment: Shroom
+    - _Npc<Bottled Message>:
+       coord: [3660, 300, -2005]
+       comment: A Letter to Koyin
+       notes: UH bottle to Koyin on shore
+    - _Npc<Dantz>:
+       coord: [3623.63, 283.43, -2078.87]
+       comment: Shroom, Dantz's Prized Cows
+       notes: 3 Acorns
+    - _Npc<Koyin>:
+       coord: [3633.99, 283.81, -2100.48]
+       comment: Shroom, get Cheese
+    - _Npc<Tokk>:
+       coord: [3620, 313.36, -2110]
+       comment: Shroom
+    - _Npc<Clavia>:
+       coord: [3443, 236.83, -2091.19]
+       comment: Reede's Secret
+    - _Npc<Reede>:
+       coord: [3428, 1311, -2083]
+       comment: A New Signature Food
+    - _Item<Sneak up on Cece>:
+       coord: [3385, 131, -2163]
+       comment: Cece's Secret
+       notes: Wait in shack, sneak in through top
+    - _Npc<Cece + Sophie>:
+       coord: [3359.61, 225.54, -2137.69]
+       comment: Cece -> Sophie -> Sophie (do election) -> Cece (talk again after)
+    - _Npc<Manny + Ivee>:
+       coord: [3373.55, 225.6, -2131.88]
+       comment: Manny -> Ivee -> Manny
+       notes: Are across from each other
+    - _Npc<Nack>:
+       coord: [3308.63, 216.33, -2109.58]
+       comment: Homegrown in Hateno
+       notes: Dazzlefruit Stal enemies
+    - _Korok::ML14
+    - _Korok::ML15
+    - _Korok::ML13
+    - _Chest<Barbarian Leg Wraps>:
+       coord: [4051.908654078701,150,-1884.3689284616485]
+    - _Bubbulfrog::WalnotMountainCave
+    - _Korok::ML20
+    - _Cave::WalnotMountain01
+    - _Shrine::Jikais
+    - _Korok::ML11
+    - _Korok::ML10
+    - _Korok::ML01:
+       comment: slide
+    - _Korok::UZ69
+    - _Korok::UZ64
+    - _Korok::UZ70
+    - _Korok::UZ73::Start
+    - _Cave::LanayruRoadEast01
+    - _Korok::UZ73::End
+    - _Addison::A70
+    - _Korok::UZ72
+    - _Korok::SS34
+    - _Korok::UZ63
+    - _Korok::UZ65
+    - _Korok::UZ66
+    - _Korok::UZ62
+    - _Shrine::Apogek
+    - _Korok::UZ71::Start
+    - _Korok::UZ60:
+       movements: 
+       - to: [4185.968539953679,150,-447.25019872191933]
+       - to: [4230.7401387925875,150,-310.7985365137738]
+    - _Bubbulfrog::HoronLagoonCave
+    - _Cave::HoronLagoon00
+    - _Korok::UZ59
+    - _Tear::G08
+    - _Korok::UZ61
+    - _Korok::UZ67
+    - _Korok::UZ68
+    - _Addison::A78
+    - _Korok::UZ71::End
+    - _Korok::ML02::Trail
+    - _Cave::TarmPoint00
+    - Escort Sasan with 2 hover stones and rockets
+    - _Shrine::Yomizuk
+    - _Bubbulfrog::TarmPointCave
+    - _Korok::ML03
+    - _Addison::A79
+    - _Enemy::Talus::GL01
+    - _Korok::ML04
+    - _Korok::ML05
+    - _Korok::ML06
+    - _SideQuest::GoddessStatueofWisdom:
+       coord: [3908.7473912460755,150,-1326.6012922441232]
+       comment: Naydra claw
+    - _Tower::MountLanayru
+ 
+  - Mount Lanayru Sky:
+    - _Korok::MLS03: 
+       notes: Slide from island
+       movements:
+       - to: [4166.712803723622,1500,-1064.4321151042514]
+       - to: [4746.794369892192,1500,-1157.1164366760868]
+    - _Korok::MLS01
+    - _Shrine::Mayanas::Start
+    - _OldMap::ValorIsland
+    - _Dispenser::S07
+    - _Shrine::Mayanas
+    - _Npc<Steward Construct>:
+       coord: [4499.317302923384,1500,-811.0713397577774]
+       notes: talk to construct to warp to the top
+    - _Chest<Glide Suit>
+    - _Dispenser::S24
+    - _Shrine::Sihajog
+    - _Item<Zakusu Start>:
+       coord: [3984.7173151395928,1500,-1560.4310959648546]
+       comment: slide
+  - Lanayru Road:
+    - _Shrine::Zakusu:
+       comment: PROVING GROUNDS
+       notes: Waste Battery and shield surf to end
+    - _Korok::ML08::Start 
+    - _Korok::ML08::End
+    - _Chasm::NaydraSnowfield
+    - _Bubbulfrog::LanayruRoadEastCave
+    - _Shrine::Jogou
+    - _Cave::LanayruRoadEast00
+    - _Location::LanayruRoadEastGate
+    - _Korok::ML07
+    - _Korok::ML12
+    - _Korok::ML09
+    - _Korok::SS58
+    - _Cave::RobredDropoff00
+    - _Bubbulfrog::RobredDropoffCave:
+       comment: clip to frog
+    - _Chest<Barbarian Helm>:
+       coord: [2539.880447476735,150,-1550.2761867765375]
+    - _Bubbulfrog::LanayruRoadSouthCave:
+       comment: clip to frog
+    - _Shrine::O-ogim::Start
+    - _Cave::LanayruRoadSouth00
+    - _Korok::SS48::Trail
+    - _Korok::SS47
+    - _Shrine::O-ogim
+    - _Korok::SS46
+    - _Korok::SS37
+    - _Korok::SS29
+    - _Korok::SS28::Start
+    - _Korok::SS28::End
+    - _Korok::SS22
+    - ToD Morning
+    - _Shrine::Kurakat
+    - _Addison::A60
+    - _Location::LanayruRoadWestGate
+    - _Korok::SS31
+    - _Korok::SS43
+    - _Korok::SS40:
+       notes: shoot on the way to clip spot
+    - _Bubbulfrog::KakarikoVillageCave
+    - _Cave::KakarikoVillage00
+    - _Item<Book>:
+       coord: [1935.9766910174767,150,-1062.257842267396]
+       comment: read
+    - _Dispenser::G02
+    - _Tablet<Ring Ruins>:
+       coord: [1842.8120243344874,150,-1093.2751676371417]
+       notes: take picture of ring ruins from dispenser
+    - _Korok::SS42
+    - _Tablet<Calamity Mural>:
+       coord: [1773.5421065490746,150,-975.0521035016627]
+       comment: upstairs. for lesson quest
+    - _Korok::SS41
+    - _Shrine::Makasura
+    - _Item<Book>:
+       coord: [1637.04398630573,150,-1144.1393673125149]
+       comment: read
+       notes: Kill monsters and talk to guys at entrance for codgers quarrel
+    - _Korok::SS45
+    - _Addison::A51
+    - _Enemy::Talus::GK03
+    - _Bubbulfrog::ByroadtoLanayruWetlands
+    - _Cave::ByroadtoLanayruWetlands01
+    - _Korok::SS33
+    - _Korok::SS36
+    - _Npc<Sleeping man>:
+       coord: [1727.092484027432,150,-901.0912129760154]
+       notes: wake with big hearty truffle. not needed for any other quest
+    - _Korok::SS38
+    - _SideQuest::CodgersQuarrel:
+       coord: [1788.5860928548045,150,-1030.5914677608644]
+    - _Place::KakarikoVillage:
+       hide-icon-on-map: true
+    - _SideQuest::OutoftheInn:
+       coord: [1830.3398523681144,150,-1019.3057978819761]
+    - _Well::KakarikoVillage
+    - _Chasm::EastHill
+    - _Korok::SS27::Start
+    - _Korok::SS27::End
+    - _Korok::SS23
+    - _Korok::SS24
+    - _Well::RikokaHills
+    - _Korok::SS25
+    - _Well::LanayruWetlands
+    - _Korok::SS19
+    - _Well::ZauzIsland:
+       notes: jump into well for stalnox
+    - _Enemy::Hinox::GZ04
+    - _Korok::SS16::Start
+    - _Well::GopongaVillageRuins
+    - _Korok::SS18
+    - _Korok::SS16::End
+    - _Shrine::Jonsau
+    - _Addison::A49
+    - _Chasm::LanayruWetlands
+    - _Well::MoorGarrisonRuins
+    - _Location::MoorGarrisonRuins:
+       hide-icon-on-map: true
+    - _Korok::SS15
+    - _Cave::CrenelPeak01
+    - _Korok::SS12:
+       comment: face south
+    - _Korok::SS09
+    - _Korok::SS13::Start
+    - _Korok::SS13::End
+    - _Addison::A58
+    - _Korok::UZ44::Start
+    - _Korok::UZ44::End
+    - _Cave::BonéPondEast02
+    - _Bubbulfrog::BonéPondEastCave
+    - _Shrine::Maoikes
+    - _Korok::UZ47
+    - _Cave::BonéPondEast03
+    - _Cave::BonéPondEast00
+    - _Korok::UZ51
+    - _Cave::BonéPondEast01
+    - _Korok::UZ52
+    - _Korok::UZ56
+    - _Korok::UZ45
+    - _Location::InogoBridge
+    - _Korok::UZ36
+    - _Korok::UZ32
+    - _Korok::UZ18::Start
+    - _Korok::UZ18::End
+    - _Cave::UplandZoranaMountainside00
+    - _Korok::UZ26:
+       movements:
+       - to: [2567.0635357749434,150,468.38916859059555]
+       - to: [2581.074062412212,150,487.89910519971454]
+    - _Bubbulfrog::UplandZoranaMountainsideCave
+    - _Cave::UplandZoranaMountainside01
+    - _Cave::UplandZoranaByroad00
+    - _Cave::RalisChannel01
+    - _Shrine::Joniu::Start
+    - _Bubbulfrog::RalisChannel
+    - _Shrine::Joniu
+    - _Chest<CLimbing Boots>:
+       coord: [2849.206773232063,150,544.8348994177159]
+    - _Bubbulfrog::UplandZoranaByroad
+    - _Bubbulfrog::UplandZoranaSummitCave
+    - _Cave::UplandZoranaSummit00
+    - _Cave::UplandZoranaByroad01
+    - _Korok::UZ38:
+       movements: 
+       - to: [3074.2631659317176,150,178.8440716722871]
+       - to: [2954.7983097460365,150,256.72617761659967]
+    - _Cave::RalisChannel00
+    - _Korok::UZ40
+    - _Korok::UZ50::Start
+    - _Korok::UZ42
+    - _Korok::UZ41::Trail
+    - _Well::TabahlWoods:
+       notes: get turing trail
+    - _Cave::TabahlWoods01
+    - _Cave::TabahlWoods00
+    - _Bubbulfrog::TabahlWoodsCave
+    - _Cave::TabahlWoods02
+    - _Korok::UZ50::End
+    - _Korok::UZ53:
+       notes: ride wing into water (difficult) or use hover stone
+    - _Korok::UZ55
+    - _Location::OrenBridge
+    - _Cave::OrenBridge00
+    - _Bubbulfrog::OrenBridgeCave
+    - _Bubbulfrog::Luto'sChannel
+    - _Korok::UZ58
+    - _Korok::UZ57
+    - _Cave::Luto'sChannel00
+    - _Korok::UZ54
+    - _Addison::A68
+    - _Korok::UZ39
+    - _Korok::UZ35
+    - _Korok::UZ34
+    - _Cave::UnderZora'sDomain00
+    - _Chasm::UnderZorasDomain
+    - _Bubbulfrog::CaveUnderZora'sDomain
+    - _Chest<Vah Ruta Helm>:
+       coord: [3336.8864195216793,150,545.6135983779977]
+    - _Korok::UZ24
+    - _Shrine::Mogawak
+    - _SideQuest::AWifeWaftedAway:
+       coord: [3286.5582724563083,150,428.33693769650927]
+    - Buy Arrows From Shop
+    - _Korok::UZ30
+    - _Cave::ReservoirLakefrontrn00
+    - _Bubbulfrog::ReservoirLakefrontCavern
+    - _Item<Zora Fabric>:
+       notes: abc blue stones to zora
+       coord: [3596.3188067287083,150,350.63667680503386]
+    - _Bubbulfrog::AncientZoraWaterworks
+    - _Enemy::Talus::SZ05
+    - _Chest<Zora Greaces:
+       coord: [3588.312791507413,150,245.5831719867001]
+    - _Enemy::Hinox::GZ02
+    - _Korok::UZ37::Start
+    - _Korok::UZ37::End
+    - _Korok::UZ28
+    - _Korok::UZ27
+    - _Korok::UZ05
+    - _Location::EastSokkalaBridge:
+       hide-icon-on-map: true
+    - _Enemy::Talus::GZ01
+    - _Korok::UZ03
+    - _Korok::UM37
+    - _Cave::ConstructionSite01
+    - _Bubbulfrog::ConstructionSiteCave
+    - _Cave::ConstructionSite00
+    - _Well::ConstructionSite
+    - _Dispenser::G01:
+       notes: activate
+    - _Cave::TarreyTownTunnel00
+    - _Bubbulfrog::TarreyTownTunnel
+    - _Npc<Hudson & Rhonson + Hudson>:
+       coord: [3939.151132435072,150,1593.026625016742]
+    - _Npc<Mattison>:
+       cpord: [3941.6530121917276,150,1578.2691088636902]
+    - _Korok::UM33
+    - _Korok::UM34
+    - _Tablet<Bell>: 
+       coord: [3965.545302135388,150,1612.45515786654]
+       comment: for stable quest
+    - _Npc<Mattison + Old People>:
+       coord: [3975.5252827270106,150,1611.7271330597837]
+       notes: third option
+    - shoot Railcar with a Cannon/Bomb
+    - _Npc<Mattison>:
+       coord: [3934.2622184182583,150,1613.4529921953217]
+       notes: use Puffshroom
+    - _Npc<racing Trio>:
+       coord: [3754.436652200722,150,1693.9815280984326]
+    - _Npc<Mattison + Hudson>:
+       coord: [3763.693607300347,150,1616.6921638392305]
+       notes: 10 Sundelions
+    - _Warp::Location<Tarrey Town>:
+       coord: [3986.0697389719044,150,1612.1885968513416]
+    - _Npc<Rhondson>:
+       coord: [3941.7864672791093,150,1595.9303163437426]
+       notes: buy the hosue
+    - _SideAdv::AMonsterousCollectionI:
+       coord: [3960.8007534296885,150,1645.7056674362384]
+       notes: Bokoblin, Horroblin, Battle Talus, Frox, King Gleeok      
+    - _SideAdv::AMonsterousCollectionII
+    - _SideAdv::AMonsterousCollectionIII
+    - _SideAdv::AMonsterousCollectionIV
+    - _SideAdv::AMonsterousCollectionV
+    - _Addison::A76
+    - _Enemy::Talus::GA03:
+       comment: slide
+    - _Chasm::EastAkkalaPlains
+    - _Shrine::Sinatanika:
+       comment: STICK
+    - _Korok::UM25::Start
+    - _Addison::A66
+    - _Korok::UM24
+    - _Tablet<Octorok Lake>:
+       coord: [4178.4345997386645,150,2531.9704449574924]
+       notes: Campfire until rain. wait for lake to fill up to take picture
+    - _Korok::UM25::End
+    - _Korok::UM23
+    - _Korok::UM17::Start
+    - _Addison::A75
+    - _Korok::UM19
+    - _Korok::UM17::End
+    - _Enemy<Monster Forces>:
+       coord: [4895.075220806728,150,2777.8787224117787]
+    - _Enemy::Talus::GA01
+    - _Cave::NorthAkkalaBeach00
+    - _Shrine::Rasiwak
     
-
-       
-       
-    
-                
     
 
     
