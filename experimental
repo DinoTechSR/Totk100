@@ -1301,137 +1301,279 @@ _route:
     - _Npc<Traysi>:
        coord: [-3258.50, 224.96, 1762.50]
        comment: Potential Princess Sightings!
+    - _Korok::LB09
+    - _Shrine::Oromuwak
+    - _Chest<Frostbite Shirt>:
+       coord: [-3041,150,1535]
+    - _Bubbulfrog::BrightcapCave
     - _Cave::Brightcap00
     - _SideQuest::CaveMushroomsThatGlow:
-       comment: 10 brightcaps
-    - _Bubbulfrog::BrightcapCave
-    - _Shrine::Oromuwak:
-       notes: above cave
-    - _Korok::LB09
-    - _Korok::LB14
-    - _Korok::LB11
+       coord: [-2990,150,1654]
+    - _Korok::LB06
+    - _Korok::LB05
+    - _SideQuest::OpentheDoor:
+       coord: [-2684,150,1672]
+    - _Cave::TabanthaHills00
+    - _Bubbulfrog::TabanthaHillsCave
+    - _Korok::RP48
+    - _Korok::PS29
+    - _Tear::G01
+    - _Korok::PS30
+    - _Well::TabanthaVillageRuins
+    - _Korok::LB04
+    - _Korok::PS25
+    - _Cave::KopeekiDrifts00
+    - _Bubbulfrog::KopeekiDriftsCave
+    - _Shrine::Nouda:
+       comment: PROVING GROUNDS
+    - _Korok::PS22
+    - _Korok::PS27
+    - _SideQuest::SupplyEyeingFliers:
+       coord: [-2174.5,150,2029.5]
+    - _Korok::PS28
+    - _Korok::PS24
+    - _Enemy<Monster Forces>:
+       coord: [-1810,150,2224]
+    - _Addison::A18
+    - _Korok::PS19
+    - _Korok::PS14::Start
+    - _Korok::PS14::End
+    - _Addison::A19
+    - _Korok::PS15
+    - _Npc<Goddess Statue>:
+       coord: [-1075,150,2691]
+    - _Shrine::Mayausiy
+    - _Korok::LB01
+    - _Korok::PS18
+    - _Korok::PS20
+    - _Well::RowanPlain
+    - _Shrine::Kiuyoyou:
+       comment: CLIP
+    - _Enemy::Hinox::GR01
+    - _Location::ForgottenTemple
+    - _Korok::PS26
+    - _Korok::LB07:
+       comment: slide
+    - _Bubbulfrog::TanagarCanyonEastCave
+    - _Enemy::Hinox::GR03
+    - _Cave::TanagarCanyonEast00
+    - _Well::MarittaExchangeRuins
+    - _Korok::LB18
+    - _Cave::Lindor'sBrow00
+    - _Shrine::Taki-ihaban
+    - _Bubbulfrog::Lindor'sBrowCave
+    - _Korok::LB15
+    - _Tower::Lindor'sBrow
+  
+  - Lindors Brow Sky:
+    - Activate panel:
+       coord: [-2229,1500,927]
+       level: Sky 
+    - _Chest<Glide Suit>:
+       coord: [-2326,1500,774]
+    - _Dispenser::S21
+    - _Shrine::Taunhiy:
+       comment: CLIP
+    - _Korok::LBS04
+  
+  - Hyrule Ridge:
+    - _Enemy::Hinox::GR06
+    - _Korok::LB29
+    - _Cave::ThundraPlateau00
+    - _Chest<Mask of Awakening>:
+       coord: [-2272,150,836]
+    - _Bubbulfrog::ThundraPlateauCave
+    - _Korok::LB23
+    - _Korok::LB21
+    - _Korok::LB19
+    - _Shrine::Runakit
+    - _Korok::LB16:
+       movements:
+       - to: [-2579,150,1251]
+       - to: [-2657,150,1284]
+    - _Enemy::Hinox::GR04
+    - _Chasm::HyruleRidge
+    - _Korok::LB26
+    - _Addison::A10
+    - _Korok::LB20:
+       comment: Slide
+    - _Addison::A04
     - _Korok::LB13
     - _Enemy::Talus::DR02
-    - _Korok::LB20
-    - _Korok::LB22
+    - _Korok::LB11
+    - _Korok::LB14
+    - _Enemy::Talus::GR02
     - _Korok::LB30::Start
-    - _Korok::LB30::End
     - _Korok::LB31
+    - _Korok::LB30::End
     - _Shrine::Iun-orok:
-       notes: clip at the top of the grate
+       comment: CLIP AT GRATE
     - _Bubbulfrog::TanagarCanyonWestCave
+    - _Cave::TanagarCanyonWest00
+    - _Location::UltraBallHaulCheckIn:
+       hide-icon-on-map: true
+    - _Location::TabanthaGreatBridge:
+       hide-icon-on-map: true
+    - _Korok::LB39:
+       comment: 45 slide
+    - _Enemy::Talus::GR04
     - _Korok::LB33
     - _Korok::LB36
     - _Korok::LB40
     - _Korok::LB37
-    - _Korok::LB46::1
-    - _Korok::LB46::2
-    - _Korok::LB46::3
-    - _Korok::LB46::4
-    - Make time to sunrise and take picture of ancient ruins:
-       comment: picture for Tabantha Bridge Stable
+    - Set Time To Morning
     - _Korok::LB45
-    - _Cave::AncientColumns00:
-       notes: clip through the slate
-    - _Chest<Tunic Of Awakening>:
-       coord: [-3535.25, 348.06, 410.16]
-    - _Korok::LB46::5
-    - _Korok::LB46::6
+    - Take picture at LB46 Start
+    - _Korok::LB46::Trail
     - _Enemy::Gleeok::G05
-    - _Korok::LB46::7
-    - _Korok::LB46::8
-    - _Korok::LB46::9
-    - _Korok::LB46
+    - _Chest<Tunic of Awakening>:
+       coord: [-3533,150,412]
+    - _Bubbulfrog::AncientColumnsCave
+    - _Cave::AncientColumns00
     - _Addison::A06
-    - _Korok::LB39
-    - _Location::UltraBallHaulCheckIn:
-       hide-icon-on-map: true
-    - _Location::TabanthaGreatBridge
-    - _Korok::LB38
+    - _Korok::LB38:
+       comment: Slide
     - _Korok::LB34
     - _Shrine::Makurukis:
-       notes: Overload Clip
-    - _Korok::LB41::Trail
-    - _Well::TabanthaBridgeStable
-    - Grab a pony point
+       comment: CLIP
     - _SideQuest::APictureforTabanthaBridgeStable:
-       coord: [-2927, 35, 547]
+       coord: [-2930,150,550]
+       comment: Ancient Columns
     - _Npc<Penn>:
-       coord: [-2910.76, 274.97, 522.58]
-       comment: Start goat quest
+       coord: [-2887,150,526]
     - _Korok::LB53::Start
-    - _Korok::LB44
-    - _SideAdv::WhiteGoatsGoneMissing:
-       coord: [-2548.82, 256.06, 406.33]
+    - _Korok::LB48
+    - _Korok::LB50
+    - _Korok::LB49:
+       movements:
+       - to: [-2918.25,150,285]
+       - to: [-2915.25,150,241.5]
+    - _Korok::LB54::Start:
+       comment: PeepoFriendship
+       notes: Stick backpackers to each other. ReABC the LB48 Backpacker and then talk to korok
+    - _Korok::LB54::End
+    - _Tear::G05
+    - _Korok::LB60
+    - _korok::
+    - _Korok::GH12::Start:
+       comment: slide
+    - _Korok::GH21
+    - _Korok::GH23
+    - _Korok::GH22
+    - _Korok::GH25
+    - _Chest<Phantom Armor>:
+       coord: [-2968,150,-982]
+       notes: 45 slide to -2968,-982 and Clip
+    - _Bubbulfrog::TamioRiverDownstreamCave
+    - _Cave::TamioRiverDownstream00
+    - _Korok::GH12::End:
+       comment: 45 slide
+    - _Korok::GH08:
+       movements:
+       - to: [-2838,150,-436.5]
+       - to: [-2921,150,-481]
+    - _Enemy::Talus::GC03
+    - _Korok::HF06
+    - _Addison::A12
+    - _Korok::LB61
+    - _Enemy::Talus::GR06
     - _Korok::LB53::End
-    - _Addison::A11
+    - -Addison::A11
+    - _SideAdv::WhiteGoatsGoneMissing:
+       coord: [-2545,150,408]
+       comment: inspect bottle
+    - _Korok::LB44
     - _Korok::LB47
     - _Korok::LB43::Start
     - _Korok::LB43::End
-    - Grab Acorns here for Milk Quest
-    - Make time night
-    - _Korok::LB55
-    - _Korok::LB59
-    - _Location::JeddoBridge
-    - _Korok::LB58
-    - _Korok::LB57
-    - _Korok::LB51
+    - _Material<Acorn x3>:
+       coord: [-2052.73, 243.86, 506.76]
+       comment: for hateno milk quest
+    - _Addison::A22
     - _Korok::LB42
-    - _Well::NewSerenneStable
-    - Take Picture at the top of the stable
+    - Pocket Rocket up high, get onto a wing, and take a picture of the rauru Geoglyph
+    - _Npc<Horse>:
+       coord: [-1288.5,150,738]
+       notes: Grab spotted horse for no taming animation
+       comment: ride to stable
+    - _SideQuest::HorseDrawnDreams:
+       coord: [-1328.25,150,721.5]
+    - Grab Pony Point
     - _SideQuest::APictureforNewSerenneStable:
-       comment: geoglyph
-    - _Npc<Penn>:
-       coord: [-1349.11, 191.08, 732.73]
-       comment: Start beast and princess quest
+       coord: [-1363,150,734]
+       comment: Geoglyph Picture
+    - _Well::NewSerenneStable
     - _Shrine::Sinakawak:
-       notes: Stick Clip
-    - _Npc::Impa:
-       coord: [-1313.14, 201.35, 823.5]
+       comment: CLIP
+    - _Npc<Impa>:
+       coord: [-1311,150,827]
+       notes: use a rocket to launch the balloon
     - _Tear::G00
     - _Enemy::Talus::GR03
     - _Addison::A21
-    - _Location::RoyalAncientLabRuins:
-       hide-icon-on-map: false
+    - _Location::RoyalAncientLabRuins
     - _Korok::LB25
     - _Cave::NorthHyrulePlain01
     - _Bubbulfrog::NorthHyrulePlainCave
-    - _Chest<ClimbingGear>:
-       coord: [-1212,6,770]
-    - _Korok::LB35
+    - _Chest<CLimbing Gear>:
+       coord: [-1214,150,773.75]
     - _Cave::NorthHyrulePlain00
+    - _Korok::LB35
+    - _Korok::LL23
+    - _Chasm::HyruleCastleMoatWest
+    - _Korok::LL34
     - _Korok::LL33
-    - _Enemy::Hinox::GC01
     - _Location::CarokBridge:
        hide-icon-on-map: true
+    - _Enemy::Hinox::GC01
     - _Well::CarokBridge
     - _Shrine::Ishodag
     - _Korok::LL40
     - _Well::MountGustaf
     - _Addison::A31
     - _Korok::LL44
-    - Set time to night
-    - _Korok::LL47:
-       notes: Shoot on the way to LL48
+    - _Korok::LL47
     - _Korok::LL48
-    - _Korok::LL45
-    - _Korok::LB52
-    - _Korok::LB56
-    - _Enemy::Hinox::GC03
+    - set time to night
     - _Korok::LL52
+    - _Enemy::Hinox::GC03
+    - _Korok::LL45
+    - -Korok::LB52
+    - _Korok::LB56:
+       notes: Hit on the way to LB51
+    - _Korok::LB51
+    - _Korok::LB55:
+       comment: Slide
+    - _Korok::LB59
+    - _Location::JeddoBridge:
+       hide-icon-on-map: true
+    - _Korok::LB58
+    - _Korok::LB57
     - _Korok::LL51
     - _Cave::SageTemple00
     - _Bubbulfrog::SageTempleCave
-    - _Korok::LL61
-    - _Korok::LL59
-    - _Chest<Fierce Diety Boots>:
-       coord: [-1108.18, 140.9, -546.13]
-    - _Bubbulfrog::AncientTreeStumpCave:
-       notes: clip down
+    - _Korok::LL55:
+       movements:
+       - to: [-1112.25,150,-420.5]
+       - to: [-1146.5,150,-381.5]
+    - _Location::AncientTreeStump:
+       hide-icon-on-map: true
     - _Cave::AncientTreeStump00
-    - LL55 Start:
-       coord: [-1110.4346300113511,6,-420.4847727758024]
-    - _Korok::LL55
+    - _Bubbulfrog::AncientTreeStumpCave
+    - _Chest<Fierce Deity Boots>: 
+       coord: [-1108.5,150,-544.5]
+    - _Korok::LL59:
+       movements: 
+       - to: [-1101.5,150,-542.5]
+       - to: [-1085.5,150,-518]
+         away: true
+    - _Korok::LL61
+    
+ 
+
+
+
+
     - _Location::AquameBridge
     - _Korok::HF25 
     - _Korok::HF10::Start
