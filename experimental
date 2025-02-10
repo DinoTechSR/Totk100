@@ -92,135 +92,150 @@ _route:
        coord: [453.76, 1579.32, -636.17]
   
   - Rocket Chest:
-    - Dive down to the surface below
-    - _Chest<Rockets x3>:
-       coord: [891.57, 118.09, -541.65]
-       comment: Dupe to appriximately 150
-       line-color: rgb(100,0,0)
-    - _Item<Splash Fruit>:
+    - for each 3 boost praf, swing the weapon
+    - Wing and dive down to surface east
+    - _Material<Splash Fruit x3>:
        coord: [884.24, 116.18, -543.12]
-       comment: For water fruit and for Gerudo Canyon quest
-    - Set up Infinite Pocket rocket here:
-       notes: after setup has been completed, zuggle the shield and perform QDS 
+    - _Chest<Rocket x3>:
+       coord: [891.57, 118.09, -541.65]
+       notes: dupe 20
+    - Zuggle-Dupe 4 full durability shields, filling inventory:
+       notes: Inventory sorting considers durability. Use the last shield for PR (least dura). This will help keep at least one at full durability.
+    - 3-boost PRAF southwest to memory:
+       notes: The number of PRAF boosts are recommendations. You can use more if you need, but you will need to dupe more shields at some point.
+    - _Location::FloretSandbar:
+       hide-icon-on-map: true
+    - _Material<Egg x2>:
+       coord: [688.0625,150,-1291.0625]
+       comment: In the tree
+    - _Tear::G03
+    - _Chest<Ancient Blade>:
+       coord: [267, 114.5, -1651.5]
+       comment: Buried in ground
+       notes: 3. boost PRAF
+    - _Chest<Cannon>:
+       coord: [238.57, 113.53, -1648.46]
+       comment: Buried under the water, use a wing to reach
+    - _Location::EastPostRuins:
+       hide-icon-on-map: true
+       notes: Some locations (like this one) are already marked by visiting another objective, so the map location icon is hidden.
+    - _Chest<Ruby>:
+       coord: [-59.51, 114.65, -1567.05]
+       comment: In small puddle
+       notes: 3 boost PRAF
+    - get tree branch to 1 durability
   
   - Farosh:
-    - _Warp::Shrine::Nachoyah
-    - _Korok::GSI15
-    - _Item<Large Zonai Charge>: 
-       coord: [501.28, 1893.86, -1613.06]
-    - _Chest<Zonaite>:
-       coord: [431.96, 1554.57, -1807.92]
-       comment: In chest here
-    - _Item<Fairy>:
-       coord: [909.74, 6999.88, -2122.8]
-    - _Korok::PFS01
+    - _Warp::Shrine::Nachoyah:
+       comment: WARP
+    - wst MNF and get 9 dzuggles 
+    - Board Slide (DSSS) to Island:
+       coord: [452,1500,-1705]
+    - _Location::WestNecludaSkyArchipelago:
+       hide-icon-on-map: true
+       level: Sky
     - _Shrine::En-oma::Start
-    - _Enemy::FluxConstruct::SC04
-    - _Item<Farosh Horn>:
-       coord: [-100, 800, -2100]
-       comment: Slide
-       notes: Dupe more than 25 for speed fod later
+    - _Enemy::FluxConstruct::SC04:
+       notes: 3 boost PRAF
+    - _Material<Farosh Horn>:
+       coord: [-1100, 300, -2440]
+       comment: Stand on horn and attack, immediately pick up
+  
+  - Banana Merchant:
+    - Wing + ASF to ruin near Digdogg Bridge
+    - _Location::GerudoCanyonPass:
+       hide-icon-on-map: true
+    - Enter inside ruin through gap on north side
+    - Run to the right and ascend up to sticks
+    - _Chest<Steering Stick x3>:
+       coord: [-1681.62, 138.94, -2067.24]
+    - Dupe 50 Carts, 200 Rockets, 400 Sticks, 250 Cannons, 20 Stabilizers
+    - Ascend out
+    - PR to / stand on scaffolding, climb to Swift Violet
+    - _Material<Swift Violet>:
+       coord: [-1811.55, 181.05, -1876.59]
+    - Release the climb and PR towards crates
+    - _Equipment::Weapon<Torch>:
+       coord: [-1691.66, 111.33, -1778.91]
+    - _Material<Wood x2>:
+       coord: [-1689.33, 111.08, -1775.14]
+    - _Material<Flint x4>:
+       coord: [-1687.65, 111.2, -1773.9]
+    - Slide (DSSS) to Outskirt Stable, enter well
+    - _Place::OutskirtStable:
+       hide-icon-on-map: true
+    - _Well::OutskirtStable:
+       comment: Enter well
+    - _Material<Brightcap>
+    - _Material<Glowing Cave Fish x3>
+    - _Material<Fairy>
+    - Ascend out
+    - Dupe 30 Farosh Horns, 10 Fairies, 5 Bird Eggs, 4 Swift Violet
+    - _Shop<Beedle>:
+       coord: [-1428.95, 137.75, -1282.91]
+       comment: Sell 20 Horns, buy all arrows
+    - _Npc<Embry>:
+       coord: [-1442.38, 138.24, -1267.06]
+       comment: Register as a Pony Points member
+    - Cook 1 Farosh Horn, 4 Swift Violets, eat the speed food
+    - Make new PR shield and use all 12 boosts to get to Yiga Merchant
+    - _Location::GreatPlateau:
+       hide-icon-on-map: true
+    - _Shop<Yiga Merchant>:
+       coord: [-979.26, 248.55, -2018.14]
+       comment: Buy 40 Bananas (FABS)
   
   - Paraglider:
-    - _Tear::G09
-    - _Korok::PF35
-    - _Korok::GC21::Start
-    - _Korok::PF30:
-       notes: Make Rock Weapon 
-    - _Item<Swift Violet>:
-       notes: Dupe at least 5 for speed food
-       coord: [-1370.8635212206937,6,-2461.834276146543]
-    - _Korok::GC21::End
-    - Grab Stakes from Chest
-    - _Item<Steering Stick>:
-       coord: [-1681.62, 138.94, -2067.24]
-       notes: dupe 250 on the way to outskirt stable
-    - _Item<Flint and Wood>:
-       coord: [-1687.65, 111.2, -1773.9]
-    - _Korok::HF35
-    - _Well::OutskirtStable:
-       notes: Grab Brightcaps, Fairies, and Glowing Cave Fish in the well
-    - _Npc<Beedle>:
-       notes: Sell 25 farosh horns, and buy arrows
-       coord: [-1446.9046398272794,6,-1262.0839380556472]
-    - Cook A dubious/rock hard food FIRST (can use a zonai charge or a zonaite) and cook the speed food SECOND
-    - _Item<Spicy Pepper>:
-       coord: [-977.53, 249.68, -2025.78]
-    - _Npc<Yiga Banana Salesman>:
-       coord: [-997.4155908680978,6,-2009.3801497429158]  
-       notes: Eat Speedfood and Buy as many bananas as you can
-    - _Item<Cannon>:
-       coord: [238.57, 113.53, -1648.46]
-       notes: Dupe to 250 on the slide to Lookout Landing
-    - _Item<Ancient Blade>:
-       coord: [267, 114.5, -1651.5]
+    - Slide to Lookout Landing
+    - _Place::LookoutLanding:
+       hide-icon-on-map: true
     - _Npc<Josha>:
        coord: [-238.97, 132.32, 147.92]
-       comment: Start Hyrule Castle questline
-    - _MainQuest::TotheKingdomofHyrule
-    - PRAF to Hylian Shield area:
-       comment: 12 Rocket boosts / full shield
-       notes: you may need to land in the middle to redirect
-    - _Location::Docks:
+       comment: To the Kingdom of Hyrule
+    - Slide to the Observation Room of lower castle
+    - _Location::HyruleCastleTownRuins:
        hide-icon-on-map: true
-    - _Equipment::Shield<Hylian Shield>:
-       coord: [-154, 141.78, 1157.37]
-       comment: Dupe the shield, keep one at full durability
-    - _Korok::LL01
-    - _Location::EastPassage:
-        coord: [-79, 120, 1120]
-        comment: Move slightly inside the passage
-    - _Korok::LL18
-    - _Location::DiningHall
-    - _Korok::LL24
     - _Location::ObservationRoom:
        hide-icon-on-map: true
-    - _Cave::RoyalHiddenPassage01:
-       comment: Enter by lifting up grate
+    - _Cave::RoyalHiddenPassage01
     - _Chest<Diamond>:
        coord: [-253.72, 193.21, 761.67]
-    - _Korok::LL26
-    - _Korok::LL21
+    - Ascend out
     - _Location::FirstGatehouse:
        hide-icon-on-map: true
     - _Npc<Hoz>:
        coord: [-334.93, 238.96, 845.94]
-       comment: Watch Zelda cutscene
-    - _Chest<Ruby>:
-       coord: [-522.39, 134.69, 312.49]
-       comment: Pick up in field
-    - Fuse a ruby to random weapon and keep until Bazaar
-    - _KeyItem::Paraglider:
-       comment: Return to LL and progress quest until tower is active
+       comment: Crisis at Hyrule Castle
+    - Wing + ASF to Docks
+    - _Location::Docks:
+       hide-icon-on-map: true
+    - _Equipment::Shield<Hylian Shield>:
+       coord: [-154, 141.78, 1157.37]
+    - Ascend out
     - _Tower::LookoutLanding
     - _Location::CentralHyruleSkyArchipelago:
        hide-icon-on-map: true
-       comment: Dive back down
     - _Npc<Purah>:
-       coord: [-248.72, 126.36, 148.83]
-       comment: Start Regional Phenomena
-    - _Item<Egg:
-       coord: [-284.76, 132.61, 173.7]
-    - _Item<Hyrule Bass>:
-       coord: [-272.07, 121.99, 160.06]
-    - _Npc<Josha>:
-       movements:
-        - to: [-254, 25, 166]
-        - to: [-254.72, 126.36, 144.83]
-       comment: Start Camera quest
+       coord: [-253.42, 132.01, 156]
+       comment: Regional Phenomena
     - _Npc<Scorpis>:
        coord: [-258.32, 127.4, 100.7]
        comment: Open the Emergency Shelter
-    - _Location::EmergencyShelter<Emergency Shelter>:
-       comment: Perform BID (duping amts in readme document)
+    - perform BID setup
+    - Go to Store and Dupe 510 Large Zonaite, 160 Diamonds, 200 Fairies, 185 Rubies, 120 Flint, 100 Fire Fruit, 50 Ancient Blades, 60 Wood, 10 Brightcaps, 10 Splash Fruit
     - _Shop::GeneralStore:
-       comment: Sell 175 diamonds, buy arrows
+       comment: MSD 20 diamonds and Sell 160 (Leave 20 on the ground and pick up after selling), buy arrows and apples
     - _Shop::ArmorShop:
-       comment: Buy Hylian set
-    - _Chest<Hylian Hood>
-    - _Chest<Hylian Tunic>
-    - _Chest<Hylian Trousers>
-  
+       comment: Buy Hylian Set [3]
+    - _Npc<Robbie>:
+       coord: [-247.84, 124.64, 136.6]
+       comment: Camera Work in the Depths
+    - Clip down into cave with statue
+    - _Npc<Horned Statue>:
+       coord: [-233.36, 110.21, 157.28]
+       comment: A Deal With the Statue
+       notes: Trade 1 heart for 1 stamina
+ 
   - Central Depths:
     - Stick clip down to the Depths
     - _Item<Large Poe>:
@@ -1346,11 +1361,8 @@ _route:
     - _Korok::LB01
     - _Korok::PS18
     - _Korok::PS20
-    - _Well::RowanPlain
-    - _Shrine::Kiuyoyou:
-       comment: CLIP
-    - _Enemy::Hinox::GR01
-    - _Location::ForgottenTemple
+    - _Location::ForgottenTemple:
+       hide-icon-on-map: true
     - _Korok::PS26
     - _Korok::LB07:
        comment: slide
@@ -1491,37 +1503,77 @@ _route:
        comment: for hateno milk quest
     - _Addison::A22
     - _Korok::LB42
-    - Pocket Rocket up high, get onto a wing, and take a picture of the rauru Geoglyph
-    - _Npc<Horse>:
-       coord: [-1288.5,150,738]
-       notes: Grab spotted horse for no taming animation
-       comment: ride to stable
-    - _SideQuest::HorseDrawnDreams:
-       coord: [-1328.25,150,721.5]
-    - Grab Pony Point
-    - _SideQuest::APictureforNewSerenneStable:
-       coord: [-1363,150,734]
-       comment: Geoglyph Picture
+    - _Korok::LB35
+    - _Cave::NorthHyrulePlain00
+    - _Chest<Climbing Gear>:
+       coord: [-1213,150,772]
+    - _Bubbulfrog::NorthHyrulePlainCave
+    - _Cave::NorthHyrulePlain01
     - _Well::NewSerenneStable
-    - _Shrine::Sinakawak:
-       comment: CLIP
+    - _Npc<Penn>:
+       coord: [-1349.11, 191.08, 732.73]
+       comment: The Beast and the Princess
+    - _Npc<Sprinn>:
+       coord: [-1354.77, 191.56, 730.96]
+       comment: A Picture for New Serenne Stable
+    - Buy arrows AND SUNSET FIREFLIES
+    - _Shrine::Sinakawak
     - _Npc<Impa>:
-       coord: [-1311,150,827]
-       notes: use a rocket to launch the balloon
+       coord: [-1313.14, 201.35, 823.5]
+       comment: Impa and the Geoglyphs
+    - _Korok::LB25
+    - _Location::RoyalAncientLabRuins
     - _Tear::G00
     - _Enemy::Talus::GR03
     - _Addison::A21
-    - _Location::RoyalAncientLabRuins
-    - _Korok::LB25
-    - _Cave::NorthHyrulePlain01
-    - _Bubbulfrog::NorthHyrulePlainCave
-    - _Chest<CLimbing Gear>:
-       coord: [-1214,150,773.75]
-    - _Cave::NorthHyrulePlain00
-    - _Korok::LB35
-    - _Korok::LL23
-    - _Chasm::HyruleCastleMoatWest
+    - _Korok::TR17::Start
+    - _Korok::TR17::End
+    - _Enemy::Hinox::GR05
+    - _Well::ElmaKnolls
+    - Clip down to shrine
+    - _Shrine::Tenmaten
+    - _Korok::TR16
+    - _Korok::TR15
+    - _Chasm::ElmaKnolls
+    - _Enemy::Hinox::GR02
+    - _Korok::LB03
+    - _Cave::YigaClanMarittaBranch00
+    - Defeat Yigas, drop down to chamber on right
+    - _Bubbulfrog::YigaClanMarittaBranch
+    - Ascend up twice to meet clothes person
+    - _Chest::YigaTights
+    - Ascend out
+    - _Korok::LB02::Start
+    - _Korok::LB02::End
+    - _Well::RowanPlain
+    - _Enemy::Hinox::GR01
+    - _Shrine::Kiuyoyou
+    - _Addison::A20
+    - _Well::IrchPlain
+    - _Korok::LB08
+    - _Korok::LB17
+    - _Korok::LL08:
+       movements:
+       - to: [-1034.59, 167.12, 1083.4]
+       - to: [-891.5,150,1037]
+    - _Korok::LL05::Start
+    - _Korok::LL05::End
+    - _Korok::TR19
+    - _Korok::LL12
+    - _Korok::LL19
+    - _Location::CastleTownPrison
+    - _Enemy::Talus::GC01
+    - _Location::MoatBridge
+    - _Korok::LL29
+    - _Korok::LL28
+    - _Location::WaterReservoir
+    - _Korok::LL35
     - _Korok::LL34
+    - _Chasm::HyruleCastleMoatWest 
+    - _Korok::LL23:
+       movements:
+       - to: [-947.69, 160.69, 681.73]
+       - to: [-942,150,815]
     - _Korok::LL33
     - _Location::CarokBridge:
        hide-icon-on-map: true
@@ -1568,14 +1620,10 @@ _route:
        - to: [-1085.5,150,-518]
          away: true
     - _Korok::LL61
-    
- 
-
-
-
-
-    - _Location::AquameBridge
-    - _Korok::HF25 
+    - _Location::AquameBridge:
+       comment: Slide
+    - _Korok::HF25
+    - _Addison::A24
     - _Korok::HF10::Start
     - _Korok::HF26
     - _Location::ManhalaBridge:
@@ -1618,12 +1666,12 @@ _route:
     - _Korok::HF30
     - _Enemy::Hinox::GC06:
        notes: Grab Soldiers bow here if you havent already
-    - _Korok::HF29::Trail:
+    - _Korok::HF29::Trail
     - Set time to night
     - _Location::SanidinParkRuins:
        hide-icon-on-map: true
     - _Korok::HF14:
-       Comment: SLIDE TO HERE
+       Comment: Slide
     - Ride Stalhorse to OutskirtStable
     - _Korok::HF24:
        notes: make sure you have 5 golden apples for quest in korok forest
@@ -1714,10 +1762,10 @@ _route:
     - _Korok::HF68::Start
     - _Korok::HF67
     - _Korok::HF68::End
+    - _Korok::HF62
     - _Korok::HF63
     - _Chasm::GreatPlateauWest
     - Drop second eye
-    - _Korok::HF62
     - _Korok::HF72
     - _Cave::RiveroftheDeadWaterfall00
     - _Bubbulfrog::RiveroftheDeadWaterfallCave
@@ -2170,6 +2218,7 @@ _route:
     - _Item<Zakusu Start>:
        coord: [3984.7173151395928,1500,-1560.4310959648546]
        comment: slide
+  
   - Lanayru Road:
     - _Shrine::Zakusu:
        comment: PROVING GROUNDS
@@ -2440,7 +2489,159 @@ _route:
     - _Enemy::Talus::GA01
     - _Cave::NorthAkkalaBeach00
     - _Shrine::Rasiwak
-    
+    - _Korok::UM06
+    - _Korok::UM10
+    - _Fairy::MalanyaSpring
+    - _Korok::UM07::Start
+    - _Korok::UM07::End
+    - _Korok::UM08::Trail
+    - _Korok::UM11
+    - _Enemy<Yiga>
+    - _Chest<Travel Medallion Prototype>:
+       coord: [4523.45, 352.99, 3163.68]
+    - _Chest::YigaArmor
+    - _Korok::UM12
+    - _Addison::A74
+    - _Korok::UM16
+    - _Shrine::Jochi-iu
+    - _Npc<Loone>:
+       coord: [4339.78, 247.76, 2815.68]
+       comment: Eldin's Colossal Fossil
+    - _Korok::UM18
+    - _Place::EastAkkalaStable:
+       hide-icon-on-map: true
+    - _Well::EastAkkalaStable
+    - Eat or sell all food except for FABS Bananas
+    - Cook a Ruby (for Well Chef)
+    - Cook Monster Extract, Goron Spice, Hylian Rice (for Hateno)
+    - Cook Porgy, Goron Spice, Hylian Rice (for Lurelin)
+    - _SideQuest::APictureforEastAkkalaStable:
+       coord: [4232.77, 231.81, 2743.5]
+    - _SideQuest::TheGatheringPirates:
+       coord: [4234.08, 231.92, 2738.65]
+    - _SideQuest::StrongestintheWorld:
+       coord: [4201.68, 232.8, 2766.36]
+       notes: drop rocket weapon and fuse a lynel part to a throaway weapon
+    - _Korok::UM21::Start
+    - _Korok::UM21::End
+    - _Korok::UM20
+    - _Location::SpringofPower:
+       hide-icon-on-map: true
+    - _SideQuest::GoddessStatueofPower:
+       coord: [3760.55, 111.16, 2679.37]
+       notes: Offer Dinraal Claw
+    - _Korok::UM22
+    - _Enemy::Talus::GA02
+    - _Korok::UM09::Start
+    - _Korok::UM05
+    - _Korok::UM15:
+       movements: 
+       - to: [3575.36, 215.1, 3046.11]
+       - to: [3543,150,3022.5]
+       comment: Slide
+    - _Korok::UM09::End
+    - _Korok::UM14
+    - _Korok::UM13
+    - _Korok::UM03:
+       movements:
+       - to: [3152.96, 241.97, 3430.86]
+       - to: [3186.3125,150,3459.125]
+    - _Chasm::SkullLake
+    - _Korok::UM04
+    - _Cave::SkullLake00
+    - _Chest::FierceDeityMask
+    - _Enemy::Hinox::GA02
+    - _Bubbulfrog::SkullLakeCave
+    - _Shrine::Kamatukis
+    - _Addison::A65
+    - _Korok::UM02
+    - _Korok::EC03::Start
+    - _Korok::EC01
+    - _Korok::EC03::End
+    - _Shrine::Kimayat
+    - _Addison::A54
+    - _Location::GutCheckRock:
+       hide-icon-on-map: true
+    - _Korok::EC04
+    - _Enemy::Talus::GE02
+    - _Shrine::Sibajitak
+    - _Korok::EC05
+    - _Enemy::Talus::GE01
+    - _Korok::EC02
+    - _Location::EldinGreatSkeleton:
+       hide-icon-on-map: true
+    - _Npc<Loone>:
+       coord: [1666.36, 206.58, 3649.95]
+       comment: Eldin's Colossal Fossil
+       notes: Break rocks below skeleton, place eye in the north slot
+    - _Korok::TR01
+    - _Shrine::Mayak:
+       comment: CLIP
+    - _Korok::TR02::Start
+    - _Enemy::Talus::GT01
+    - _Korok::TR02::End
+    - _Korok::TR03::Start
+    - _Korok::TR03::End
+    - _Cave::DeplianBadlands00
+    - _Bubbulfrog::DeplianBadlandsCave
+    - _Shrine::Minetak
+    - _Korok::TR04
+    - _Enemy::Hinox::GE01
+    - _Addison::A45
+    - _Korok::TR13::Start
+    - _Tear::G10
+    - _Korok::TR12
+    - _Korok::TR13::End
+    - _Shrine::Sikukuu
+    - _Addison::A36
+    - _Location::ThyphloRuins:
+       hide-icon-on-map: true
+    - _Korok::TR10::Start
+    - _Korok::TR10::End
+    - _Npc<Kazul>:
+       coord: [417.21, 280.49, 3163.17]
+       comment: Investigate the Thyphlo Ruins
+       notes: Clip into room, read the mural to autocomplete 5 quests
+    - Cook dubious or rock hard food
+    - _Korok::TR08  
+    - _Korok::TR11
+    - _Chasm::DrenanHighlands
+    - _Shrine::Kikakin:
+       comment: CLIP
+    - _Korok::TR14
+    - _Enemy::Talus::GT02
+    - _Addison::A28
+    - _Korok::TR07
+    - _Korok::TR09::Start
+    - _Korok::TR09::End
+    - _Korok::TR06:
+       movements: 
+       - to: [60.64, 295.65, 3113.63]
+    - _Korok::TR05    
+    - _Tower::ThyphloRuins
+ 
+  - Thyphlo Ruins Sky:
+    - _Location::NorthHyruleSkyArchipelago:
+       hide-icon-on-map: true
+    - _Enemy::FluxConstruct::SE01
+    - _Shrine::Mayam::Start
+    - _Shrine::Mayam
+    - _Dispenser::S09
+    - _Korok::TRS01
+    - _OldMap::Eldin_01<Old Map>
+    - _Location::BraveryIsland:
+       coord: [229.56, 2089.86, 2069.67]
+       comment: Activate the terminal
+    - _Npc<Steward Construct>:
+       coord: [231.18, 858.7, 2014.17]
+       comment: Repeat dive trial for Glide piece
+    - _Dispenser::S15
+    - _Shrine::Simosiwak
+    - _Item<Korok Starting Block>:
+       coord: [283.88, 857.72, 1962.05]
+    - _Korok::TRS02
+    - _Shrine::Ninjis:
+       notes: On the surface
     
 
     
