@@ -339,7 +339,7 @@ _route:
     - _Equipment::Bow<Savage Lynel Bow>
     - _Chest::MajorasMask
   
-  - Hyrule Field/Eldin Canyon:
+  - To Eldin Canyon:
     - _Warp::Tower::LookoutLanding
     - _Shop::CrystalRefinery01
     - _Npc<Robbie>:
@@ -350,7 +350,6 @@ _route:
     - _Cave::PasseriGreenbelt00
     - _Bubbulfrog::PasseriGreenbeltCave
     - _Korok::LL43::Trail
-    - _Korok::LL42
     - _Korok::LL41
     - _Addison::A30
     - _Location::CentralSquare:
@@ -869,9 +868,46 @@ _route:
     - _Lightroot::Uukukis
     - _Enemy::Hinox::DE03
     - _Temple::Fire:
-       notes:
+       notes: Beat Ghoma, get the sage will, and reload the autosave in fire temple. Fuse a ghoma rock to a weapon, do map zuggle inputs, but after dropping dont unpause, but reload the save at the sages will.
       
-      
+  - Hyrule Field:
+    - _Warp::Tower::LookoutLanding
+    - _Shop::CrystalRefinery01
+    - _Npc::Robbie:
+       comment: Camera Work in the Depths
+    - _Location::MabeVillageRuins:
+       hide-icon-on-map: true
+    - _Well::MabeVillageRuins
+    - _Cave::RanchRuins01
+    - _Material<Raw Meat>:
+       coord: [6.9, 132.5, -172.55]
+    - _Material<Giant Brightbloom Seed x2>:
+       coord: [28.15, 135.81, -159.14]
+    - _Bubbulfrog::RanchRuinsCave
+    - _Cave::RanchRuins00
+    - _Korok::LL54
+    - _Korok::LL56
+    - _Material<Spicy Pepper> x3:
+       coord: [-215.26, 131.72, -379.46]
+       notes: Under rock, needed for Gerudo Canyon quest
+    - _Shrine::Jiosin
+    - _Korok::HF07
+    - _Enemy<Monster Forces>:
+       coord: [-441.12, 156.17, -624.38]
+       comment: Bring Peace to Hyrule Field!
+    - _Location::HyruleGarrisonRuins:
+       hide-icon-on-map: true
+    - _Korok::LL60
+    - _Shrine::Susuyai
+    - _Korok::HF22::Start
+    - _Korok::HF13
+    - _Korok::HF22::End
+    - _Well::AquameLake
+    - _Location::ExchangeRuins:
+       hide-icon-on-map: true
+    - _Shrine::Mayachin
+    - _Addison::A32
+    - _Tower::HyruleField  
     
   - Hyrule Field Sky:
     - _Warp::Shrine::Mayachin
@@ -1005,6 +1041,8 @@ _route:
        coord: [-3272, 5, -2582]
     - ABC the Sphere and Bring it back to gerudo town
     - _Korok::GC15
+    - _Location::NorthernIcehouse:
+       hide-icon-on-map: true
     - _SideQuest::TheIcelessIcehouse:
        coord: [-3754, 5, -2277]
        notes: use spare ice fruit and 1 fire fruit to fit it. make sure you still have at least 3 ice fruit for the shrine quest later on. 
@@ -1066,13 +1104,10 @@ _route:
     - _Enemy::Molduga::SG01
     - _Korok::GC24
     - _Enemy::Gleeok::S02
-    - _Korok::GC14::1
-    - _Korok::GC14::2
-    - _Korok::GC14::3
-    - _Korok::GC14::4
-    - _Korok::GC14::5
-    - _Korok::GC14:  
+    - _Korok::GC14::Trail:
        comment: high to low
+    - _Location::WestGerudoRuins:
+       hide-icon-on-map: true
     - _Korok::GC17
     - _Korok::GC10
     - _Korok::GC04
@@ -1136,6 +1171,8 @@ _route:
     - _Korok::LB28
     - _Korok::LB24
     - _Korok::LB27
+    - _Location::GisaCrater:
+       hide-icon-on-map: true
     - _Cave::GisaCrater01
     - _Bubbulfrog::GisaCraterCave
     - _Shrine::Ikatak::Start
@@ -1149,6 +1186,8 @@ _route:
     - _Korok::RP61
     - _Korok::RP58
     - _Korok::RP59
+    - _Location::DragonBoneMire:
+       hide-icon-on-map: true
     - _Korok::RP57:
        notes: flower trail under the neck of the skeleton
     - _Korok::RP54
@@ -1248,18 +1287,21 @@ _route:
     - _Korok::RP27
     - _Korok::RP26::Start
     - _Korok::RP26::End
+    - _Location::SelmiesSpot
+    - _Korok::RP20
+    - _Cave::HebraMountainsNorthwest00
+    - _Bubbulfrog::HebraMountainsNorthwestCave
     - _Shrine::Rutafu-um::Start
     - _Shrine::Rutafu-um
-    - _Bubbulfrog::HebraMountainsNorthwestCave
-    - _Cave::HebraMountainsNorthwest00
-    - _Korok::RP20
     - _Korok::RP25
     - _Cave::EastBironSnowshelf00
     - _Korok::RP18
     - _Korok::RP11
     - _Korok::RP09
-    - _Shrine::Eutoum
-    
+    - _Location::GoflamsSecretHotSpring:
+       hide-icon-on-map: true
+    - _Shrine::Eutoum:
+       comment: PROVING GROUNDS 
 
   - Wind Temple:
     - _Location::RisingIslandChain:
@@ -1278,7 +1320,7 @@ _route:
     - _Temple::Wind:
        notes: vertical cart slide to the top of the wind temple. if you are not going to vertical cart slide, use the near reverse of this route as it is faster
  
-  - To Faron:
+  - Forgotten Temple:
     - _Warp::Npc<Tulin>:
        coord: [-3594.84, 318.50, 1805.23]
        comment: Tulin of Rito Village
@@ -1435,8 +1477,10 @@ _route:
     - _Korok::LB37
     - Set Time To Morning
     - _Korok::LB45
-    - Take picture at LB46 Start
+    - Take picture of the collums at LB46 Start
     - _Korok::LB46::Trail
+    - _Location::AncientColumns:
+       hide-icon-on-map: true
     - _Enemy::Gleeok::G05
     - _Chest<Tunic of Awakening>:
        coord: [-3533,150,412]
@@ -1602,6 +1646,8 @@ _route:
     - _Korok::LB58
     - _Korok::LB57
     - _Korok::LL51
+    - _Location::SageTempleRuins:
+       hide-icon-on-map: true
     - _Cave::SageTemple00
     - _Bubbulfrog::SageTempleCave
     - _Korok::LL55:
@@ -1724,29 +1770,38 @@ _route:
     - _Korok::HF42:
        movements: 
         - to: [-615,6,-1521]
-          away: true   
-    - HF39 Start: 
-       coord: [-656,6,-1384]
-    - _Korok::HF39
+          away: true    
+    - _Korok::HF39:
+       movements:
+       - to: [-656,6,-1384]
+       - to: [-593,150,-1411]
+    - _Location::GatepostTownRuins
     - _Korok::HF32
     - _Korok::HF28
     - _Korok::HF31
-    - _Enemy::Talus::GC06
+    - _Location::KolomoGarrisonRuins
+    - _Enemy::Talus::GC06:
+       comment: Slide
     - _Korok::HF23
     - _Bubbulfrog::WhistlingHillCave
     - _Cave::WhistlingHill00
     - _Shrine::Teniten
     - _Korok::HF43::Start
-    - _Korok::HF43::End
+    - _Korok::HF43::End:
+       comment: Slide
     - _Shrine::Kamizun:
        comment: proving grounds
     - _Chasm::ForestofTime
     - _Korok::HF45
+    - _Location::OutpostRuins:
+       hide-icon-on-map: true
     - _Korok::HF50::Start
     - _Korok::HF50::End
     - _Korok::HF58::Start
     - _Korok::HF54
     - _Korok::HF65
+    - _Location::TempleofTimeRuins:
+       hide-icon-on-map: true
     - _Chest<Nostalgic Fabric>: 
        coord: [-810.5,6,-1966]
     - _Korok::HF64:
@@ -1790,7 +1845,6 @@ _route:
     - _Korok::PF10
     - _Korok::PF12::End
     - _Korok::PF09
-    - _Addison::A41
     - _Korok::PF05
     - _Korok::PF04
     - _Npc<Food Guy>:
@@ -1810,13 +1864,16 @@ _route:
     - _SideAdv::GourmetsGoneMissing:
         coord: [387, 6,-1045]
     - _Shrine::Tajikats
+    - _Korok::HF21
     - _Korok::PF14::Start  
     - _Location::OwlanBridge
     - _Korok::PF06
+    - _Addison::A41
     - _Korok::PF02
     - _Enemy::Hinox::GC05
     - _Korok::PF03::Start:
-       notes: Peepo Friendhip (thx ana)
+       notes: Peepo Friendship
+    - _Location::HorwellBridge
     - _Addison::A40
     - _Korok::SS39
     - _Location::EagusBridge
@@ -1832,6 +1889,8 @@ _route:
     - _Korok::PF14::End
     - _Korok::PF16
     - _Korok::PF18
+    - _Location::DeyaVillageRuins:
+       hide-icon-on-map: true
     - _Well::DeyaVillageRuinsNorth
     - _Well::DeyaVillageRuins
     - _Korok::PF20
@@ -1876,6 +1935,8 @@ _route:
     - _Korok::HF70
     - _Korok::PF34::Start
     - _Korok::HF75
+    - _Location::BridgeofHylia:
+       hide-icon-on-map: true
     - _Korok::PF31
     - _Korok::PF34::End
     - _Chasm::LakeHylia
@@ -1922,7 +1983,9 @@ _route:
     - _Shrine::Utsushok:
        comment: Stick Clip
     - _Korok::PF65
-    - _Korok::PF71
+    - _Korok::PF71  
+    - _Location::SarjonBridge:
+       hide-icon-on-map: true
     - _Korok::PF55
     - _Cave::SarjonWoods00
     - _Korok::PF54
@@ -1950,6 +2013,8 @@ _route:
     - _Cave::RodaiLakefrontTunnel00
     - _Korok::PF52
     - _Korok::PF64
+    - _Location::FloriaBridge:
+       hide-icon-on-map: true
     - Take a Picture of the the waterfall when its sunny:
        notes: use noon time to reset
     - _Korok::PF70
@@ -2039,8 +2104,6 @@ _route:
        cord: [2848,150,-3450]
     - _Enemy<Monster Forces>:
        coord: [2906,150,-3418]
-    - _Location::KeyaPond:
-       hide-icon-on-map: true
     - _Npc<Bolson>:
        coord: [2885,150,-3423]
        notes: Give him the 15 logs and the 20 Hylian rice
@@ -2084,6 +2147,8 @@ _route:
     - Read Diary To start champions Tunic Quest
     - _Korok::ML34
     - _Korok::ML31
+    - _Place::HatenoVillage:
+       hide-icon-on-map: true
     - _Well::HatenoVillageSouth
     - _Shrine::Zanmik:
        comment: Stick Clip
@@ -2642,6 +2707,166 @@ _route:
     - _Korok::TRS02
     - _Shrine::Ninjis:
        notes: On the surface
+    
+  - Phantom Ganon:
+    - _Warp::Shrine::Jiosin
+    - _Chasm::HyruleField
+    - _Korok::LL50
+    - _Npc<Spot>:
+       coord: [-337.56, 128.59, -53.05]
+       comment: Spotting Spot!
+       notes: Ride back to Lookout Landing
+    - _Npc<Lester>:
+       coord: [-252.2, 124.6, 52.12]
+       comment: Spotting Spot!
+    - _Npc<Mubs>:
+       coord: [-208.31, 124.75, 81.6]
+       comment: Village Attacked by Pirates
+       notes: Send to Lurelin
+    - _Npc<Purah>:
+       coord: [-233.5, 131.94, 153.43]
+       comment: Crisis at Hyrule Castle, Regional Phenomenon
+    - _Korok::LL42
+    - Clip into Royal Hidden Passage
+    - _Chest::SoldiersGreaves
+    - _Enemy::Hinox::GC02
+    - _Chest::SoldiersHelm
+    - _Chest::SoldiersArmor
+    - _Bubbulfrog::RoyalHiddenPassage
+    - _Korok::LL30
+    - _Korok::LL31
+    - _Place::HyruleCastle:
+       hide-icon-on-map: true
+    - _Location::SecondGatehouse:
+       hide-icon-on-map: true
+    - _Enemy<Monster Forces>:
+       coord: [-162.25, 390.86, 887.86]
+       comment: Bokoblins
+    - _Korok::LL14
+    - _Korok::LL11
+    - _Location::Library:
+       hide-icon-on-map: true
+    - _Enemy<Monster Forces>:
+       coord: [-158.76, 330.27, 1076.15]
+       comment: Hinox + Chuchus
+    - _Enemy::Hinox::CC01
+    - UH bookshelf below the upwards path
+    - _Location::KingsStudy:
+       hide-icon-on-map: true
+    - _Chest::RoyalGuardBoots:
+       notes: Easy to forget
+    - _Enemy<Monster Forces>:
+       coord: [-165.68, 334.75, 1146.34]
+       comment: Gibdos
+    - _Shrine::Serutabomac
+    - _Korok::LL07
+    - _Korok::LL06
+    - _Location::PrincessZeldasRoom:
+       hide-icon-on-map: true
+    - _Enemy<Monster Forces>:
+       coord: [-318.3, 409.43, 992.64]
+       comment: Fire Lizalfos
+    - _Chest::RoyalGuardCap
+    - _Location::PrincessZeldasStudy:
+       notes: Forgettable
+    - _Korok::LL10
+    - _Korok::LL09
+    - _Enemy<Monster Forces>:
+       coord: [-367.43, 352.62, 989.59]
+       comment: Moblin + Ice Keese
+    - _Korok::LL17
+    - _Enemy<Monster Forces>:
+       coord: [-313.52, 351.05, 932.62]
+       comment: Shock Like Likes
+    - _Korok::LL13
+    - _Location::Sanctum:
+       hide-icon-on-map: true
+    - _Enemy<Phantom Ganon>:
+       coord: [-254, 444.19, 1075.87]
+       comment: Crisis at Hyrule Castle
+    - _Item<Heart Container>
+ 
+  - Korok Forest:
+    - Light the two torches on fire
+    - _Chest::ChampionsLeathers:
+       comment: A New Champion's Tunic
+    - _Item<Korok Starting Block>:
+       coord: [-302.86, 195.56, 1123.4]
+       line-color: lightgreen
+    - _Korok::LL02
+    - _Korok::LL03
+    - _Addison::A29
+    - _Korok::LL01
+    - clip out of bounds to east passage
+    - _Chasm::HyruleCastle:
+       notes: should be marked on the way to east passage. if not, grab when you get the combatures lightroot
+    - _Location::EastPassage:
+       coord: [-80, 400, 1120]
+       notes: Move slightly inside to mark passage  
+    - _Korok::LL18
+    - _Location::DiningHall
+    - _Korok::LL24
+    - _Korok::LL22
+    - _Korok::LL21
+    - _Korok::LL25
+    - _Korok::LL20
+    - _Korok::LL16::Trail
+    - _Korok::LL04:
+       notes: Inside a crack in the wall
+    - _Location::Lockup:
+       coord: [-438.33, 132.24, 1115.69]
+       notes: Move slightly behind the Korok, missable
+    - Destroy the black rocks
+    - _Chest<Royal Hyrulean Fabric>:
+       coord: [-489.72, 126.14, 1009.97]
+    - ABC clip out, rocket to Guards Chamber, marking West Passage along the way
+    - _Location::WestPassage:
+       coord: [-450, 120, 900]
+    - _Location::GuardsChamber:
+       hide-icon-on-map: true
+    - _Chest::RoyalGuardUniform
+    - _Cave::RoyalHiddenPassage02
+    - _Korok::LL26
+    - _Well::HyruleCastleTownRuins:
+       comment: Slide
+    - _Location::HyruleCathedral
+    - _Korok::LL32:
+       notes: possible to hit on the way to the well with a cannon arrow
+    - _Korok::LL27
+    - _Location::BoneyardBridge
+    - _Chasm::HyruleCastleMoatEast:
+       notes: use ABC to clip down to chasm
+    - _Korok::LL15
+    - _Location::HyruleForestPark:
+       hide-icon-on-map: true
+    - _Shrine::Sepapa
+    - _Location::HelmheadBridge
+    - _Korok::TR20
+    - _Well::RauruSettlementRuins
+    - _Location::RauruSettlementRuins:
+       hide-icon-on-map: true
+    - _Chest<Bomb Flower x5>:
+       comment: for Dak and Prissen
+       notes: climb on the back right of the pillar and mash a. this is tricky, so use a hover stone if you want to be safe
+    - _SideQuest::TheTreasureHunters:
+       coord: [619,150,1280]
+    - _Korok::TR18
+    - _Cave::RauruHillside00
+    - _Bubbulfrog::RauruHillsideCave
+    - _Korok::EC46
+    - _Location::MilitaryTrainingCamp:
+       hide-icon-on-map: true
+    - _Korok::EC44
+    - _Korok::EC41
+    - _Location::LostWoods:
+       coord: [799,150,1826]
+       notes: try t o brush the wall to get the lost woods location. if not, use map to get on route
+    - _Korok::EC35
+    - _Chasm::MinshiWoods
+ 
+  - Depths 3:
+    - _Location::MinshiGrove:
+       line-color: red
     
 
     
