@@ -2867,9 +2867,62 @@ _route:
   - Depths 3:
     - _Location::MinshiGrove:
        line-color: red
-    
-
-    
+    - _Chest<Tunic of the Sky>:
+       coord: [1022.0000440947897,-500,1411.7676362175253]
+    - _Lightroot::Uihcoke
+    - _Lightroot::Zi-ner
+    - _Enemy::Talus::DK01
+    - _Enemy::FluxConstruct::DC02
+    - _YigaSchema::InstantKitchen
+    - _Chest<Large Crystallized Charge>
+    - _Chest<Trousers of the Sky>:
+       coord: [1168.000022234237,-500,425.6402437929228]
+    - _Location::CrenelCanyonMine:
+       hide-icon-on-map: true
+    - _Lightroot::Nojoj
+    - _Enemy::Frox::DC06
+    - _Lightroot::Korakut
+    - _Lightroot::Korom
+    - _Enemy::Talus::DK02
+    - _Lightroot::Arusakam
+    - _Location::AbandonedKakarikoMine
+    - _SchemaStone::KakarikoMine
+    - _Shop::ForgeConstruct07:
+       comment: buy all large CC
+    - _Enemy::Hinox::DL02
+    - _Chest<Tunic of the Hero>:
+       coord: [1280.0000214245865,-500,-1796.5319907651392]
+    - _Lightroot::Sohse
+    - _Location::BubingaGrove:
+       hide-icon-on-map: true
+    - _Enemy::Hinox::DL03:
+       notes: make sure to go to the right of the hinox. 
+    - _Chest<Ravio's Hood>:
+       coord: [2240.0000591667376,-500,-1900.287397309903]
+    - _YigaSchema::ScatterTrap
+    - _Chest<Large Crystallized Charge>
+    - _Enemy::FluxConstruct::DL03
+    - _Enemy::Hinox::DL01
+    - _Lightroot::Takaruk
+    - _YigaSchema::SuperSpring
+    - _Chest<Large Crystallized Charge>
+    - _Enemy::FluxConstruct::DL02
+    - _Lightroot::Migo-o
+    - _Enemy::Frox::DL01
+    - _Lightroot::Uogoj
+    - _Enemy::FluxConstruct::DL04
+    - _Lightroot::Usukaz
+    - _YigaSchema::Tank
+    - _Chest<Large Crystallized Charge>
+    - _Enemy::Talus::DL02:
+       movements: 
+       - to: [3112.0000188710746,-500,-1448.0998756608878]
+       - to: [3027.0000135772098,-500,-1779.2685432310618]
+    - _Enemy::Talus::DL03:
+       movements:
+       - to: [2700.0000377421493,-500,-1812.46982326193]
+       - to: [2642.0000341298655,-500,-1940.5350481833302]
+    - _Location::RozudoCanyonMine
     
      
     
