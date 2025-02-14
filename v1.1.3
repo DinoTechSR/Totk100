@@ -27,6 +27,7 @@ _route:
     - _Location::TempleofTime:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
+    - ToT Shield
     - Use QDZ to get the MsgNotFound sword ("MNF")
     - _Warp::Location<Up Top>:
        coord: [424.75,1500,-1680]
@@ -60,12 +61,11 @@ _route:
        coord: [588.93, 1579.45, -912.35]
     - _Material<Bird Egg x2>:
        coord: [607.79, 1600.74, -897.14]
-    - _Enemy<Soldier Construct>:
-       coord: [453.3, 1552.01, -897.25]
-       notes: Pick up Old Wooden Shield (keep at full durability) and Rusty Broadsword
     - Upgrade 1 Heart Container, open 4-Heart Door
     - _Npc<Great Sky Island Ending>:
-       coord: [453.76, 1579.32, -636.17]
+       movements:
+       - to: [453,1500,-883]
+       - to: [453.76, 1579.32, -636.17]
        comment: To the Kingdom of Hyrule
   
   - Paraglider:
@@ -198,9 +198,6 @@ _route:
     - _Npc<Purah>:
        coord: [-253.42, 132.01, 156]
        comment: Regional Phenomena
-    - _Item<BID Spot>:
-       coord: [-120, 300, 170]
-       notes: If you must let go of throw aim, do not do it inside the menu
     - Dupe 80 Fire Fruit, 180 Fairies, 180 Diamonds, 180 Rubies, 120 Flint, 80 Ancient Blades, 60 Wood, 510 Large Zonaite
     - Dupe 3 Cave Fish, 13 Bananas, 20 Dazzlefruit, 15 Splash Fruit, 15 Brightcaps, 10 Frogs, 10 Sundelions
     - _Shop::GeneralStore:
