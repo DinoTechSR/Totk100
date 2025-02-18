@@ -1,13 +1,50 @@
 ---
+# NOT CELER BRIEF USAGE GUIDE
+  
+# Click on any objective
+# In the Middle Panel
+# Or on the Right Panel / Objmap
+  
+# Use the Up and Down Keys
+# Or click on another objective
+# To move between objectives
+# An objective is marked complete
+# by moving past it on the route
+  
+# Go into Settings (top right)
+# and you can play around with
+# the available options
+  
+# Enable "Show Progress Bar"
+# This shows all counters at once
+  
+# Enable "Show Current Segment"
+# This will only draw the
+# currently selected segment,
+# helping with lag and visibility
+# Make sure you have a segment selected
+ 
+# Handles in between panels
+# allow you to resize each
+# according to your preference
+
+# This panel on the left is 
+# only used for route editing
+# You can minimize it if you want
+  
 _config:
-_project:
+_project: 
   authors:
     - BounceSR
+    - DinoTechSR  
   description: 100%
   name: 100%
   url: ""
-  version: 3.0
-  
+  version: 3.1
+  # last updated 2025/02/15 for:
+  # jetpack + Dragonhead testing
+  # castle + ZD changes
+
 _route:
   - Great Sky Island:
     - _Special::StartPos Sky<Room of Awakening>:
@@ -20,6 +57,8 @@ _route:
     - Title Card
     - _Location::GreatSkyIsland:
        hide-icon-on-map: true
+    - _Equipment::Weapon<Tree Branch>:
+       coord: [394.97, 1647.94, -1392.77]
     - _Npc<Steward Construct>:
        coord: [449.86, 1640.83, -1310.45]
        comment: Purah Pad
@@ -27,18 +66,22 @@ _route:
     - _Location::TempleofTime:
        coord: [453.51, 1556.17, -849.75]
        comment: The Closed Door
-    - ToT Shield
     - Use QDZ to get the MsgNotFound sword ("MNF")
-    - _Warp::Location<Up Top>:
-       coord: [424.75,1500,-1680]
+    - _Warp::Npc<Steward Construct>:
+       coord: [449.86, 1640.83, -1310.45]
        comment: Respawn here
-    - _Shrine::Gutanbac:
-       notes: Inside shrine, pick up two bows and setup QDS / ASF; also pick up the Zonai Charge from the construct  
+    - Wing to Bottomless Cave
+    - _Cave::Bottomless00
+    - Run through the cave, pick up Bomb Flowers x4 along the way
+    - _Bubbulfrog::BottomlessCave:
+       notes: Use a bomb flower
+    - _Equipment::Shield<Flame Emitter Shield>
     - _Cave::Bottomless01
-    - _Equipment::Shield<Flame Emitter Shield>:
-       coord: [745.41, 1650.87, -1368.7]
-    - _Material<Bomb Flower>:
-       coord: [744.35, 1647.04, -1344.69]  
+    - Climb up the vines and enter Ascend shrine
+    - _Shrine::Gutanbac:
+       notes: Inside shrine, pick up two bows and setup QDS / ASF; also pick up the Zonai Charge from the construct
+    - Energy Cell
+    - Wing + ASF to Fuse shrine and enter
     - _Shrine::In-isa:
        notes: Inside shrine, pick up Claymore and Fire Fruit, dupe 20 Bomb Flowers and 15 Zonai Charges in water
     - ASF to Ultrahand (UH) shrine and enter
@@ -59,13 +102,12 @@ _route:
        notes: Slower but easier, skip warp to UH and wing from Recall
     - _Chest<Large Zonaite>:
        coord: [588.93, 1579.45, -912.35]
-    - _Material<Bird Egg x2>:
-       coord: [607.79, 1600.74, -897.14]
+    - _Enemy<Soldier Construct>:
+       coord: [453.3, 1552.01, -897.25]
+       notes: Pick up Old Wooden Shield (keep at full durability) and Rusty Broadsword
     - Upgrade 1 Heart Container, open 4-Heart Door
     - _Npc<Great Sky Island Ending>:
-       movements:
-       - to: [453,1500,-883]
-       - to: [453.76, 1579.32, -636.17]
+       coord: [453.76, 1579.32, -636.17]
        comment: To the Kingdom of Hyrule
   
   - Paraglider:
@@ -109,6 +151,7 @@ _route:
        coord: [-334.93, 238.96, 845.94]
        comment: Crisis at Hyrule Castle
     - Wing + ASF to Docks hidden entrance, run through tunnel and bomb switch
+    - While winging, fuse rocket to Tree Branch and damage it down
     - _Location::Docks:
        hide-icon-on-map: true
     - _Equipment::Shield<Hylian Shield>:
@@ -118,92 +161,85 @@ _route:
        comment: WARP
     - Rocket back to LL, talk to Purah until getting the Paraglider, launch from the tower
     - _Tower::LookoutLanding
-    
+  
+  - Flint:
+    - _Warp::Shrine::Gutanbac
+    - _Material<Flint>:
+       coord: [790.68, 1682.9, -1389.64]
+    - _Material<Wood>:
+       coord: [780, 1600, -1400]
+       notes: Chop down tree with MNF
+    - _Material<Spicy Pepper x3>:
+       coord: [778.18, 1681.52, -1391.44]
+  
   - Farosh:
-    - _Warp::Shrine::In-isa:
-       comment: WARP
-    - _Material<Farosh Horn>:
-       coord: [80, 300, -2050]
-    - _Material<Dazzlefruit>:
-       coord: [-144.72, 128.56, -1824.89]
-    - _Material<Sundelion>:
-       coord: [-143.59, 132.2, -1809.05]
-    - _Location::EastPostRuins:
-       hide-icon-on-map: true
-    - _Chest<Ruby>:
-       coord: [-59.51, 114.65, -1567.05]
-       comment: Pick up
+    - Dive down below
+    - _Material<Bird Egg x2>:
+       coord: [688.12, 163.95, -1290.63]
+    - _Tear::G03
     - _Chest<Ancient Blade>:
        coord: [267, 114.5, -1651.5]
        comment: Buried in ground
     - _Chest<Cannon>:
        coord: [238.57, 113.53, -1648.46]
        comment: Buried under the water, use a wing to reach
-    - _Tear::G03
-    - Rocket up to dispenser in sky islands above Dueling Peaks
+    - _Material<Dazzlefruit x3>:
+       coord: [287.42, 179.67, -1907.37]
+    - _Well::HillsofBaumer
+    - Bomb rocks
+    - _Material<Glowing Cave Fish>
+    - _Material<Brightcap>
+    - _Chest<Ruby>
+    - Ascend out
+    - _Material<Farosh Horn>:
+       coord: [80, 300, -2050]
+  
+  - Dragonhead:
+    - Rocket up to the fairy island
     - _Location::WestNecludaSkyArchipelago:
        hide-icon-on-map: true
-    - _Dispenser::S05:
-       comment: Use 5 Zonai Charges, pick up carts and stabilizers
-    - WST + Dzuggle 9 MNFs
-    - Slide west to Digdogg ruins west, enter gap on the north side and ascend up to stick chest
-    - _Location::GerudoCanyonPass:
+    - _Material<Fairy>:
+       coord: [926.96, 667.61, -2131.03]
+       level: Sky
+    - Rocket to Dragonhead Island
+    - _Location::DragonheadIsland:
        hide-icon-on-map: true
-    - _Chest<Steering Stick x3>:
-       coord: [-1681.62, 138.94, -2067.24]
-    - Dupe 50 Carts, 200 Rockets, 400 Sticks, 250 Cannons, 20 Stabilizers
-    - Ascend out
-    - Rocket NW to Swift Violet
-    - _Material<Swift Violet>:
-       coord: [-1811.55, 181.05, -1876.59]
-    - Rocket NE to crates on Digdogg Bridge
-    - _Location::DigdoggSuspensionBridge:
-       hide-icon-on-map: true
-    - _Equipment::Weapon<Torch>:
-       coord: [-1691.66, 111.33, -1778.91]
-    - _Material<Wood x2>:
-       coord: [-1689.33, 111.08, -1775.14]
-    - _Material<Flint x4>:
-       coord: [-1687.65, 111.2, -1773.9]
-    - Rocket N to Outskirt Stable
-    - _Place::OutskirtStable:
-       hide-icon-on-map: true
-    - _Well::OutskirtStable:
-       comment: Enter well
-    - _Material<Brightcap>
-    - _Material<Glowing Cave Fish x3>
-    - _Material<Fairy>
-    - Ascend out
-    - Dupe 15 Diamonds, 10 Fairies, 5 Farosh Horns, 4 Swift Violet
-    - _Shop<Beedle>:
-       coord: [-1428.95, 137.75, -1282.91]
-       comment: Sell 12 Diamonds, buy all arrows and Frogs
-    - _Npc<Embry>:
-       coord: [-1442.38, 138.24, -1267.06]
-       comment: Register as a Pony Points member
-    - Cook 1 Farosh Horn, 4 Swift Violets, eat the speed food
-    - Slide to Banana Merchant on plateau
-    - _Location::GreatPlateau:
-       hide-icon-on-map: true
-    - _Shop<Yiga Merchant>:
-       coord: [-979.26, 248.55, -2018.14]
-       comment: Buy 40 Bananas (FABS)
-    - _Material<Mighty Banana>:
-       comment: Defeat Yiga Soldier
-    - _Material<Spicy Pepper x6>:
-       coord: [-977.53, 249.68, -2025.78]
+    - _Dispenser::S02:
+       notes: Use for carts, sticks, fans, extra wings
+    - Dupe 50 Carts, 200 Rockets, 400 Sticks, 250 Cannons
+        
+  - Recursive Jetpack:
+    - _Enemy<Construct>:
+       coord: [908.58, 118.24, -2725.57]
+       comment: Slide   
+       notes: Pick up Zonaite Sword
+    - _Material<Fleet Lotus Seeds>:
+       coord: [919.49, 113.84, -2504.05]
+    - _Cave::Tobio'sHollow00
+    - _Npc<Tattered Notebook>:
+       coord: [1207.04, 202.14, -2489.5]
+       comment: Legend of the Soaring Spear
+       notes: Get quest from book
+    - Throw into target
+    - _Shrine::Utojis
+    - _Bubbulfrog::Tobio'sHollowCave
+    
+       
   
   - Regional Phenomena:
     - _Warp::Tower::LookoutLanding
     - _Npc<Purah>:
        coord: [-253.42, 132.01, 156]
        comment: Regional Phenomena
-    - Dupe 80 Fire Fruit, 180 Fairies, 180 Diamonds, 180 Rubies, 120 Flint, 80 Ancient Blades, 60 Wood, 510 Large Zonaite
-    - Dupe 3 Cave Fish, 13 Bananas, 20 Dazzlefruit, 15 Splash Fruit, 15 Brightcaps, 10 Frogs, 10 Sundelions
+    - Perform BID
+    - Dupe 510 Large Zonaite, 180 Diamonds, 180 Rubies, 180 Fairies, 120 Flint, 60 Wood, 80 Fire Fruit, 80 Ancient Blades
+    - Dupe 20 Dazzlefruit, 10 Splash Fruit, 10 Brightcaps, 3 Cave Fish, 10 Frogs, 10 Farosh Horns, 10 Fleet Lotus      
     - _Shop::GeneralStore:
        comment: Sell 165 diamonds, buy arrows and apples
     - _Shop::ArmorShop:
        comment: Buy Hylian Set [3]
+    - _Equipment::Weapon<Torch>:
+       coord: [-246.46, 124.78, 42.67]
     - _Npc<Scorpis>:
        coord: [-258.32, 127.4, 100.7]
        comment: Open the Emergency Shelter
@@ -299,7 +335,7 @@ _route:
     - Static Zuggle a torch and light it
     - If time of day ("ToD") is between 12am - 5am, you may need to make morning twice
     - _Shop::ForgeConstruct10:
-       comment: Farm 2300 (to 2400) Crystallized Charges ("CC")
+       comment: Farm TO 2500 TOTAL Crystallized Charges ("CC")
        notes: Buy, move slightly, place wood (lit by torch), sit until morning, reload autosave, repeat
     - After the last reload (or any other forced reload), unequip and re-equip armor and equipment to regain overload.
     - _Location::SecretSpringofRevival:
@@ -329,6 +365,7 @@ _route:
        comment: Upgrade battery
     - _Npc::Robbie:
        comment: Camera Work in the Depths
+    - Buy arrows
     - _Location::MabeVillageRuins:
        hide-icon-on-map: true
     - _Well::MabeVillageRuins
@@ -351,34 +388,52 @@ _route:
        notes: Save Autobuild favorite for Koroks. Build ABC stick clip build. Favorite that as well.
     - _Korok::HF13
     - _Korok::HF22::End 
-    - _Well::AquameLake 
-    - _Location::AquameBridge
-    - _Korok::HF25  
-    - _Location::ColiseumRuins:
-       hide-icon-on-map: true
-    - _Enemy::Gleeok::G07
-    - Clip above cave entrance
-    - _Cave::ColiseumRuins00    
-    - _Bubbulfrog::ColiseumRuinsCave 
-    - _Npc<Misko Tablet>:
-       comment: Read for Awakening 3 Quest
-    - _Chest::TrousersofAwakening
-    - Ascend out
-    - _Enemy<Boss Bokoblin>:
-       coord: [-883.06, 140.45, -1340.05]
-       comment: Pick up Royal Claymore
+    - _Well::AquameLake
+    - _Korok::HF32 
     - _Item<Korok Starting Block>:
        coord: [-657.09, 158.02, -1389.64]
     - _Korok::HF39
+    - _Location::GreatPlateau:
+       hide-icon-on-map: true
     - _Npc<Bargainer Statue Fragment>:
        coord: [-587.31, 134.42, -1542.53]
        comment: A Call from the Depths
        notes: Talk to statue after breaking floodgate
-    - _Location::GatepostTownRuins
+    - _Korok::HF58::Start
+    - _Korok::HF57
+    - _Korok::HF58::End
+    - _Cave::ShrineofResurrection00
+    - _Bubbulfrog::ShrineofResurrection
+    - _SchemaStone::ShrineOfResurrection:
+       notes: Examine banana, defeat Yiga
+    - _Korok::HF68::Start
+    - _Korok::HF68::End
+    - _Cave::RiveroftheDeadWaterfall00
+    - _Bubbulfrog::RiveroftheDeadWaterfallCave
+    - _Shrine::Tadarok
+    - _Korok::HF67
+    - _Shop<Yiga Merchant>:
+       coord: [-979.26, 248.55, -2018.14]
+       comment: Buy 40 Bananas (FABS)   
+    - _Korok::HF60
+    - _Location::TempleofTimeRuins:
+       hide-icon-on-map: true
+    - _Korok::HF65
+    - _Chest<Nostalgic Fabric>:
+       coord: [-811.25, 263.59, -1963.41]
+    - _Korok::HF64
+    - _Tablet<Statue>:
+       coord: [-820, 300, -2000]
+       comment: SNAP
+    - _Npc<Disguised Statue>:
+       coord: [-823.26, 225.44, -2031.48]
+       comment: A Call From the Depths  
+    - _Item<Korok Starting Block>:
+       coord: [-683.04, 199.9, -1842.77]
+    - _Korok::HF54 
+    - _Location::GatepostTownRuins   
     - _Location::KolomoGarrisonRuins
-    - _Korok::HF31:
-       notes: For rock patterns, use UH to move rock
-    - _Korok::HF32
+    - _Korok::HF31
     - _Korok::HF28
     - _Chest<Amber>:
        coord: [-603.99, 148.01, -886.01]
@@ -439,13 +494,15 @@ _route:
     - _Location::WestHyruleSkyArchipelago:
        hide-icon-on-map: true
        level: Sky
-    - _Enemy::FluxConstruct::SC01
+    - _Enemy::FluxConstruct::SC01:
+       comment: Slide
     - _SagesWill::Tabantha<Sage Will>:
        comment: Attached to Flux Construct
   
   - Gerudo Highlands Tower:
     - Slide to surface near tower
-    - _Korok::GH26
+    - _Korok::GH26:
+       comment: Slide
     - _Cave::Meadela'sMantle00
     - _Bubbulfrog::Meadela'sMantleCave
     - Spawn wing on water, ascend into tower platform
@@ -463,7 +520,8 @@ _route:
     - Clip down into room with chest
     - _SagesWill::Tabantha_02<Sage Will>
     - Clip down through the bottom
-    - _Dispenser::S23
+    - _Dispenser::S23:
+       notes: Use for stabilizers (if necessary)
     - _Item<Korok Starting Block>:
        coord: [-3374.14, 2429.17, 12.18]
     - _Korok::GHS01
@@ -495,7 +553,7 @@ _route:
     - Clip out (the door is solid but invisible)
     - _Dispenser::S00:
        notes: Use for hover stones
-    - Dupe 100 Hover Stones
+    - Dupe 100 Hover Stones and 30 Stabilizers
     - _Item<Korok Starting Block>:
        coord: [-3621.97, 1768.08, 998.65]
     - _Korok::LBS02
@@ -508,7 +566,8 @@ _route:
     - _Tablet<King Gleeok>:
        coord: [-4420.64, 1389.90, 2275.43]
        comment: Kilton and Sayge
-    - _Enemy::Gleeok::S01
+    - _Enemy::Gleeok::S01:
+       comment: Slide
     - _Material<Gleeok Gut>:
        comment: Collect from Gleeok
     - _SagesWill::Hebra<Sage Will>:
@@ -605,6 +664,7 @@ _route:
     - _Korok::RPS01
     - _Temple::Wind:
        coord: [-2860, 1500, 3100]
+       notes: Do a vertical slide up to the correct height and glide into the temple
     - _Item<Heart Container>
     
   - Return to Rito Village:
@@ -902,8 +962,12 @@ _route:
     - _Korok::PS26
     - _Korok::PS20 
     - _Korok::PS19
+    - Buy arrows
     - _Place::SnowfieldStable:
        hide-icon-on-map: true
+    - _Npc<Varke>:
+       coord: [-1648.72, 339.78, 2569.43]
+       comment: Register as a Pony Points member
     - _Npc<Nat>:
        coord: [-1665.01, 339.45, 2540.73]
        comment: The Captured Tent
@@ -1001,14 +1065,20 @@ _route:
     - _Korok::TR15
     - _Chasm::ElmaKnolls
     - _Enemy::Hinox::GR02
-    - _Korok::LB03
-    - _Cave::YigaClanMarittaBranch00
-    - Defeat Yigas, drop down to chamber on right
-    - _Bubbulfrog::YigaClanMarittaBranch
-    - Ascend up twice to meet clothes person
-    - _Chest::YigaTights
-    - Ascend out
     - _Korok::LB02::Start
+    - _Material<Sundelion>:
+       coord: [-650.59, 331.53, 2190.27]
+       notes: Pick up
+    - Clip down into base
+    - _Material<Mighty Bananas x6>:
+       coord: [-636.74, 254.58, 2159.76]
+       notes: Pick up
+    - _Bubbulfrog::YigaClanMarittaBranch
+    - Ascend up, defeat Yigas, ascend up again to tailor
+    - _Chest::YigaTights
+    - Drop down, run out the cave entrance
+    - _Cave::YigaClanMarittaBranch00
+    - _Korok::LB03
     - _Korok::LB02::End
     - _Well::RowanPlain
     - _Enemy::Hinox::GR01
@@ -1096,10 +1166,9 @@ _route:
     - _Korok::HF24:
        notes: Pick up Golden Apples again after Korok
     - _Korok::HF33
-    - _Addison::A24
-    - _Korok::HF10::Start
     - _Location::ManhalaBridge
     - _Korok::HF26
+    - _Korok::HF10::Start
     - _Korok::HF19
     - _Korok::HF20
     - _Enemy::Talus::GC05
@@ -1153,17 +1222,15 @@ _route:
     - _Npc<Toffa>:
        coord: [-1449.91, 137.77, -1253.55]
        comment: The Horse Guard's Request
-       notes: Turn in Stalhorse > Ride deer in trees north back > Turn in Deer    
+       notes: Turn in Stalhorse, quest is not complete yet
     - _Npc<Embry>:
        coord: [-1442.38, 138.24, -1267.06]
        comment: A Picture for Outskirt Stable
-    - _Korok::HF35
     - _Npc<Penn>:
        coord: [-1412.67, 137.5, -1296.43]
        comment: The Beckoning Woman
-    - _Korok::HF38::Start
-    - _Korok::HF34
-    - _Korok::HF38::End
+    - _Korok::HF35
+    - _Well::OutskirtStable
     - _Shrine::Tsutsu-um
     - _Npc<Ralera>:
        coord: [-1356.03, 122.09, -1439.93]
@@ -1175,12 +1242,36 @@ _route:
     - _Npc<Ralera>:
        coord: [-1088.28, 251.83, -1371.44]
        comment: The Beckoning Woman (3)
+    - _Location::ColiseumRuins:
+       hide-icon-on-map: true
+    - _Enemy::Gleeok::G07
+    - Clip above cave entrance
+    - _Cave::ColiseumRuins00    
+    - _Bubbulfrog::ColiseumRuinsCave 
+    - _Npc<Misko Tablet>:
+       comment: Read for Awakening 3 Quest
+    - _Chest::TrousersofAwakening
+    - Ascend out
+    - _Location::AquameBridge
+    - _Korok::HF25  
+    - _Addison::A24
+    - _Npc<Deer>:
+       coord: [-1409.72, 160.61, -1173.91]
+       comment: The Horse Guard's Request
+       notes: Ride back to Toffa
+    - _Npc<Toffa>:
+       coord: [-1449.91, 137.77, -1253.55]
+       comment: Complete The Horse Guard's Request
+    - _Korok::HF34
+    - _Korok::HF38::Start
+    - _Korok::HF38::End
     - _Location::GreatPlateau:
        hide-icon-on-map: true
     - _Shrine::Riogok
     - _Korok::HF49::Trail
     - _Korok::HF55
     - _Enemy::Talus::GC07
+    - _Korok::HF52
     - _Korok::HF47
     - _Enemy<Ralera>:
        coord: [-989.8, 190.78, -1527.7]
@@ -1191,49 +1282,31 @@ _route:
     - _Bubbulfrog::GreatPlateauFoothillCave
     - _Shrine::Kyokugon:
        notes: Clip, circle orb shrine
-    - _Korok::HF60
-    - _Location::TempleofTimeRuins:
-       hide-icon-on-map: true
-    - _Korok::HF65
-    - _Chest<Nostalgic Fabric>:
-       coord: [-811.25, 263.59, -1963.41]
-    - _Korok::HF64
-    - _Tablet<Statue>:
-       comment: SNAP
-    - _Npc<Disguised Statue>:
-       coord: [-823.26, 225.44, -2031.48]
-       comment: A Call From the Depths
-    - _Korok::HF71
-    - _Chasm::GreatPlateauSouth:
-       notes: Drop stasis eye into chasm
-    - _Chest::YigaMask
-    - _Korok::HF73
-    - _Tablet<Water Sinkhole>:
-       coord: [-640, 300, -2140]
-       comment: Use wing and zoom all the way in
-    - _Korok::HF66
-    - _Chasm::GreatPlateauEast:
-       notes: Drop bombs eye into chasm
-    - _Item<Korok Starting Block>:
-       coord: [-683.04, 199.9, -1842.77]
-    - _Korok::HF54
-    - _Korok::HF42
+    - Ascend out
     - _Chasm::GreatPlateauNorth:
        notes: Drop magnesis eye into chasm
-    - _Korok::HF58::Start
-    - _Korok::HF52
-    - _Korok::HF57
-    - _Korok::HF58::End
-    - _Cave::ShrineofResurrection00
-    - _Bubbulfrog::ShrineofResurrection
-    - _SchemaStone::ShrineOfResurrection:
-       notes: Examine banana, defeat Yiga
-    - _Korok::HF68::Start
-    - _Korok::HF67
-    - _Korok::HF68::End
-    - _Cave::RiveroftheDeadWaterfall00
-    - _Bubbulfrog::RiveroftheDeadWaterfallCave
-    - _Shrine::Tadarok
+    - _Korok::HF42
+    - _Korok::HF50::Start
+    - _Korok::HF50::End
+    - _Tablet<Water Sinkhole>:
+       coord: [-450, 300, -1850]
+       comment: SNAP
+       notes: Use wing and zoom all the way in
+    - _Chasm::GreatPlateauEast:
+       notes: Drop bombs eye into chasm 
+    - _Korok::HF66 
+    - _Korok::HF73
+    - _Chest::YigaMask
+    - _Chasm::GreatPlateauSouth:
+       notes: Drop stasis eye into chasm
+    - _Korok::HF71
+    - _Korok::HF74
+    - _Korok::PF30   
+    - _Korok::PF27  
+    - _Korok::PF35
+    - _Tear::G09 
+    - _Korok::GC21::Start
+    - _Korok::GC21::End
     - _Korok::HF72
     - _Korok::HF63
     - _Chasm::GreatPlateauWest:
@@ -1292,7 +1365,8 @@ _route:
     - _Enemy::Talus::DF01
     - _Location::SouthLomeiDepthsLabyrinth:
        hide-icon-on-map: true
-    - _Lightroot::Sisustom
+    - _Lightroot::Sisustom:
+       comment: Slide
     - Clip down into labyrinth
     - _Enemy::FluxConstruct::DG04
     - _Chest::EvilSpiritMask
@@ -1444,8 +1518,6 @@ _route:
     - _YigaSchema::ThreeWheeler
     - _Chest<Large Crystallized Charge>:
        comment: In Adjacent Chest
-    - _Enemy::Frox::DC07
-    - _Lightroot::Napanos
     - _Enemy::Talus::DC02
     - _Location::BlupeeBurrow:
        hide-icon-on-map: true
@@ -1465,7 +1537,20 @@ _route:
        coord: [-2269.08, -693.89, -399.08]
     - _Item<Large Poe>:
        coord: [-2265.08, -693.8, -399.48]
-
+    - _Lightroot::Napanos
+    - _Enemy::Frox::DC07
+    - _Item<Large Poe>:
+       coord: [-1671.13, -393.42, 76.22]
+    - _Item<Large Poe>:
+       coord: [-1600.37, -398.22, 88.23]
+    - _Item<Large Poe>:
+       coord: [-1505.42, -388.64, 72.86]
+    - _Item<Large Poe>:
+       coord: [-1462.91, -355.19, 53.24]
+    - _Item<Grand Poe>:
+       coord: [-1574.5, -365.25, 234.96]
+    - _YigaSchema::BombBouquet
+    
   - Woodland Stable:
     - _Warp::Tower::LookoutLanding:
        line-color: lightsalmon
@@ -1810,6 +1895,7 @@ _route:
     - _Enemy::Talus::DT02
     - _Lightroot::Nikakik
     - _Location::DrenaCanyonMine
+    - _Lightroot::Uoyoyuik
     - _Lightroot::Yisuayam
     - _Location::CliffBargainerStatue:
        hide-icon-on-map: true
@@ -1866,6 +1952,7 @@ _route:
        hide-icon-on-map: true
     - _Item<Grand Poe>:
        coord: [-3395.21, -676.25, 3573.68]
+       comment: Slide
     - _Item<Large Poe>:
        coord: [-3399.69, -685.35, 3577.87]
     - _Lightroot::Muotue
@@ -1926,18 +2013,8 @@ _route:
     - _Item<Large Poe>:
        coord: [-3328.93, -383.7, -238.47]
     - _YigaSchema::InstantScaffold
-    - _Enemy::Talus::DR04
-    - _Item<Large Poe>:
-       coord: [-1671.13, -393.42, 76.22]
-    - _Item<Large Poe>:
-       coord: [-1600.37, -398.22, 88.23]
-    - _Item<Large Poe>:
-       coord: [-1505.42, -388.64, 72.86]
-    - _Item<Large Poe>:
-       coord: [-1462.91, -355.19, 53.24]
-    - _Item<Grand Poe>:
-       coord: [-1574.5, -365.25, 234.96]
-    - _YigaSchema::BombBouquet
+    - _Enemy::Talus::DR04:
+       comment: Slide
     - _Enemy::Frox::DC04
     - _Lightroot::Sikurukam
     - _Location::RhoamCanyonMine
@@ -1959,22 +2036,24 @@ _route:
        coord: [-1701.76, -498.29, 1140.26]
     - _Item<Large Poe>:
        coord: [-1682.31, -497.43, 1142.99]
-    - _Lightroot::Kawakanis
+    - _Item<Large Poe>:
+       coord: [-1310.22, -471.62, 1449.75]
+    - _Item<Large Poe>:
+       coord: [-1318.59, -465.73, 1448.31]
+    - _YigaSchema::CargoCarrier
     - _Enemy::Frox::DC01
+    - _Lightroot::Kawakanis
     - _Item<Large Poe>:
        coord: [-1193.55, -389.47, 1030.84]
     - _Item<Large Poe>:
        coord: [-1187.55, -388.71, 1048.26]
     - _Item<Large Poe>:
        coord: [-1194.89, -388.69, 1051.73]
-    - _Item<Large Poe>:
-       coord: [-1310.22, -471.62, 1449.75]
-    - _Item<Large Poe>:
-       coord: [-1318.59, -465.73, 1448.31]
-    - _YigaSchema::CargoCarrier
-    - _Lightroot::Uoyoyuik
-    - _Enemy::Frox::DE04
+    - Clip across
+    - _Enemy::Frox::DC03
+    - Clip across again
     - _Enemy::FluxConstruct::DC01
+    - _Enemy::Frox::DE04
     - _Lightroot::Netamnet
     - _Item<Large Poe>:
        coord: [-341.01, -488.1, 1779.18]
@@ -2012,7 +2091,7 @@ _route:
        notes: Upgrade all bows and shields
     - _Item<Blue Nightshade>:
        coord: [451.45, 248.68, 2107.31]
-    - Dupe 13 Hylian Rice, 10 Amber, 10 Crabs, 10 Sunset Fireflies, 5 Golden Apples, 4 Blue Nightshades
+    - Dupe 13 Hylian Rice, 10 Amber, 10 Crabs, 10 Sunset Fireflies, 10 Sundelions, 10 Bananas, 5 Golden Apples, 4 Blue Nightshades
     - _Npc<Damia>:
        coord: [564.99, 264.83, 2160.65]
        comment: A Pretty Stone and Five Golden Apples
@@ -2068,6 +2147,7 @@ _route:
        comment: Soul of the Gorons
     - _Temple::Fire
     - _Item<Heart Container>
+    
   
   - Return to Goron City:
     - _Warp::Npc<Yunobo>:
@@ -2209,7 +2289,8 @@ _route:
     - _Item<Korok Starting Block>:
        coord: [3662.96, 1272.91, 1410.33]
     - _Korok::UMS03
-    - _Chest::ZonaiteShinGuards
+    - _Chest::ZonaiteShinGuards:
+       comment: Slide
     - _Shrine::Gikaku::Start
     - _Item<Korok Starting Block>:
        coord: [4613.21, 1404.4, 2283.76]
@@ -2221,7 +2302,8 @@ _route:
     - _Shrine::Gikaku
     - _Location::NorthAkkalaSkyArchipelago:
        hide-icon-on-map: true
-    - _OldMap::Akkala_01<Old Map>
+    - _OldMap::Akkala_01<Old Map>:
+       comment: Slide
     - _Location::LomeiSkyLabyrinth:
        hide-icon-on-map: true
     - _Shrine::Mogisari
@@ -2388,7 +2470,7 @@ _route:
     - _Lightroot::Kuzimoy
   
     
-  - Zora's Domain Windup:
+  - To Zora's Domain:
     - _Warp::Shrine::Kisinona:
        line-color: mediumpurple
     - _Npc<Penn>:
@@ -2443,58 +2525,29 @@ _route:
     - _Korok::UZ57
     - _Location::LutosCrossing
     - _Cave::Luto'sChannel00
-    - _Bubbulfrog::Luto'sChannel
+    - _Bubbulfrog::Luto'sChannel:
+       coord: [3050, 300, -150]
     - _Korok::UZ58
     - _Location::LanayruSkyArchipelago:
        hide-icon-on-map: true
-    - _Tablet::S01
+    - _Tablet::S01:
+       coord: [3000, 300, 100]
+    - _Enemy::FluxConstruct::SL02
+    - _SagesWill::Lanayru_01<Sage Will>:
+       comment: Attached to Flux Construct
     - _Item<Korok Starting Block>:
-       coord: [3069.58, 367.53, 177.36]
-    - _Korok::UZ38
-    - _Cave::RalisChannel00
-    - _Korok::UZ40
-    - _Cave::RalisChannel01
-    - _Shrine::Joniu::Start
-    - _Shrine::Joniu
-    - _Bubbulfrog::RalisChannel
-    - _Cave::UplandZoranaByroad01
-    - _Bubbulfrog::UplandZoranaByroad:
-       notes: Raise the gate at the back first
-    - _Chest::ClimbingBoots:
-       notes: Ascend straight up here, will go into next cave
-    - _Bubbulfrog::UplandZoranaSummitCave
-    - _Cave::UplandZoranaSummit00
-    - _Npc<Bazz>:
-       coord: [2841, 482.17, 583.63]
-       comment: Mired in Muck
-       notes: Use splash fruit
-    - _Equipment::Weapon<Zora Spear>:
-       comment: As quest reward
-    - _Tower::UplandZorana
-
-
-  - Upland Zorana Sky:
-    - _Location::LanayruSkyArchipelago:
-       hide-icon-on-map: true
-    - _Dispenser::S22
-    - _Shrine::Jirutagumac
-    - Clip down to layer below
-    - _SagesWill::Lanayru<Sage Will>
-    - Rocket out of slot
-    - _OldMap::WellspringIsland_02<Old Map>
-    - _Item<Korok Starting Block>:
-       coord: [3232.47, 1045.66, 461.38]
-    - _Korok::UZS03
-  
-  - Sidon:
+       coord: [3292.69, 399.33, -10.05]
+    - _Korok::UZ54
+    - _Addison::A68
+    - _Korok::UZ39
     - _Place::ZorasDomain:
        hide-icon-on-map: true
+    - _Korok::UZ34    
     - _Korok::UZ24
     - _Npc<Yona>:
        coord: [3305.35, 244.26, 478.26]
        comment: The Sludge Covered Statue
        notes: Use a splash fruit
-    - _Korok::UZ23
     - _Shrine::Ihen-a
     - _Location::MiphaCourt:
        hide-icon-on-map: true
@@ -2574,12 +2627,12 @@ _route:
     - _Korok::UZ28
     - _Enemy::Talus::GZ04
     - _Korok::UZ33
+    - _Korok::UZ46
+    - _Korok::UZ43
     - _Korok::UZ49
     - _Enemy<Monster Forces>:
        coord: [4178.5, 463.75, 71.75]
        comment: The Fort at Ja'abu Ridge
-    - _Korok::UZ43
-    - _Korok::UZ46
     - _Location::EastReservoirLake:
        hide-icon-on-map: true
     - _Korok::UZ48
@@ -2618,8 +2671,9 @@ _route:
     - _Warp::Npc<Sidon>:
        coord: [3338.14, 271.89, 550.5]
        comment: Sidon of the Zora
+       line-color: orange
     - _Npc<Sidon>:
-       coord: [3342.75, 269.46, 543.89]
+       coord: [3338.14, 271.89, 550.5]
        comment: Secret Treasure Under the Great Fish
        notes: Immediately reload autosave for Sidon
     - _Npc<Chroma>:
@@ -2631,24 +2685,88 @@ _route:
     - _Npc<Yona>:
        coord: [3310, 150, 488]
        comment: A Token of Friendship
-    - Dupe 10 Crabs
-    - _Npc<Cleff>:
-       coord: [3324.52, 245.26, 492.66]
-       comment: A Crabulous Deal
-       notes: 10 Bright-Eyed Crabs
-    - _Npc<Dento>:
-       coord: [3336.38, 245.86, 489.25]
-       comment: Glory of the Zora
-       notes: Zora Spear, Diamond x3, Flint x5    
-    - _Npc<Gaddison>:
-       coord: [3400.48, 261.25, 484.99]
-       comment: The Fort at Ja'abu Ridge
     - _Npc<Fronk>:
        coord: [3291.71, 244.86, 441.43]
        comment: A Wife Wafted Away
     - _Item<Korok Starting Block>:
        coord: [3105.06, 278.17, 461.8]
     - _Korok::UZ29
+    - _Item<Korok Starting Block>:
+       coord: [3069.58, 367.53, 177.36]
+    - _Korok::UZ38
+    - _Cave::RalisChannel00
+    - _Korok::UZ40
+    - _Cave::RalisChannel01
+    - _Shrine::Joniu::Start
+    - _Shrine::Joniu
+    - _Bubbulfrog::RalisChannel
+    - _Cave::UplandZoranaByroad01
+    - _Bubbulfrog::UplandZoranaByroad:
+       notes: Raise the gate at the back first
+    - _Chest::ClimbingBoots:
+       notes: Ascend straight up here, will go into next cave
+    - _Bubbulfrog::UplandZoranaSummitCave
+    - _Cave::UplandZoranaSummit00
+    - Make room for weapon Zora spear
+    - _Npc<Bazz>:
+       coord: [2841, 482.17, 583.63]
+       comment: Mired in Muck
+       notes: Use splash fruit
+    - _Tower::UplandZorana
+
+
+  - Upland Zorana Sky:
+    - _Location::LanayruSkyArchipelago:
+       hide-icon-on-map: true
+    - _Dispenser::S22
+    - _Shrine::Jirutagumac
+    - Clip down to layer below
+    - _SagesWill::Lanayru<Sage Will>
+    - Rocket out of slot
+    - _OldMap::WellspringIsland_02<Old Map>
+    - _Item<Korok Starting Block>:
+       coord: [3232.47, 1045.66, 461.38]
+    - _Korok::UZS03
+    - _Npc<Mei>:
+       coord: [3668.75, 1356.94, 567.5]
+       comment: A Wife Wafted Away
+    - _OldMap::WellspringIsland<Old Map>    
+  
+  - Akkala:
+    - Clip down to cave
+    - _Bubbulfrog::ReservoirLakefrontCavern
+    - _Item<Blue Rock>:
+       coord: [3907.68, 316.91, 343.08]
+    - _Cave::ReservoirLakefrontrn00
+    - _Npc<Ledo>:
+       coord: [3594.67, 316.50, 338.88]
+       comment: The Blue Stone
+    - _Bubbulfrog::AncientZoraWaterworks
+    - _Enemy::Talus::SZ05
+    - _Chest::ZoraGreaves
+    - Ascend out
+    - _Enemy::Hinox::GZ02
+    - _Npc<Gaddison>:
+       coord: [3400.48, 261.25, 484.99]
+       comment: The Fort at Ja'abu Ridge
+    - _Npc<Dento>:
+       coord: [3336.38, 245.86, 489.25]
+       comment: Glory of the Zora
+       notes: Zora Spear, Diamond x3, Flint x5   
+    - _Npc<Cleff>:
+       coord: [3324.52, 245.26, 492.66]
+       comment: A Crabulous Deal
+       notes: 10 Bright-Eyed Crabs
+    - _Npc<Fronk>:
+       coord: [3291.71, 244.86, 441.43]
+       comment: A Wife Wafted Away
+    - _Shrine::Mogawak
+    - _Korok::UZ35
+    - _Cave::UnderZora'sDomain00
+    - _Chasm::UnderZorasDomain
+    - _Chest::VahRutaDivineHelm
+    - _Bubbulfrog::CaveUnderZora'sDomain
+    - _Korok::UZ23
     - _Korok::UZ20
     - _Cave::UplandZoranaFoothill00
     - _Bubbulfrog::UplandZoranaFoothillCave
@@ -2918,6 +3036,7 @@ _route:
        hide-icon-on-map: true
     - _Item<Korok Starting Block>:
        coord: [-683.92, 1290.82, 3534.95]
+       comment: Slide
     - _Korok::PSS02
     - _Shrine::Tenbez
     - _Tablet::S03
@@ -2961,8 +3080,8 @@ _route:
        comment: Serenade to Mija
   
   - Hebra Mountains:
-    - Slide W
-    - _Korok::RP06::Start
+    - _Korok::RP06::Start:
+       comment: Slide
     - _Korok::RP06::End
     - _Item<Korok Starting Block>:
        coord: [-3428.24, 350.17, 3799.82]
@@ -3063,8 +3182,8 @@ _route:
     - _Npc<Kish>:
        coord: [1061.47, 128.06, 1134.35]
        comment: A Picture for Woodland Stable
-    - Slide >E
-    - _Korok::EC57
+    - _Korok::EC57:
+       comment: Slide
     - _Tear::G02
     - _Korok::EC58
     - _Korok::EC60
@@ -3212,19 +3331,6 @@ _route:
        hide-icon-on-map: true
     - _Korok::SS27::Start
     - _Korok::SS27::End
-    - ToD Morning
-    - Spin handle with rockets
-    - _Npc<Steward Construct>:
-       coord: [2399.95, 259.9, -520.23]
-       comment: Talk to construct for quest
-    - _Shrine::Kurakat
-    - _Korok::SS22
-    - _Korok::SS28::Start
-    - _Korok::SS28::End
-    - _Korok::SS29
-    - _Addison::A60
-    - _Location::LanayruRoadWestGate:
-       notes: Stay low to mark location
     - _Korok::SS31
     - _Korok::SS43
     - _Korok::SS52
@@ -3237,6 +3343,7 @@ _route:
     - _Korok::SS55
     - _Location::KakarikoBridge
     - _Korok::SS57 
+    - ToD Night
     - _Place::DuelingPeaksStable:
        hide-icon-on-map: true
     - _Npc<Penn>:
@@ -3270,19 +3377,30 @@ _route:
     - _Location::LanayruPromenade:
        hide-icon-on-map: true
     - _Shrine::O-ogim
-    - ToD Night
     - _Korok::SS47
     - _Korok::SS48::Trail
     - _Enemy::Hinox::GL01
     - _Korok::SS46
     - _Korok::SS37
-    - _Korok::SS34
-    - Up high to Lanayru Sky
-    - _Enemy::FluxConstruct::SL02
-    - _SagesWill::Lanayru_01<Sage Will>:
-       comment: Attached to Flux Construct
+    - _Location::LanayruRoadWestGate:
+       notes: Is low at gate
+    - _Addison::A60
+    - _Korok::SS29
+    - ToD Morning:
+       notes: Can skip if expected to complete puzzle by 5 55am
+    - Spin handle with rockets
+    - _Npc<Steward Construct>:
+       coord: [2399.95, 259.9, -520.23]
+       comment: Talk to construct for quest
+    - _Shrine::Kurakat
+    - _Korok::SS22
+    - _Korok::SS28::Start
+    - _Korok::SS28::End
     - _Korok::UZ63::Trail
     - _Korok::UZ65
+    - _Korok::SS34
+    - _Korok::UZ72
+    - _Addison::A70
     - _Korok::UZ66
     - _Korok::UZ62
     - _Shrine::Apogek
@@ -3319,11 +3437,10 @@ _route:
     - _Korok::UZ64
     - _Korok::UZ70::Trail
     - _Korok::UZ73::Start
-    - _Addison::A70
-    - _Korok::UZ72
     - _Korok::UZ73::End
     - _Cave::LanayruRoadEast01
-    - Clip out and back in
+    - _Korok::ML05
+    - Clip down
     - _Bubbulfrog::LanayruRoadEastCave
     - _Shrine::Jogou
     - _Location::LanayruRoadEastGate:
@@ -3354,9 +3471,8 @@ _route:
     - _Shrine::Zakusu:
        comment: Proving Grounds
     - _Korok::ML08::Start
-    - _Korok::ML08::End
     - _Chasm::NaydraSnowfield
-    - _Korok::ML05
+    - _Korok::ML08::End
     - _Korok::ML06
     - _Korok::ML04
     - _Enemy::Talus::GL01
@@ -3595,14 +3711,16 @@ _route:
     - _Dispenser::S01
     - _OldMap::Necluda_02<Old Map>:
        comment: Chest in water
-    - _Korok::MLS01
+    - _Korok::MLS01:
+       comment: Slide
     - _Shrine::Mayanas::Start
     - _OldMap::ValorIsland<Old Map>:
        comment: Hanging from rope
     - _OldMap::ValorIsland_01<Old Map>:
        comment: Hanging from rope
     - _Shrine::Mayanas
-    - _Dispenser::S07
+    - _Dispenser::S07:
+       comment: Slide
     - _Item<Korok Starting Block>:
        coord: [4748.25, 1934.02, -1153.66]
     - _Korok::MLS03
@@ -3618,7 +3736,8 @@ _route:
     - _Dispenser::S24
     - _Shrine::Sihajog
     - _Tablet::S07
-    - _Enemy::FluxConstruct::SF01
+    - _Enemy::FluxConstruct::SF01:
+       comment: Slide
     - _Shrine::Kumamayn::Start:
        comment: Attached to Flux Construct
     - _Korok::RWS01
@@ -3848,30 +3967,24 @@ _route:
     - _Korok::GC36
     - _Korok::GC33
     - _Shrine::Kitawak
+    - _Korok::GC26
     - _Korok::GC27
     - _Addison::A26
-    - _Korok::GC26
-    - _Korok::GC21::Start
-    - _Tear::G09
-    - _Korok::PF35
-    - _Korok::PF27
-    - _Korok::HF74
-    - _Korok::PF30
-    - _Korok::GC21::End
+    - _Cave::LowerSpectacleRock00
+    - _Bubbulfrog::LowerSpectacleRockCave
+    - _Korok::GC19::Start
+    - _Korok::GC19::End
+    - _Addison::A25
     - _Cave::StalryPlateau00
     - _Bubbulfrog::StalryPlateauCave
     - _Npc<Botrick>:
        coord: [-1509.83, 87.22, -2234.80]
        comment: Disaster in Gerudo Canyon
        notes: Save from Fire Lizalfos
-    - _Addison::A25
     - _Well::MountNabooru
     - _Cave::MountNabooruSouth00
     - _Bubbulfrog::MountNabooruSouthCave
-    - _Korok::GC19::Start
-    - _Korok::GC19::End
-    - _Cave::LowerSpectacleRock00
-    - _Bubbulfrog::LowerSpectacleRockCave
+    - Ascend out
     - _Npc<Giro>:
        coord: [-1885.63, 104, -2340.83]
        comment: Disaster in Gerudo Canyon
@@ -3887,7 +4000,8 @@ _route:
     - _Bubbulfrog::KoukotPlateauCave  
     - _Korok::GC23
     - _Enemy::Gleeok::G09 
-    - _Tablet::S05
+    - _Tablet::S05:
+       comment: V Slide
     - _Chasm::EastGerudo
     - _Korok::GC40
     - _Enemy::Molduga::SG03
@@ -4128,7 +4242,8 @@ _route:
     - Enter shelter, read mural, ascend out
     - _Item<North Mirror>:
         coord: [-4056.82, 167.50, -3149.83]
-    - _Enemy::Gleeok::S02
+    - _Enemy::Gleeok::S02:
+       comment: V Slide
     - _SagesWill::Gerudo<Sage Will>:
        comment: After the Gleeok
     - _Enemy::Molduga::SG04
@@ -4234,9 +4349,9 @@ _route:
        coord: [-3643, 121.79, -3631.5]
        comment: Gerudo Fabric
     - _Chest<Gerudo Fabric>
-    - _Npc<Riju>:
+    - _SideQuest::TreasureoftheGerudoDesert:
        coord: [-3887.35, 157.48, -2968]
-       comment: Treasure of the Gerudo Desert
+       comment: Slide
     - _Shop<Sand Seal Rental>:
        coord: [-3770, 150, -2925.5]
        comment: Rent a Sleigh Seal (50 Rupees)
@@ -4365,11 +4480,15 @@ _route:
        coord: [-233.5, 131.94, 153.43]
        comment: Crisis at Hyrule Castle, Regional Phenomenon
     - _Korok::LL42
-    - Clip into Royal Hidden Passage
+    - Clip down from above
     - _Chest::SoldiersGreaves
+    - Clip across
     - _Enemy::Hinox::GC02
+    - In bounds through black rocks
     - _Chest::SoldiersHelm
+    - In bounds to next armor piece
     - _Chest::SoldiersArmor
+    - Clip across, mark Hyrule Castle Chasm along the way
     - _Bubbulfrog::RoyalHiddenPassage
     - _Korok::LL30
     - _Korok::LL31
@@ -4382,6 +4501,21 @@ _route:
        comment: Bokoblins
     - _Korok::LL14
     - _Korok::LL11
+    - _Korok::LL01
+    - _Location::EastPassage:
+       coord: [-80, 400, 1120]
+       notes: Move slightly inside to mark passage
+    - _Korok::LL18
+    - _Location::DiningHall
+    - _Korok::LL24
+    - _Korok::LL26
+    - _Korok::LL21    
+    - _Korok::LL22 
+    - _Korok::LL25
+    - _Korok::LL20
+    - _Korok::LL16::Trail    
+    - _Korok::LL17
+    - _Korok::LL13
     - _Location::Library:
        hide-icon-on-map: true
     - _Enemy<Monster Forces>:
@@ -4399,24 +4533,23 @@ _route:
     - _Shrine::Serutabomac
     - _Korok::LL07
     - _Korok::LL06
+    - _Korok::LL10
+    - _Korok::LL09
+    - _Location::PrincessZeldasStudy:
+       notes: Is marked by entering inside the building
     - _Location::PrincessZeldasRoom:
        hide-icon-on-map: true
+    - _Chest::RoyalGuardCap:
+       notes: Is in corner of room with next monster set
     - _Enemy<Monster Forces>:
        coord: [-318.3, 409.43, 992.64]
        comment: Fire Lizalfos
-    - _Chest::RoyalGuardCap
-    - _Location::PrincessZeldasStudy:
-       notes: Forgettable
-    - _Korok::LL10
-    - _Korok::LL09
     - _Enemy<Monster Forces>:
        coord: [-367.43, 352.62, 989.59]
        comment: Moblin + Ice Keese
-    - _Korok::LL17
     - _Enemy<Monster Forces>:
        coord: [-313.52, 351.05, 932.62]
-       comment: Shock Like Likes
-    - _Korok::LL13
+       comment: Shock Like Likes       
     - _Location::Sanctum:
        hide-icon-on-map: true
     - _Enemy<Phantom Ganon>:
@@ -4431,24 +4564,9 @@ _route:
     - _Korok::LL02
     - _Korok::LL03
     - _Addison::A29
-    - _Korok::LL01
-    - _Location::EastPassage:
-       coord: [-80, 400, 1120]
-       notes: Move slightly inside to mark passage
-    - _Korok::LL18
-    - _Location::DiningHall
-    - _Korok::LL24
-    - _Korok::LL26
-    - _Korok::LL22
-    - _Korok::LL21
-    - _Korok::LL25
-    - _Korok::LL20
-    - _Korok::LL16::Trail
-    - _Korok::LL04:
-       notes: Inside a crack in the wall
     - _Location::Lockup:
        coord: [-438.33, 132.24, 1115.69]
-       notes: Move slightly behind the Korok, missable
+       notes: Is inside a crack in the wall, next to pinwheel Korok
     - Destroy the black rocks
     - _Chest<Royal Hyrulean Fabric>:
        coord: [-489.72, 126.14, 1009.97]
@@ -4458,73 +4576,17 @@ _route:
     - _Location::GuardsChamber:
        hide-icon-on-map: true
     - _Chest::RoyalGuardUniform
-    - _Cave::RoyalHiddenPassage02
-    - Clip out, mark castle chasm from OOB, then go west
+    - _Cave::RoyalHiddenPassage02 
     - _Chasm::HyruleCastle:
-       notes: Mark from OOB
-  
-  - Hyrule Castle West Frox:
-    - _Enemy::Frox::DC03
+       coord: [-250, 300, 900]
+ 
    
-  - A Wife Wafted Away Sky:
-    - _Warp::Shrine::Igoshon:
-       line-color: turquoise
-    - _Npc<Mei>:
-       coord: [3668.75, 1356.94, 567.5]
-       comment: A Wife Wafted Away
-    - _OldMap::WellspringIsland<Old Map>
-    
-  - A Wife Wafted Away Surface:
-    - Clip down to cave
-    - _Bubbulfrog::ReservoirLakefrontCavern
-    - _Item<Blue Rock>:
-       coord: [3907.68, 316.91, 343.08]
-    - _Cave::ReservoirLakefrontrn00
-    - _Npc<Ledo>:
-       coord: [3594.67, 316.50, 338.88]
-       comment: The Blue Stone
-    - _Bubbulfrog::AncientZoraWaterworks
-    - _Enemy::Talus::SZ05
-    - _Chest::ZoraGreaves
-    - Ascend out
-    - _Enemy::Hinox::GZ02
-    - _Item<Korok Starting Block>:
-       coord: [3292.69, 399.33, -10.05]
-    - _Korok::UZ54
-    - _Addison::A68
-    - _Korok::UZ39
-    - _Korok::UZ34    
-    - _Npc<Fronk>:
-       coord: [3291.71, 244.86, 441.43]
-       comment: A Wife Wafted Away
-    - _Shrine::Mogawak
-    - _Korok::UZ35
-    - _Cave::UnderZora'sDomain00
-    - _Bubbulfrog::CaveUnderZora'sDomain:
-       coord: [3246.66, 197.32, 449.94]
-    - _Chest::VahRutaDivineHelm:
-       coord: [3246.88, 125.00, 455.68]
-    - _Chasm::UnderZorasDomain:
-       comment: Dive down
-
-  - A Wife Wafted Away Depths:
-    - _Item<Grand Poe>:
-       coord: [3331.09, -584.7, 347.29]
-       notes: Clip across
-    - _Item<Grand Poe>:
-       coord: [3326.7, -585.19, 357.89]
-    - _Item<Grand Poe>:
-       coord: [3342.36, -635.31, 640.43]
-    - _Item<Grand Poe>:
-       coord: [3215.03, -624.72, 625.15]
-    - _Item<Grand Poe>:
-       coord: [3207.1, -624.68, 624.86]
-    - _Shop::ForgeConstruct03:
-       comment: Buy 100 CC using 15 Large Zonaite
-
   
   - Final Memory:
-    - _Warp::Shrine::Mayachideg
+    - _Warp::Shrine::Mayachideg:
+       comment: WARP
+       notes: Complete Proving Grounds
+       line-color: turquoise
     - _Place::SouthAkkalaStable:
        hide-icon-on-map: true
     - _Npc<Parcy>:
@@ -4708,19 +4770,12 @@ _route:
     - _Korok::HF43::End
     - _Shrine::Kamizun:
        comment: (Proving Grounds)
-    - _Location::EastPostRuins:
-       hide-icon-on-map: true
-    - _Chasm::ForestofTime
-    - _Location::OutpostRuins:
-       coord: [-180, 300, -1650]
     - _Korok::HF45
-    - _Korok::HF50::Start
-    - _Korok::HF50::End 
-    - _Korok::HF61
-    - _Korok::HF59::Trail
-    - _Korok::PF19
+    - _Location::OutpostRuins
+    - _Chasm::ForestofTime
     - _Korok::HF53
     - _Korok::PF12::Start
+    - _Location::EastPostRuins
     - _Korok::HF48
     - _Location::ProximBridge
     - _Korok::PF13
@@ -4809,6 +4864,9 @@ _route:
     - _Korok::PF31
     - _Korok::HF75
     - _Korok::HF69
+    - _Korok::PF19
+    - _Korok::HF59::Trail
+    - _Korok::HF61
     - _Addison::A34
     - _Korok::HF70
     - _Korok::PF34::Start
@@ -4858,13 +4916,6 @@ _route:
     - _Korok::PF24
     - _Korok::SS72::Start
     - _Korok::SS72::End
-    - _Cave::Tobio'sHollow00
-    - _Npc<Tattered Notebook>:
-       coord: [1207.04, 202.14, -2489.5]
-       comment: Legend of the Soaring Spear
-       notes: Get quest from book
-    - _Shrine::Utojis
-    - _Bubbulfrog::Tobio'sHollowCave
     - Clip to cave
     - _Chest::TinglesShirt
     - _Bubbulfrog::DuelingPeaksSouthCave
@@ -4928,7 +4979,8 @@ _route:
     - _Location::ThunderheadIsles:
        hide-icon-on-map: true
        level: Sky
-    - _OldMap::ThunderheadIsles<Old Map>
+    - _OldMap::ThunderheadIsles<Old Map>:
+       comment: V Slide
     - _Korok::PFS02
     - _SagesWill::ThunderheadIsles<Sage Will>
     - _Dispenser::S18
@@ -5160,7 +5212,7 @@ _route:
     - _Korok::PS24
     - _Enemy<Monster Forces>:
        coord: [-1793.9, 374.36, 2226.77]
-       comment: Bring Peace to Hebra!
+       comment: Slide
     - _Addison::A18:
        notes: Should get Addison's Fabric
     - _Npc<Huck>:
@@ -5309,7 +5361,8 @@ _route:
     - _Chest::MidnasHelmet
     - _Location::CresiaPitMine:
        hide-icon-on-map: true
-    - _Chest::TrousersoftheWind
+    - _Chest::TrousersoftheWind:
+       comment; Slide
     - _Enemy::FluxConstruct::DL05
     - _Enemy::Talus::DL04:
        notes: South of wall
@@ -5357,7 +5410,9 @@ _route:
     - _YigaSchema::WaterFreezer
     - _Enemy::FluxConstruct::DF01
     - Clip through wall
-    - _Lightroot::Amo-ne
+    - _Lightroot::Amo-ne:
+       comment: Slide
+       notes: Slide to the wall, and clip to the lightroot
     - Clip through wall again
     - _Item<Grand Poe>:
        coord: [236.8, -351.29, -2144.02]
@@ -5384,9 +5439,6 @@ _route:
     - _Dispenser::S03
     - _Korok::GSI06
     - _Chest::ArchaicWarmGreaves
-    - _Cave::Bottomless00
-    - Run through the cave, pick up Bomb Flowers x4 along the way
-    - _Bubbulfrog::BottomlessCave
     - _Korok::GSI10
     - _Korok::GSI14
     - _Cave::Pit01
