@@ -238,14 +238,14 @@ _route:
  
   - Central Depths:
     - Stick clip down to the Depths
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-150.5, -338.9, -9.12]
        line-color: rgb(0,250,150)
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-140.24, -339.37, -5.02]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-132.9, -339.24, -26.28]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-135.08, -285.5, -46.98]
     - _KeyItem::Poe
     - _Enemy::Talus::DC01
@@ -258,21 +258,21 @@ _route:
        comment: Unlock 1st depths armor piece
     - _Enemy::FluxConstruct::DC03
     - _Enemy::Hinox::DC02
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [482.5, -314.87, 169.5]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [495.77, -315.48, 187.61]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [529.6, -296.68, 200.44]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [529.66, -296.1, 207.94]
     - _Location::AppleanGrove
     - _Lightroot::Oyimay
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-88.75, -321.12, 348.35]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-105.8, -320.93, 348.03]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-119.3, -323.72, 384.23]
     - _Lightroot::Sinonoyk
     - _Enemy::Frox::DC05
@@ -302,9 +302,9 @@ _route:
        coord: [-293.30, -355.53, -1793.55]
     - _Enemy::Frox::DC10
     - _Lightroot::Nogukoyk
-    - _Item<Grand Poe>:
+    - _Poe::Grand:
        coord: [-648.6, -412.91, -1784.9]
-    - _Item<Grand Poe>:
+    - _Poe::Grand:
        coord: [-658, -410.28, -1794.7]
     - _Location::GreatAbandonedCentralMine
     - _Special::StartPos Depths
@@ -320,12 +320,12 @@ _route:
     - _Shop::ForgeConstruct10:
        comment: Farm to 2500
     - _Lightroot::Koradat
-    - _Item<Grand Poe>:
+    - _Poe::Grand:
        coord: [-1031.94, -508.81, -1917.7]
-    - _Item<Large Poe>:
+    - _Poe::Large:
        coord: [-1034.03, -508.74, -1918.27]
     - _Location::SecretSpringofRevival    
-    - _Item<Grand Poe>:
+    - _Poe::Grand:
        coord: [-1160.64, -428.48, -1813.99]
     - _Location::GroveofSpirits
     - _Lightroot::Kogoir
@@ -719,75 +719,35 @@ _route:
     - _Shrine::Sitsum
     - _Enemy<Moragia>
     - _Chasm::DeathMountain
-    - _Korok::EC27
-    - _Location::ShadowHamletRuins:
-       hide-icon-on-map: true
-    - _Well::ShadowHamletRuins
-    - _Korok::UM27
-    - _Tower::UlriMountain
-  
-  - Eldin Sky:
-    - _Tablet::S11
-    - _SagesWill::Akkala
-    - _Shrine::Natak::Start
-    - _Dispenser::S20
-    - _Korok::UMS03
-    - _Shrine::Natak
-    - _Enemy::FluxConstruct::SA02
-    - _OldMap::Akkala
-    - _Chest<Zonaite Shin Guards>:
-       coord: [4465.135395332254,1500,2025.77287158101]
-    - _Shrine::Gikaku::Start:
-       comment: chuck to shrine area
-    - _Korok::UMS02:
-       movements:
-       - to: [4613.272095766028,1500,2284.591648145464]
-       - to: [4649.127037595696,1500,2129.7203633981253]
-    - _Dispenser::S12
-    - _Location::SkyMine:
-       coord: [4493.201003564242,1500,2105.5304791553676]
-       notes: Activating the terminal is necessary
-    - _Shrine::Gikaku
-    - _OldMap::Akkala_01
-    - _Enemy::FluxConstruct::SA01
-    - _OldMap::Akkala_02
-    - _Shrine::Mogisari 
-    - _Korok::UMS01
-  
-  - Akkala Labarynth:
-    - _Korok::UM01
-    - _Shrine::Igashuk
-    - _Chasm::LomeiLabyrinth
-    - _Cave::NorthAkkalaBeach01
-    - _Bubbulfrog::NorthAkkalaBeachCave
-    - _Enemy::Hinox::GA01
-    - Clip down to depths
 
   - Eldin Depths/Fire Temple:
-    - _Lightroot::Kuhsagi
-    - _Enemy::FluxConstruct::DA01
-    - _Lightroot::Kawisar
-    - _Enemy::Talus::DA01
-    - _Lightroot::Ui-ihcoj
-    - _YigaSchema::HeadlightRaft
-    - _Lightroot::Sikutamak:
-       line-color: rgb(255,100,155)
-       notes: (OPTIONAL AND DIFFICULT) use Raft of killed yiga with ultrahand to fly to lightroot
-    - _Enemy::Hinox::DE01
-    - _Chest<Biggorons Sword>:
-       coord: [3259.129127029835,-500,3445.777145502873]
+    - _Dispenser::D00
+    - _Npc<Yunobo>:
+       coord: [2299.867111988713,-500,2573.312509140368]
+    - _Lightroot::Mustis
+    - _Enemy::Talus::DE03
+    - _Lightroot::Kisomom
+    - _Location::RokGrove
+    - _Lightroot::Sikutamak
+    - _Location::AkkalaHouseofBones:
+       hide-icon-on-map: true
+       notes: Clip across to section high up
+    - _Enemy::Hinox::DE01:
+       notes: Use Dazzlefruit on other Stal enemies
+    - _Chest<Biggoron's Sword>:
+       coord: [3239.78, -324.65, 3446.48]
+       comment: Equipment Old Map Reward
+    - _Poe::Large:
+       coord: [3261.82, -525.62, 3753.88]
     - _YigaSchema::AssaultCart
     - _Lightroot::Tayamik
-    - _Enemy::Talus::DE01
     - _Enemy::FluxConstruct::DE02
-    - _Lightroot::Kisomom
-    - _Enemy::Talus::DE03
-    - _Lightroot::Mustis
-    - _Npc<Yunobo>:
-          coord: [2299.867111988713,-500,2573.312509140368]
-    - _Dispenser::D00
-    - _SchemaStone::EldinMine
-    - _Lightroot::Cugukaram
+    - _Enemy::Talus::DE01
+    - _Lightroot::Katijabis
+    - _Location::ScorchingColiseum:
+       hide-icon-on-map: true
+    - _Chest::ZantsHelmet
+    - _Enemy::Hinox::DE02
     - _Lightroot::Misisi
     - Do first terminals of fire temple:
        movements:
@@ -798,10 +758,6 @@ _route:
        - to: [1348.084413139246,-500,3051.5335319566993]
     - _Enemy::Talus::DE02
     - _Lightroot::Katoij
-    - _Enemy::Hinox::DE02
-    - _Lightroot::Katijabis
-    - _Chest<Zants Helmet>:
-       coord: [2145.1370668795653,-500,3184.774092701542]
     - _Chest<Trousers of the Wild>:
        coord: [1680.2758053064426,-500,3713.5408586798912]
     - _Lightroot::Kayam
@@ -869,7 +825,44 @@ _route:
     - _Enemy::Hinox::DE03
     - _Temple::Fire:
        notes: Beat Ghoma, get the sage will, and reload the autosave in fire temple. Fuse a ghoma rock to a weapon, do map zuggle inputs, but after dropping dont unpause, but reload the save at the sages will.
-      
+   
+  - Eldin Sky:
+    - _Tablet::S11
+    - _SagesWill::Akkala
+    - _Shrine::Natak::Start
+    - _Dispenser::S20
+    - _Korok::UMS03
+    - _Shrine::Natak
+    - _Enemy::FluxConstruct::SA02
+    - _OldMap::Akkala
+    - _Chest<Zonaite Shin Guards>:
+       coord: [4465.135395332254,1500,2025.77287158101]
+    - _Shrine::Gikaku::Start:
+       comment: chuck to shrine area
+    - _Korok::UMS02:
+       movements:
+       - to: [4613.272095766028,1500,2284.591648145464]
+       - to: [4649.127037595696,1500,2129.7203633981253]
+    - _Dispenser::S12
+    - _Location::SkyMine:
+       coord: [4493.201003564242,1500,2105.5304791553676]
+       notes: Activating the terminal is necessary
+    - _Shrine::Gikaku
+    - _OldMap::Akkala_01
+    - _Enemy::FluxConstruct::SA01
+    - _OldMap::Akkala_02
+    - _Shrine::Mogisari 
+    - _Korok::UMS01
+  
+  - Akkala Labarynth:
+    - _Korok::UM01
+    - _Shrine::Igashuk
+    - _Chasm::LomeiLabyrinth
+    - _Cave::NorthAkkalaBeach01
+    - _Bubbulfrog::NorthAkkalaBeachCave
+    - _Enemy::Hinox::GA01
+    - Clip down to depths
+   
   - Hyrule Field:
     - _Warp::Tower::LookoutLanding
     - _Shop::CrystalRefinery01
