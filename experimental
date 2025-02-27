@@ -394,7 +394,7 @@ _route:
     - _Korok::SS11
     - _Korok::EC59
     - _Addison::A50
-    - _Enemy::Hinox::DE05:
+    - _Enemy::Hinox::GZ01:
        movements:
        - to: [1312.2758053064426,150,911.5457431620202]
          away: true
@@ -448,7 +448,7 @@ _route:
     - _Korok::UZ04
     - _Korok::EC51
     - _Korok::UM41
-    - _Enemy::Talus::DA02
+    - _Enemy::Talus::GA04
     - _Korok::UZ01
     - _Korok::UM38
     - _Cave::AkkalaCitadelRuins00
@@ -464,6 +464,7 @@ _route:
     - _Chasm::SouthAkkalaPlains
     - _Location::SokkalaBridge
     - _Location::WestSokkalaBridge
+    - _Korok::UZ06
     - _Korok::UZ15
     - _Korok::UZ23
     - Splash the Statue
@@ -473,7 +474,8 @@ _route:
     - Start Sidon Quest
     - _Location<Fix The Slate>:
        coord: [3420.9276285505985,150,883.9145215627459]
-    - Set time to night
+    - _Item<Set time to night>:
+       coord: [3404.5,150,880]
     - _Cave::PristineSanctum01
     - _Bubbulfrog::PristineSanctum
     - Speak to doraphan
@@ -505,6 +507,8 @@ _route:
     - _Cave::UlriaGrottoEast00
     - _Korok::UZ12::End
     - _Bubbulfrog::UlriaGrottoEastCave
+    - _Enemy::Hinox::GA04
+    - _Cave::UlriaGrottoEast01
     - _Shrine::Gatanisis
     - _Korok::UZ07:
        movements: 
@@ -514,7 +518,6 @@ _route:
        movements:
        - to: [4698.93423446383,150,545.5317002759002]
        - to: [4627.944657126929,150,564.5433009209555]
-    - _Cave::UlriaGrottoEast01
     - _Korok::UZ17
     - _Korok::UZ19
     - _Addison::A77
@@ -522,7 +525,7 @@ _route:
     - _Cave::UlriaGrottoSouth00
     - _Bubbulfrog::UlriaGrottoSouthCave
     - _Enemy::Talus::GZ03
-    - _Enemy::Talus::DZ01
+    - _Enemy::Talus::GZ04
     - _Korok::UZ25
     - _Korok::UZ33
     - _Korok::UZ46
@@ -624,100 +627,95 @@ _route:
     - _Korok::EC29
     - _Addison::A46
     - _Korok::EC19
+    - _Location::StolockBridge
     - _Korok::EC21
-    - _Location<Buy Armor>:
-       coord: [1641,150,2408]
+    - _Place::GoronCity:
+       hide-icon-on-map: true
+    - _Shop::ArmorShop02:
+       comment: Buy Flamebreaker Set
     - _Npc<Yunobo>:
-       coord: [1648.01, 487.5, 2439.43]
-    - Buy Goron Spice, Rock Salt, and Arros from shop
+       coord: [1652.15, 487.3, 2443.18]
+       comment: Yunobo of Goron City
+    - _Shop::GeneralStore06:
+       comment: Buy Goron Spice and arrows
+    - _Korok::EC20
     - _Korok::EC16
-    - _Shrine::Marakuguc:
-       comment: STICK
-    - Take Picture of daruk
+    - _Shrine::Marakuguc
+    - _Tablet<Daruk Statue>:
+       comment: A Picture for Foothill Stable
     - _Npc<Dugby>:
-       notes: attach rocket to back of cart
        coord: [1744, 531.5, 2585]
+       comment: The Ancient City Gorondia?
+       notes: Launch minecart using rocket
     - _Korok::EC06::Start
     - _Cave::YunoboCoHQSouth00
+    - _Chest::EmberHeaddress
     - _Bubbulfrog::YunoboCoHQSouthCave
-    - _Chest<Ember Headdress>:
-       coord: [1574.5,150,2758.5]
-    - _SideQuest::TheAncientCityGorondia?:
-       coord: [1645.5,150,2788.5]
+    - _Place::YunoboCoHQ:
+       hide-icon-on-map: true
+    - _Npc<Dugby>:
+       coord: [1651, 414, 2792]
+       comment: The Ancient City Gorondia?
     - _Korok::EC06::End
     - _Cave::IsleofRabacGallery00
-    - _Location::IsleofRabac:
-       hide-icon-on-map: true
-    - _Korok::EC11:
-       movements:
-       - to: [1461,150,2966]
-       - to: [1567.5,150,2941.5]
-         away: true
-       notes: Shoot on the way to EC12
+    - _Korok::EC11
     - _Korok::EC12
+    - Equip Flamebreaker Set and SLB
     - _Korok::EC13
-    - Yunobo Fight:
-       notes: MAKE SURE TO HAVE ABC DEACTIVATED WHEN THE FIGHT ENDS. you will get an infinite load if this is not executed
+    - _Npc<Slergo>:
+       coord: [1639.66, 518.5, 2861.65]
+       comment: Yunobo of Goron City
+    - _Enemy<Yunobo>:
+       coord: [1642.65, 510.5, 2908.4]
+       comment: Yunobo of Goron City
     - _Cave::YunoboCoHQEast00
-    - _Shrine::Isisim:
-       comment: PROVING GROUNDS
+    - _Shrine::Isisim
     - _Bubbulfrog::YunoboCoHQEastCave
     - _Bubbulfrog::IsleofRabacGallery
     - _Shrine::Jiotak
-    - Set Time to night
     - _Enemy::Talus::GE03
-    - _Korok::EC09:
-       movements: 
-       - to: [2194.43, 613.08, 3008.75]
-       - to: [2170.75,150,3035.75]
+    - ToD Night:
+       notes: Can skip setting ToD if expected to arrive to Stalnox before 5am
+    - _Korok::EC09
+    - _Item<Korok Starting Block>:
+       coord: [2194.43, 613.08, 3008.75]
     - _Korok::EC07
-    - _Enemy::Hinox::GE02:
-       movements:
-       - to: [2141.25,150,3010.75]
-         away: true
+    - _Enemy::Hinox::GE02
     - _Korok::EC08
     - _Cave::Lizard'sBurrow00
-    - _Bubbulfrog::Lizard'sBurrow
     - _Chest::VahRudaniaDivineHelm
+    - _Bubbulfrog::Lizard'sBurrow
     - _Cave::LakeDarmanMonsterDen00
+    - _Enemy<Monster Forces>:
+       coord: [2428.1, 563.75, 2951.68]
+       comment: Bring Peace to Eldin!
     - _Bubbulfrog::LakeDarmanMonsterDen
-    - _SideAdv::BringPeacetoEldin
+    - _Bubbulfrog::DeathMountainWestTunnel
+    - _Npc<Mota>:
+       coord: [2345.72, 620.15, 2682.08]
+       comment: The Abandoned Laborer
+       notes: Launch minecart with rocket
+    - _Cave::DeathMountainWestTunnel00
+    - _Npc<Mota>:
+       coord: [2220, 620, 2670]
+       comment: The Abandoned Laborer
+    - _Location::DeathMountainWestSite
+    - _Korok::EC14
+    - _Bubbulfrog::DeathMountainFoothillCave
+    - _Korok::EC10::Start
+    - _Korok::EC10::End
     - _Enemy::Talus::GE04
     - _Shrine::Momosik::Start
     - _Bubbulfrog::DeathMountainEastTunnel
     - _Cave::DeathMountainEastTunnel00
     - _Shrine::Momosik
-    - _SideQuest<The Death Caldera Crystal>
     - _Addison::A55
     - _Korok::EC18
-    - _Korok::EC23
-    - _Addison::A56
-    - _Location::BridgeofEldin
-    - _Korok::EC22::Trail
-    - _Korok::EC24
-    - _Enemy::Talus::GE05
-    - _Korok::EC17
-    - _Korok::EC15::Start
-    - _Korok::EC15::End
-    - _Addison::A47
-    - _Cave::DeathMountainFoothill00
-    - _Cave::DeathMountainWestTunnel00:
-    - _Korok::EC14
-    - _Korok::EC10::Start
-    - _Korok::EC10::End
-    - _Bubbulfrog::DeathMountainWestTunnel
-    - _Npc<Mota>:
-       coord: [2345.72, 620.15, 2682.08]
-       comment: The Abandoned Laborer
-    - _Bubbulfrog::DeathMountainFoothillCave
-    - _Location::DeathMountainWestSite: 
-       hide-icon-on-map: true
-    - _Npc<Mota>:
-       coord: [2220, 620, 2670]
-    - _Cave::DeathMountainWestTunnel00
-    - _SideQuest::TheAbandonedLaborer
-    - _Shrine::Sitsum
-    - _Enemy<Moragia>
+    - _Korok::EC23   
+    - _Enemy<Moragia>:
+       coord: [2386.37, 914.77, 2603.82]
+       comment: Yunobo of Goron City
+       notes: Use PR + Wings
     - _Chasm::DeathMountain
 
   - Eldin Depths/Fire Temple:
@@ -781,31 +779,187 @@ _route:
     - _Lightroot::Kawumoro
     - _Enemy::Talus::GR01
     - _Enemy::Talus::DR03
-    - _Enemy::Hinox::GH03
-    - _Location::CuhoCanyonMine:
-       hide-icon-on-map: true
-    - _Chest<Tunic of the Wind>:
-       coord: [-3781.81696556936,-500,1337.615347032356]
-    - _Lightroot::Kataki
-    - _Enemy::Frox::DH07
     - _Lightroot::Koro-nui
     - _YigaSchema::AllPurposeRaft
     - _Enemy::Frox::DH08
     - _Lightroot::Sasag
     - _Lightroot::Kawakarut
     - _YigaSchema::InstantScaffold
+    - _Enemy::FluxConstruct::DG01
+    - _Location::GerudoCanyonMine:
+       hide-icon-on-map: true
+    - _Chest<Trousers Of Time>:
+       coord: [-4183.5,-500,-698]
+    - _Lightroot::Mustuto
+    - _Enemy::Talus::DG01
+    - _Location::AgaatCanyonMine
+    - _Poe::Grand:
+       coord: [-4504,-500,-1004]
+    - _YigaSchema::SmokeRocket
+    - _Item<Large Crystallized Charge>
+    - _Enemy::Frox::DG01
+    - _Lightroot::Stamayam
+    - _Enemy::Hinox::DG01
+    - _Enemy::Talus::DG02
+    - _Enemy::Frox::DG02
+    - _Lightroot::Umamustor
+    - _Poe::Large:
+       coord: [-3125.5,-500,-1562.5]
+    - _YigaSchema::Fanboat
+    - Use Paper Boat to get to lightroot
+    - _Lightroot::Kimakarut
+    - _Enemy::Frox::DG06
+    - _Poe::Large:
+       coord: [-3177.5,-500,-2532]
+    - _Poe::Large:
+       coord: [-3183.5,-500,-2517.5]
+    - _Shop::ForgeConstruct02
+    - _SchemaStone::KaraKaraMine
+    - _Location::AbandonedKaraKaraMine:
+       hide-icon-on-map: true
+    - _Chest<Miners Mask>:
+       coord: [-3231.3125,-500,-2476.625]
+    - _Poe::Grand:
+       coord: [-3234,-500,-2477]
+    - _Lightroot::Tatayam
+    - _Enemy::Talus::DG03
+    - _Lightroot::Mihcihc
+    - _Enemy::Frox::DG08
+    - _Poe::Grand:
+       coord: [-3667,-500,-2967]
+    - _Poe::Grand:
+       coord: [-3708,-500,-2955]
+    - _Enemy<Khoga>:
+       coord: [-3828,-500,-2913]
+    - _Shop::ForgeConstruct01
+    - _SchemaStone::GerudoMine
+    - _Location::AbandonedGerudoMine:
+       hide-icon-on-map: true
+    - _Poe::Large:
+       coord: [-3890.5,-500,-2922]
+    - _Poe::Large:
+       coord: [-3870.5,-500,-2943.5]
+    - _Lightroot::Gonatoyros
+    - _Enemy::FluxConstruct::DG03
+    - _Enemy::Frox::DG04
+    - _Poe::Large:
+       coord: [-4161,-500,-2276]
+    - _Lightroot::Rasinaduk
+    - _YigaSchema::RaidingPlane
+    - _Item<Large Crystalized Charge>
+    - _Poe::Large:
+       coord: [-4598,-500,-2783]
+    - _Poe::Large:
+       coord: [-4588,-500,-2806]
+    - _Lightroot::Gonatoyrim
+    - _Enemy::Frox::DG10
+    - _Chest<Tunic of the Wild>:
+       coord: [-4868,-500,-3716]
+    - _Location::GerudoDarkSkeleton:
+       hide-icon-on-map: true
+    - _Enemy::Hinox::DG02
+    - _Location::DesertColiseum:
+       hide-icon-on-map: true
+    - _Chest<Sheiks Mask>:
+       coord: [-4311,-500,-3780]
+       notes: use rubies for everything except the white enemy
+    - _Lightroot::Kasari
+    - _Poe::Large:
+       coord: [-4099,-500,-3801]
+    - _Poe::Large:
+       coord: [-3873,-500,-3656]
+    - _Poe::Large:
+       coord: [-3849,-500,-3661]
+    - _Lightroot::Gataharak
+    - _Enemy::Hinox::DG03
+    - _Poe::Large:
+       coord: [-3293.3125,-500,-3811.6875]
+    - _YigaSchema::VerticalEscape
+    - _Item<Large Crystalized Charge>
+    - _Enemy::Frox::DG09
+    - _Poe::Grand:
+       coord: [-2685.6875,-500,-2905.25]
+    - _YigaSchema::ShockTrap
+    - _Item<Large Crystallized Charge>
+    - _Enemy::Frox::DG07
+    - _Lightroot::Amakawis
+    - _YigaSchema::BeamTurret
+    - _Location::SouthLomeiDepthsLabyrinth:
+       hide-icon-on-map: true
+    - _Lightroot::Sisustom
+    - _Enemy::FluxConstruct::DG04
+    - _Chest<Evil Spirit Mask>:
+       coord: [-1796,-500,-3466]
+    - _Location::GranajhCanyonMine
+    - _Location::DavalCanyonMine
+    - _Enemy::Talus::DF01
+    - _Poe::Large:
+       coord: [-746.5,-500,-3549]
+    - _Poe::Large:
+       coord: [-733.25,-500,-3542.5]
+    - _Poe::Large:
+       coord: [-739,-500,-3527.5]
+    - _Lightroot::Nikohsi
+    - _Location::PappettoGrove
+    - _Enemy::Frox::DF02
+    - _Enemy::Frox::DF01
+    - _Location::FaloraaCanyonMine
+    - _YigaSchema::Monocycle
+    - _Item<Large Crystallized Charge>
+    - _Lightroot::Kawatik
+    - _Enemy::Frox::DG05
+    - _Location::NabooruCanyonMine
+    - _Lightroot::Jadukakar
+    - _Enemy::Frox::DG03
+    - _Lightroot::Kawiraus
+    - _Enemy::FluxConstruct::DG02
+    - _Location::DaliteGrove
+    - _Poe::Large:
+       coord: [-1843.5,-500,-701.5]
+    - _Poe::Large:
+       coord: [-1835.25,-500,-705.75]
+    - _YigaSchema::ThreeWheeler
+    - _Enemy::Talus::DC02
+    - _Location::BlupeeBurrow:
+       hide-icon-on-map: true
+    - _Poe::Grand:
+       coord: [-2298.75,-500,-436.0625]
+    - _Poe::Large:
+       coord: [-2300.125,-500,-433.8125]
+    - _Poe::Grand:
+       coord: [-2298.75,-500,-432.375]
+    - _Poe::Large:
+       coord: [-2297.1875,-500,-434.125]
+    - _Poe::Large:
+       coord: [-2314,-500,-394.25]
+    - _Poe::Large:
+       coord: [-2308.75,-500,-394.25]
+    - _Poe::Large:
+       coord: [-2269.75,-500,-397.5]
+    - _Poe::Large:
+       coord: [-2264.5,-500,-399]
+    - _Poe::Large:
+       coord: [-2127.75,-500,-387.75]
+    - _Poe::Large:
+       coord: [-2110.75,-500,-374.75]
+    - _Lightroot::Napanos
+    - _Enemy::Frox::DC07
+    - _Poe::Grand:
+       coord: [-1574.25,-500,234.25]
+    - _YigaSchema::BombBouquet
+    - _Item<Large Crystallized Charge>
     - _Enemy::Talus::DR04
     - _Enemy::Frox::DC04
     - _Lightroot::Sikurukam
     - _Location::RhoamCanyonMine
     - _YigaSchema::FlamethrowerBalloon
-    - _Enemy::Hinox::DH04
     - _Enemy::Talus::DR01
+    - _Enemy::Hinox::DH04
     - _Lightroot::Tikanur
     - _Location::LindorCanyonMine
     - _Lightroot::Nabahi-ikat
-    - _YigaSchema::BombBouquet
     - _Lightroot::Kawakanis
+    - _Enemy::Frox::DC01
     - _YigaSchema::CargoCarrier
     - _Enemy::FluxConstruct::DC01
     - _Lightroot::Netamnet
@@ -813,7 +967,10 @@ _route:
     - _Enemy::Frox::DE04
     - _Lightroot::Uoyoyuik
     - _Lightroot::Yisuayam
-    - _Location::CliffBargainerStatue
+    - _Location::CliffBargainerStatue:
+       hide-icon-on-map: true
+    - _Shop::BargainerStatue02
+    - _Enemy::Frox::DH02
     - _Location::DrenaCanyonMine
     - _Lightroot::Nikakik
     - _Enemy::Talus::DT02
@@ -821,20 +978,117 @@ _route:
     - _YigaSchema::AerialCannon
     - _Enemy::Gleeok::D01:
        notes: take picture and get guts
+    - _Chest<Cap of Twilight>:
+       coord: [264,-500,3118]
     - _Lightroot::Uukukis
     - _Enemy::Hinox::DE03
-    - _Temple::Fire:
-       notes: Beat Ghoma, get the sage will, and reload the autosave in fire temple. Fuse a ghoma rock to a weapon, do map zuggle inputs, but after dropping dont unpause, but reload the save at the sages will.
-   
+    - _Temple::Fire
+  
+  - Eldin 2:
+    - _Warp::Npc<Yunobo>:
+       coord: [1652.15, 487.3, 2443.18]
+       comment: Yunobo of Goron City
+    - _SideQuest::TheHiddenTeasureatLizardLakes:
+       coord: [1652.15, 487.3, 2437.18]
+    - Talk to Dugby to send to minecart
+    - _SideQuest::AmberDealer:
+       coord: [1661, 388, 2474]
+       notes: 10 Amber       
+    - _SideQuest::SouloftheGorons:
+       coord: [1687.56, 502.14, 2497.22]
+       notes: Cobble Crusher, Diamond x3, Flint x5
+    - _SideQuest::MoonGazingGorons:
+       coord: [1675.44, 488.75, 2433.4]
+    - _Npc<Dugby>:
+       coord: [1614.5, 502, 2399]
+       comment: The Ancient City Gorondia!
+       notes: At village center; launch with rocket, remove the blocking boulders
+    - _Place::SouthernMine:
+       hide-icon-on-map: true
+    - _SideQuest::TheAncientCityGorondia!:
+       coord: [1580, 300, 2060]
+       line-color: red
+    - _Korok::EC31
+    - _Cave::SouthernMine00
+    - _SideQuest::MineCartLandOpenforBusiness:
+       coord: [1827.42, 427.27, 2079.37]
+    - _SideQuest::MineCartLandQuickshotCourse:
+       coord: [1830.87, 427.25, 2080.46]
+    - _Bubbulfrog::SouthernMine  
+    - _Location::EldinSkyArchipelago:
+       hide-icon-on-map: true
+    - _SagesWill::Eldin<Sage Will>
+    - _Item<Korok Starting Block>:
+       coord: [1799.11, 602.53, 2210.18]
+    - _Korok::EC28
+    - _Tablet<Soaking Goron>:
+       comment: A Picture for Woodland Stable
+    - _Korok::EC25
+    - _Korok::EC17
+    - _Korok::EC15::Start
+    - _Cave::DeathMountainFoothill00
+    - _Addison::A47
+    - _Korok::EC15::End
+    - _SideQuest::MineCartLandDeathMountain:
+       coord: [2363, 932.75, 2599.5] 
+    - _Shrine::Sitsum
+    - _Addison::A56
+    - _Location::BridgeofEldin:
+       hide-icon-on-map: true
+    - _Korok::EC22::Trail
+    - _Enemy::Talus::GE05
+    - _Korok::EC24
+    - Clip down to cave from above
+    - _Bubbulfrog::GorkoTunnel
+    - _Npc<Kima>:
+       coord: [2160.65, 495.5, 2086.57]
+       comment: Simmerstone Springs
+    - _Korok::EC30
+    - _Cave::GorkoTunnel00
+    - _Korok::EC33::Start
+    - _Korok::EC33::End
+    - _Item<Rock Roast>:
+       coord: [1667.56, 369.49, 1840.24]
+       comment: Escort back to Bedrock Bistro
+    - _Bubbulfrog::WestRestaurantCave
+    - _Cave::WestRestaurant00
+    - _Place::BedrockBistro:
+       hide-icon-on-map: true
+    - _SideQuest::MeatforMeat:
+       coord: [1761.51, 384.49, 1546.32]
+       notes: Turn in 100 Flint    
+    - ABC-Overload-Clip from above into cave
+    - _Enemy::Talus::GE06
+    - _Korok::EC34::Trail
+    - _Korok::EC40
+    - _Cave::LakeIntenoch00
+    - _Bubbulfrog::LakeIntenochCave
+    - _Shrine::Moshapin::Start
+    - _Shrine::Moshapin
+    - _Korok::EC38
+    - _Shrine::Mayachideg:
+       notes: Save warp point to later (proving grounds)
+    - _Korok::UM26::Start
+    - _Location::ShadowHamletRuins:
+       hide-icon-on-map: true
+    - _Korok::EC27:
+       notes: Jigsaw piece on top of roof
+    - _Well::ShadowHamletRuins
+    - _Korok::UM26::End
+    - _Korok::UM27
+    - _Enemy<Aerocuda>:
+       notes: Defeat, UH pedestal to tower
+    - _Tower::UlriMountain 
+  
   - Eldin Sky:
     - _Tablet::S11
-    - _SagesWill::Akkala
+    - _SagesWill::Akkala<Sage Will>
     - _Shrine::Natak::Start
     - _Dispenser::S20
     - _Korok::UMS03
     - _Shrine::Natak
     - _Enemy::FluxConstruct::SA02
-    - _OldMap::Akkala
+    - _OldMap::Akkala<Old Map>
     - _Chest<Zonaite Shin Guards>:
        coord: [4465.135395332254,1500,2025.77287158101]
     - _Shrine::Gikaku::Start:
@@ -848,9 +1102,7 @@ _route:
        coord: [4493.201003564242,1500,2105.5304791553676]
        notes: Activating the terminal is necessary
     - _Shrine::Gikaku
-    - _OldMap::Akkala_01
-    - _Enemy::FluxConstruct::SA01
-    - _OldMap::Akkala_02
+    - _OldMap::Akkala_01<Old Map>
     - _Shrine::Mogisari 
     - _Korok::UMS01
   
@@ -863,6 +1115,153 @@ _route:
     - _Enemy::Hinox::GA01
     - Clip down to depths
    
+  - Depths 4:
+    - Stick clip to depths
+    - _Location::LomeiDepthsLabyrinth:
+       hide-icon-on-map: true
+    - _Lightroot::Kuhsagi
+    - _Enemy::FluxConstruct::DA01
+    - _Chest::EvilSpiritArmor
+    - Clip across
+    - _Lightroot::Kawisar
+    - _Enemy::Talus::DA01
+    - _Lightroot::Ui-ihcoj
+    - _Poe::Large:
+       coord: [4156.17, -475.57, 3245.55]
+    - _YigaSchema::HeadlightRaft
+    - _Chest<Large Crystallized Charge>:
+       comment: In Adjacent Chest
+    - _Enemy::FluxConstruct::DA02
+    - _Location::WellspringofPower:
+       hide-icon-on-map: true
+    - _Shop::BargainerStatue05
+    - _Poe::Large:
+       coord: [3645, -366.25, 2310.46]
+    - _Poe::Large:
+       coord: [3648.15, -359.76, 2303.19]
+    - _YigaSchema::Wagon
+    - _Chest<Large Crystallized Charge>:
+       comment: In Adjacent Chest
+    - _Location::UlriCanyonMine
+    - _Lightroot::Akinatanis
+    - _Enemy::Frox::DA01
+    - _Location::RistMine:
+       hide-icon-on-map: true
+    - _Lightroot::Kimimeg
+    - _Poe::Large:
+       coord: [4518.95, -348.26, 2164.07]
+    - _Poe::Grand:
+       coord: [4521.70, -348.48, 2168.57]
+    - _Chest::TunicofTwilight
+    - _Enemy::Hinox::DA01
+    - _Location::AbandonedTarreyMine:
+       hide-icon-on-map: true
+    - _Poe::Large:
+       coord: [3963.31, -399.37, 1549.24]
+    - _Poe::Large:
+       coord: [3960.17, -399.79, 1543.06]
+    - _Poe::Large:
+       coord: [3957.23, -399.38, 1549.24]
+    - _Shop::ForgeConstruct06:
+       comment: Buy 100 CC using 15 Large Zonaite
+    - _SchemaStone::TarreyMine
+    - _Lightroot::Agihi-ihcoj:
+       notes: Clip across
+    - _Lightroot::Kawikatisar
+    - _Enemy::Frox::DA02
+    - _Lightroot::Sisinatag
+    - _Chest::CapoftheWind:
+       notes: Clip across
+    - _Poe::Large:
+       coord: [4394.02, -583.93, 621.02]
+       notes: Clip back across
+    - _Poe::Grand:
+       coord: [4386.71, -574.10, 624.78]
+    - _YigaSchema::TripleCannon
+    - _Chest<Large Crystallized Charge>:
+       comment: In Adjacent Chest
+    - _Enemy::Talus::DZ01
+    - _Location::PloymusCanyonMine
+    - _Lightroot::A-nehi
+    - Clip across
+    - _Poe::Grand:
+       coord: [3331.09, -584.7, 347.29]
+    - _Poe::Grand:
+       coord: [3326.7, -585.19, 357.89]
+    - _Lightroot::Kawagom
+    - _Location::AbandonedLanayruMine:
+       hide-icon-on-map: true
+    - _Poe::Grand:
+       coord: [3342.36, -635.31, 640.43]
+    - _Enemy<Master Kohga>:
+       coord: [3299.39, -644.89, 559.10]
+       comment: Master Kohga of the Yiga Clan
+    - _Chest<Huge Crystallized Charge>:
+       coord: [3296.97, -644.88, 574.83]
+       comment: Pick up 100 CC chest
+    - _SchemaStone::LanayruMine
+    - _Shop::ForgeConstruct03:
+       comment: Buy 100 CC using 15 Large Zonaite
+    - _Poe::Grand:
+       coord: [3215.03, -624.72, 625.15]
+    - _Poe::Grand:
+       coord: [3207.1, -624.68, 624.86]
+    - _Enemy::FluxConstruct::DL01
+    - _Lightroot::Uinoj
+    - _Enemy::Frox::DA03
+    - _Lightroot::Anonisik
+    - _Poe::Grand:
+       coord: [2614.33, -490.69, 1626.70]
+    - _YigaSchema::BigRig
+    - _Chest<Large Crystallized Charge>:
+       comment: In Adjacent Chest
+    - _Enemy::Talus::DA02
+    - _Location::AncientUndergroundFortress:
+       hide-icon-on-map: true
+    - _Poe::Grand:
+       coord: [3234.23, -684.54, 1527.7]
+    - _Lightroot::Niuzimod
+    - _Chest::TrousersofTwilight
+    - _Lightroot::Gedihcayam
+    - _Lightroot::Nipahsom
+    - _Enemy::Frox::DE03
+    - _Lightroot::Kawamit
+    - _Enemy::Talus::DE04
+    - _Location::MinshiGrove:
+       hide-icon-on-map: true
+    - _Chest::TunicoftheSky
+    - _Lightroot::Uihcoke
+    - _Enemy::Hinox::DE05
+    - _Poe::Large:
+       coord: [1548.11, -346.47, 774.21]
+    - _Poe::Large:
+       coord: [1555.41, -340.34, 767.41]
+    - _YigaSchema::Rainmaker
+    - _Chest<Large Crystallized Charge>:
+       comment: In Adjacent Chest  
+    - Equip GEB, unequip Flamebreaker Set 
+    - Clip across
+    - _Enemy<Marbled Gohma>:
+       coord: [1607.1, -354.04, -62.11]
+       comment: Fuse rock to shield, use for proving grounds
+    - _Lightroot::Uasnoj
+    - _Lightroot::Sekioam
+    - _Location::TabahlGrove:
+       hide-icon-on-map: true
+    - _Chest<Sea Breeze Shield>:
+       coord: [2667.56, -453.72, 253.65]
+       comment: Equipment Old Map Reward
+    - _Location::RutoCanyonMine
+    - _Lightroot::Kegopa
+    - _Poe::Large:
+       coord: [3655.35, -319.73, -574.38]
+    - _Poe::Large:
+       coord: [3653.72, -329.94, -582.45]
+    - _YigaSchema::Icebreaker
+    - _Chest<Large Crystallized Charge>:
+       comment: In Adjacent Chest
+    - _Lightroot::Kuzimoy
+ 
   - Hyrule Field:
     - _Warp::Tower::LookoutLanding
     - _Shop::CrystalRefinery01
@@ -1118,8 +1517,7 @@ _route:
     - _Korok::GH47::End
     - _Korok::GH44
     - _Addison::A01
-    - Make a Vertical Cart slide blueprint with stabalizers here
-    - _Enemy::Hinox::DG01
+    - _Enemy::Hinox::GG01
     - _Enemy::Talus::GG01
     - _Korok::GH24
     - _Korok::GH27
@@ -1689,7 +2087,7 @@ _route:
     - _Korok::HF08
     - _Korok::HF17
     - _Korok::HF16
-    - _Enemy::Talus::DC02
+    - _Enemy::Talus::GC04
     - _Bubbulfrog::SatoriMountainFoothillCave:
        notes: Overload clip to bubbulfrog    
     - _Enemy::Hinox::GC04:
@@ -2600,6 +2998,9 @@ _route:
     - _Korok::UM09::End
     - _Korok::UM14
     - _Korok::UM13
+    - _Enemy::FluxConstruct::SA01:
+       comment: V Slide
+    - _OldMap::Akkala_02<Old Map>
     - _Korok::UM03:
        movements:
        - to: [3152.96, 241.97, 3430.86]
@@ -2856,104 +3257,67 @@ _route:
        notes: try t o brush the wall to get the lost woods location. if not, use map to get on route
     - _Korok::EC35
     - _Chasm::MinshiWoods
- 
-  - Depths 3:
-    - _Location::MinshiGrove:
-       line-color: red
-    - _Chest<Tunic of the Sky>:
-       coord: [1022.0000440947897,-500,1411.7676362175253]
-    - _Lightroot::Uihcoke
-    - _Lightroot::Zi-ner
-    - _Enemy::Talus::DK01
-    - _Enemy::FluxConstruct::DC02
-    - _YigaSchema::InstantKitchen
-    - _Chest<Large Crystallized Charge>
-    - _Chest<Trousers of the Sky>:
-       coord: [1168.000022234237,-500,425.6402437929228]
-    - _Location::CrenelCanyonMine:
+  
+  - Korok Forest Depths:
+    - _Location::KorokGrove:
        hide-icon-on-map: true
-    - _Lightroot::Nojoj
-    - _Enemy::Frox::DC06
-    - _Lightroot::Korakut
-    - _Lightroot::Korom
-    - _Enemy::Talus::DK02
-    - _Lightroot::Arusakam
-    - _Location::AbandonedKakarikoMine
-    - _SchemaStone::KakarikoMine
-    - _Shop::ForgeConstruct07:
-       comment: buy all large CC
-    - _Enemy::Hinox::DL02
-    - _Chest<Tunic of the Hero>:
-       coord: [1280.0000214245865,-500,-1796.5319907651392]
-    - _Lightroot::Sohse
-    - _Location::BubingaGrove:
-       hide-icon-on-map: true
-    - _Enemy::Hinox::DL03:
-       notes: make sure to go to the right of the hinox. 
-    - _Chest<Ravio's Hood>:
-       coord: [2240.0000591667376,-500,-1900.287397309903]
-    - _YigaSchema::ScatterTrap
-    - _Chest<Large Crystallized Charge>
-    - _Enemy::FluxConstruct::DL03
-    - _Enemy::Hinox::DL01
-    - _Lightroot::Takaruk
-    - _YigaSchema::SuperSpring
-    - _Chest<Large Crystallized Charge>
-    - _Enemy::FluxConstruct::DL02
-    - _Lightroot::Migo-o
-    - _Enemy::Frox::DL01
-    - _Lightroot::Uogoj
-    - _Enemy::FluxConstruct::DL04
-    - _Lightroot::Usukaz
-    - _YigaSchema::Tank
-    - _Chest<Large Crystallized Charge>
-    - _Enemy::Talus::DL02:
-       movements: 
-       - to: [3112.0000188710746,-500,-1448.0998756608878]
-       - to: [3027.0000135772098,-500,-1779.2685432310618]
-    - _Enemy::Talus::DL03:
-       movements:
-       - to: [2700.0000377421493,-500,-1812.46982326193]
-       - to: [2642.0000341298655,-500,-1940.5350481833302]
-    - _Location::RozudoCanyonMine
-    
+    - _Lightroot::Eknupup
+    - _Lightroot::Ramobnukas
+    - _Enemy::Hinox::DE04
+    - _Lightroot::Sijnin
+    - _Lightroot::Rikonasum
+    - _Enemy<Phantom Ganon>:
+       coord: [412,-500,2189]
+       notes: ABC stick clip in. 1 ruby and give ganon a beating. Vertical Cart Slide instead of ascending out
      
-    
-    
-    
-      
-    
-       
-  
-    
-    
-
-    
-    
-    
-    
-    
-
-    
+  - Korok Forest Surface:
+    - Ascend up the Deku Tree
+    - _Place::KorokForest:
+       hide-icon-on-map: true
+    - Upgrade to 8 Hearts and Full Stamina
+    - _Chasm::DekuTree:
+       notes: Easily missable
+    - _Npc<Kula>:
+       coord: [433.49, 249.74, 2109.7]
+       comment: Whirly Swirly Things
+    - _Shrine::Musanokir
+    - _Npc<Hestu>:
+       coord: [419.49, 248.71, 2119.06]
+       comment: Hestu's Concerns
+       notes: Upgrade all bows and shields
+    - _Item<Blue Nightshade>:
+       coord: [451.45, 248.68, 2107.31]
+    - _Npc<Damia>:
+       coord: [564.99, 264.83, 2160.65]
+       comment: A Pretty Stone and Five Golden Apples
+    - _Shrine::Pupunke::Start
+    - _Shrine::Pupunke
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       comment: Walton's Treasure Hunt
+       notes: Talk once -> sword/spear -> Talk again
+    - Stick clip down into Secret Room
+    - _Npc<Oaki>:
+       coord: [413.12, 285.21, 2177.78]
+       comment: The Secret Room
+       notes: 2 Giant Brightbloom, 4 Blue Nightshade
+    - ABC clip through the front
+    - _Npc<Deku Tree>:
+       coord: [430, 268, 2145]
+       comment: Recovering the Hero's Sword
+    - _SideQuest::WaltonsTreasureHunt:
+       coord: [422.01, 263.88, 2157.42]
+    - _Npc<Maca>:
+       coord: [379.65, 251.5, 2083.58]
+       comment: Maca's Special Place
+    - _Npc<Walton>:
+       coord: [417.59, 334.03, 2180.27]
+       notes: Turn in shield, can discard equipment
+    - _Enemy::Talus::GT03
+    - _Shrine::Sakunbomar::Start
+    - _Shrine::Sakunbomar
  
-  
-    
-      
-    
-    
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+ 
        
        
        
